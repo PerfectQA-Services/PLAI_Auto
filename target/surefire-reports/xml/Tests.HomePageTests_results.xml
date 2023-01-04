@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify HomePage Functionality"
+           tests="51"
+           failures="15"
+           errors="0"
+           skipped="0"
+           time="2790.788">
+  <properties />
+            <testcase name="Verify_the_banner_for_searched_club_From_Location_Icon" time="62.559" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2ed43451-b474-4311-9177-aa821a407e56
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Sporty Tots&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2ed43451-b474-4311-9177-aa821a407e56
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="Sporty Tots"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Verify_Join_Team_Button(HomePage.java:82)
+  Tests.HomePageTests.Verify_the_banner_for_searched_club_From_Location_Icon(HomePageTests.java:480)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Assign_Groups_field" time="67.839" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a75aaa76-6964-4443-86bb-c9b6015e1de7
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a75aaa76-6964-4443-86bb-c9b6015e1de7
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Assign_Groups_field(HomePageTests.java:762)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_functionality_of_CLOSE_button" time="81.891" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 90958de2-c46b-4809-9f95-9726d3b552b7
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;CLOSE&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 90958de2-c46b-4809-9f95-9726d3b552b7
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="CLOSE"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.SignUpPage.click_on_user_information_page_button(SignUpPage.java:749)
+  Tests.HomePageTests.Verify_the_functionality_of_CLOSE_button(HomePageTests.java:696)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Done_link_with_Search_bar_In_Assign_Groups" time="67.802" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5be1be08-b506-4eca-bd3a-b9b0330f6bbe
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5be1be08-b506-4eca-bd3a-b9b0330f6bbe
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Done_link_with_Search_bar_In_Assign_Groups(HomePageTests.java:819)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Bookmark_icon_of_Article_banner" time="60.482" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 026ac650-44b1-4257-b0e1-e85ade1213f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.view.View[1]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 026ac650-44b1-4257-b0e1-e85ade1213f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="Article"]//..//android.view.View[1]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Bookmark_Article(HomePage.java:310)
+  Tests.HomePageTests.Verify_the_Bookmark_icon_of_Article_banner(HomePageTests.java:416)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_NEXT_button_of_UPDATE_TEAM_screen_without_entering_data_in_mandatory_fields" time="74.253" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: dc824834-6986-4bdf-939e-3aa52abdf3c2
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Team Name*&quot;]//..//..}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: dc824834-6986-4bdf-939e-3aa52abdf3c2
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="Team Name*"]//..//..}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Clear_Data_In_Edit_Form(HomePage.java:452)
+  Tests.HomePageTests.Verify_the_NEXT_button_of_UPDATE_TEAM_screen_without_entering_data_in_mandatory_fields(HomePageTests.java:558)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Confirm_button_after_entering_data_in_Assign_Groups" time="67.561" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bfc4003a-be88-44dc-ba6a-0005fa894e1f
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bfc4003a-be88-44dc-ba6a-0005fa894e1f
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Confirm_button_after_entering_data_in_Assign_Groups(HomePageTests.java:857)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Done_link_without_selecting_any_option" time="62.578" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6558d0b9-c5a4-4b74-885a-baa784096007
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.Toast}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6558d0b9-c5a4-4b74-885a-baa784096007
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.Toast}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.LoginPage.Get_Toast_Alert(LoginPage.java:74)
+  Tests.HomePageTests.Verify_the_Done_link_without_selecting_any_option(HomePageTests.java:229)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Deselect_All_button" time="67.240" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 200f26b2-f559-41e3-90ee-f05388957220
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 200f26b2-f559-41e3-90ee-f05388957220
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Deselect_All_button(HomePageTests.java:800)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Confirm_button_without_entering_data_in_Assign_Groups" time="67.435" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 94a36246-b512-4458-8482-c64da4f74a68
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 94a36246-b512-4458-8482-c64da4f74a68
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Confirm_button_without_entering_data_in_Assign_Groups(HomePageTests.java:838)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Select_All_button" time="67.754" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe8b7b4-1fcc-433f-9a3d-1ecb0aad6d96
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe8b7b4-1fcc-433f-9a3d-1ecb0aad6d96
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Select_All_button(HomePageTests.java:781)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_functionality_of_Article_banners" time="54.010" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7e59875d-a532-47a8-b854-30373c73cf81
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.widget.TextView[contains(@text,&quot;Read Article&quot;)]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7e59875d-a532-47a8-b854-30373c73cf81
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="Article"]//..//android.widget.TextView[contains(@text,"Read Article")]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Open_Article(HomePage.java:292)
+  Tests.HomePageTests.Verify_the_functionality_of_Article_banners(HomePageTests.java:384)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_Sliding_banner_for_member" time="43.251" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.StaleElementReferenceException"
+                  message="androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1814fb3e-5258-4cea-86db-e145435ee1a5"
+              >
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1814fb3e-5258-4cea-86db-e145435ee1a5
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+  io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+  io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  Pages.HomePage.Verify_Member_Club_Screen(HomePage.java:355)
+  Tests.HomePageTests.Verify_Sliding_banner_for_member(HomePageTests.java:495)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Accept_button_on_request_banner" time="67.466" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d39a19a6-5537-4088-8dc1-b8261ace10b2
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d39a19a6-5537-4088-8dc1-b8261ace10b2
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="3ynrhm Eynryn"]//..//android.view.View//android.widget.TextView[@text="ACCEPT"]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Accept_User_Request(HomePage.java:481)
+  Tests.HomePageTests.Verify_the_Accept_button_on_request_banner(HomePageTests.java:745)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_the_Share_icon_of_Article_banner" time="53.730" classname="Tests.HomePageTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3974b965-235f-4db1-aa28-345f01fc3973
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.view.View[2]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f:c148:5c9e:6494%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3974b965-235f-4db1-aa28-345f01fc3973
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text="Article"]//..//android.view.View[2]}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+  io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+  Pages.HomePage.Verify_Share_Article(HomePage.java:301)
+  Tests.HomePageTests.Verify_the_Share_icon_of_Article_banner(HomePageTests.java:398)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="Verify_Done_link_by_selecting_country_from_the_list" time="64.236" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Mobile_Number_field_by_entering_more_than_10_digit_number_More_Than_10_Digits" time="53.907" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Profile_icon" time="39.845" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Search_icon" time="50.213" classname="Tests.HomePageTests" />
+                <testcase name="Verify_Done_icon_of_Edit_Profile_screen" time="49.910" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Pending_Request_button" time="39.069" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Location_field_by_tap_on_Dropdown_icon" time="54.964" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_fields_of_Profile_screen" time="42.207" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Search_bar_From_Location_Icon" time="46.392" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_fields_display_on_Edit_Profile_screen" time="48.694" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_fields_display_on_Pending_Request_screen" time="41.377" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_NEXT_button_of_UPDATE_TEAM_screen_by_entering_data_in_mandatory_fields" time="59.237" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Edit_icon" time="42.447" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Location_field_of_EDIT_PROFILE_screen" time="44.036" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_banner_for_searched_club_2_Verify_Pending_Request" time="63.017" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_fields_display_on_first_screen_of_Update_Team" time="58.924" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_navigation_of_Back_icon_display_on_Profile_screen" time="41.016" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Search_bar_Request_Tab_Admin" time="55.999" classname="Tests.HomePageTests" />
+                <testcase name="Verify_fields_of_Home_screen" time="33.786" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Sort_by_filter" time="40.206" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_fields_display_on_second_screen_of_Update_Team" time="59.496" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_banner_for_searched_club" time="55.196" classname="Tests.HomePageTests" />
+                <testcase name="Verify_UPDATE_TEAM_button" time="65.235" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Search_bar_Pending_Requests" time="38.872" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Location_icon" time="43.455" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_REQUEST_tab_for_admin_banner" time="55.921" classname="Tests.HomePageTests" />
+                <testcase name="Verify_dropdown_list_for_Country_field" time="60.569" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Edit_button_for_admin_banner" time="58.980" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Done_link_with_Search_bar" time="52.575" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Team_screen_From_Location_Icon" time="43.051" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Bookmark_option_of_Please_Select_popup" time="41.299" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_Mobile_Number_field_by_entering_more_than_10_digit_number" time="53.895" classname="Tests.HomePageTests" />
+                <testcase name="Verify_Search_bar_of_dropdown_list_for_Country" time="64.254" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Team_screen" time="51.280" classname="Tests.HomePageTests" />
+                <testcase name="Verify_the_functionality_of_Search_bar" time="54.474" classname="Tests.HomePageTests" />
+                <testcase name="Verify_Sliding_banner_for_Admin" time="56.903" classname="Tests.HomePageTests" />
+      
+</testsuite>

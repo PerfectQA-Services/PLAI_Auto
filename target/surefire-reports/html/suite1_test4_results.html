@@ -1,0 +1,2659 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Verify HomePage Functionality</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Verify HomePage Functionality</h1>
+<p>
+  Test duration: 3239.129s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Tests.HomePageTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Verify_Sliding_banner_for_member
+      </td>
+  <td class="duration">
+    43.251s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is member<br>
+                                Club Name Verified = PLAIers Snooker Club<br>
+                                Facebook icon is Displayed<br>
+                                Twitter icon is Displayed<br>
+                                Instagram icon is Displayed<br>
+                                Youtube icon is Displayed<br>
+                                News Tab is Displayed<br>
+                                Event Tab is Displayed<br>
+                                Shop Tab is Displayed<br>
+                                Members Tab is Displayed<br>
+                                Clicked On Navigation Right Arrow<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 1814fb3e-5258-4cea-86db-e145435ee1a5</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)<br />
+              io.appium.java_client.MobileElement.execute(MobileElement.java:1)<br />
+              io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              Pages.HomePage.Verify_Member_Club_Screen(HomePage.java:355)<br />
+              Tests.HomePageTests.Verify_Sliding_banner_for_member(HomePageTests.java:495)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Accept_button_on_request_banner
+      </td>
+  <td class="duration">
+    67.466s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: d39a19a6-5537-4088-8dc1-b8261ace10b2<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Accept_button_on_request_banner(HomePageTests.java:745)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Assign_Groups_field
+      </td>
+  <td class="duration">
+    67.839s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: a75aaa76-6964-4443-86bb-c9b6015e1de7<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Assign_Groups_field(HomePageTests.java:762)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Bookmark_icon_of_Article_banner
+      </td>
+  <td class="duration">
+    60.482s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Sort by Button<br>
+                                Clicked On Bookmark Option<br>
+                                Please Add Bookmark is Displayed<br>
+                                Clicked On Sort by Button<br>
+                                Clicked On All Option<br>
+                                Bookmark Article Button is displayed<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 026ac650-44b1-4257-b0e1-e85ade1213f1<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.view.View[1]}</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Bookmark_Article(HomePage.java:310)<br />
+              Tests.HomePageTests.Verify_the_Bookmark_icon_of_Article_banner(HomePageTests.java:416)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Confirm_button_after_entering_data_in_Assign_Groups
+      </td>
+  <td class="duration">
+    67.561s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: bfc4003a-be88-44dc-ba6a-0005fa894e1f<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Confirm_button_after_entering_data_in_Assign_Groups(HomePageTests.java:857)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Confirm_button_without_entering_data_in_Assign_Groups
+      </td>
+  <td class="duration">
+    67.435s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 94a36246-b512-4458-8482-c64da4f74a68<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Confirm_button_without_entering_data_in_Assign_Groups(HomePageTests.java:838)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Deselect_All_button
+      </td>
+  <td class="duration">
+    67.240s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 200f26b2-f559-41e3-90ee-f05388957220<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Deselect_All_button(HomePageTests.java:800)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Done_link_with_Search_bar_In_Assign_Groups
+      </td>
+  <td class="duration">
+    67.802s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 5be1be08-b506-4eca-bd3a-b9b0330f6bbe<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Done_link_with_Search_bar_In_Assign_Groups(HomePageTests.java:819)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Done_link_without_selecting_any_option
+      </td>
+  <td class="duration">
+    62.578s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Clicked on Location Dropdown Button<br>
+                                Location Dropdown Opened with list of countries<br>
+                                Clicked on Done Button<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 6558d0b9-c5a4-4b74-885a-baa784096007<br/>
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.Toast}</b></a><br />
+    <div class="stackTrace" id="exception-8">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.LoginPage.Get_Toast_Alert(LoginPage.java:74)<br />
+              Tests.HomePageTests.Verify_the_Done_link_without_selecting_any_option(HomePageTests.java:229)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_NEXT_button_of_UPDATE_TEAM_screen_without_entering_data_in_mandatory_fields
+      </td>
+  <td class="duration">
+    74.253s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: dc824834-6986-4bdf-939e-3aa52abdf3c2<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Team Name*&quot;]//..//..}</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Clear_Data_In_Edit_Form(HomePage.java:452)<br />
+              Tests.HomePageTests.Verify_the_NEXT_button_of_UPDATE_TEAM_screen_without_entering_data_in_mandatory_fields(HomePageTests.java:558)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Select_All_button
+      </td>
+  <td class="duration">
+    67.754s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 3fe8b7b4-1fcc-433f-9a3d-1ecb0aad6d96<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;3ynrhm Eynryn&quot;]//..//android.view.View//android.widget.TextView[@text=&quot;ACCEPT&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-10">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Accept_User_Request(HomePage.java:481)<br />
+              Tests.HomePageTests.Verify_the_Select_All_button(HomePageTests.java:781)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Share_icon_of_Article_banner
+      </td>
+  <td class="duration">
+    53.730s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Share Article Button is displayed<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 3974b965-235f-4db1-aa28-345f01fc3973<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.view.View[2]}</b></a><br />
+    <div class="stackTrace" id="exception-11">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Verify_Share_Article(HomePage.java:301)<br />
+              Tests.HomePageTests.Verify_the_Share_icon_of_Article_banner(HomePageTests.java:398)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_banner_for_searched_club_From_Location_Icon
+      </td>
+  <td class="duration">
+    62.559s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Location Icon<br>
+                                Searched Sporty Tots<br>
+                                Map navigated to Sporty Tots Location<br>
+                                Sporty Tots banner is displayed<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 2ed43451-b474-4311-9177-aa821a407e56<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Sporty Tots&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Verify_Join_Team_Button(HomePage.java:82)<br />
+              Tests.HomePageTests.Verify_the_banner_for_searched_club_From_Location_Icon(HomePageTests.java:480)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Article_banners
+      </td>
+  <td class="duration">
+    54.010s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Article Banner is displayed<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 7e59875d-a532-47a8-b854-30373c73cf81<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Article&quot;]//..//android.widget.TextView[contains(@text,&quot;Read Article&quot;)]}</b></a><br />
+    <div class="stackTrace" id="exception-13">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.HomePage.Open_Article(HomePage.java:292)<br />
+              Tests.HomePageTests.Verify_the_functionality_of_Article_banners(HomePageTests.java:384)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_CLOSE_button
+      </td>
+  <td class="duration">
+    81.891s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                                Clicked On Country Dropdown<br>
+                                Search bar is Displayed<br>
+                                Searched Location :- Brazil<br>
+                                Clicked On Searched Location :- Brazil<br>
+                                Clicked on Done Button<br>
+                                Clicked On Next Button<br>
+                                Clicked On Update Team<br>
+                                Team updated Successfully Popup is displayed<br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8f:c148:5c9e:6494%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;19.0.1&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: /Users/admin/Desktop/Plai_M..., appPackage: com.app.plaisports, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/admin/Desktop/Plai_M..., autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: 25e4e5308f0d7ece, platformName: android, platformVersion: 10, resetKeyboard: false, unicodeKeyboard: false}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 25e4e5308f0d7ece, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: 25e4e5308f0d7ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, resetKeyboard: false, statBarHeight: 63, takesScreenshot: true, unicodeKeyboard: false, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 90958de2-c46b-4809-9f95-9726d3b552b7<br/>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;CLOSE&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-14">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+              io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+              io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+              Pages.SignUpPage.click_on_user_information_page_button(SignUpPage.java:749)<br />
+              Tests.HomePageTests.Verify_the_functionality_of_CLOSE_button(HomePageTests.java:696)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Tests.HomePageTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Verify_Done_icon_of_Edit_Profile_screen
+      </td>
+  <td class="duration">
+    49.910s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Clicked on Done Button<br>
+                                Verify Profile Edited Toast Alert<br>
+                                Alert :- Profile updated successfully.<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_Done_link_by_selecting_country_from_the_list
+      </td>
+  <td class="duration">
+    64.236s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                                Clicked On Country Dropdown<br>
+                                Search bar is Displayed<br>
+                                Searched Location :- Brazil<br>
+                                Clicked On Searched Location :- Brazil<br>
+                                Clicked on Done Button<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_Search_bar_of_dropdown_list_for_Country
+      </td>
+  <td class="duration">
+    64.254s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                                Clicked On Country Dropdown<br>
+                                Search bar is Displayed<br>
+                                Searched Location :- Brazil<br>
+                                Clicked On Searched Location :- Brazil<br>
+                                Clicked on Done Button<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_Sliding_banner_for_Admin
+      </td>
+  <td class="duration">
+    56.903s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Facebook icon is Displayed<br>
+                                Twitter icon is Displayed<br>
+                                Instagram icon is Displayed<br>
+                                Youtube icon is Displayed<br>
+                                Edit Button is Displayed<br>
+                                Request Tab is Displayed<br>
+                                News Tab is Displayed<br>
+                                Event Tab is Displayed<br>
+                                Shop Tab is Displayed<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Members Tab is Displayed<br>
+                                Links Tab is Displayed<br>
+                                Groups Tab is Displayed<br>
+                                Add New Article Button is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_UPDATE_TEAM_button
+      </td>
+  <td class="duration">
+    65.235s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                                Clicked On Country Dropdown<br>
+                                Search bar is Displayed<br>
+                                Searched Location :- Brazil<br>
+                                Clicked On Searched Location :- Brazil<br>
+                                Clicked on Done Button<br>
+                                Clicked On Next Button<br>
+                                Clicked On Update Team<br>
+                                Team updated Successfully Popup is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_dropdown_list_for_Country_field
+      </td>
+  <td class="duration">
+    60.569s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                                Clicked On Country Dropdown<br>
+                                Search bar is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_fields_of_Home_screen
+      </td>
+  <td class="duration">
+    33.786s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                Search Icon On Home Page is displayed<br>
+                                Profile Icon On Home Page is displayed<br>
+                                Pending Button On Home Page is displayed<br>
+                                Sliding Banners On Home Page is displayed<br>
+                                Sort by Button On Home Page is displayed<br>
+                                Location Icon On Home Page is displayed<br>
+                                Create Team Plus Button On Home Page is displayed<br>
+                                Settings Button On Home Page is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Bookmark_option_of_Please_Select_popup
+      </td>
+  <td class="duration">
+    41.299s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Sort by Button<br>
+                                Clicked On Bookmark Option<br>
+                                Please Add Bookmark is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Done_link_with_Search_bar
+      </td>
+  <td class="duration">
+    52.575s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Clicked on Location Dropdown Button<br>
+                                Searched Location :- Brazil<br>
+                                Clicked On Searched Location :- Brazil<br>
+                                Clicked on Done Button<br>
+                                Location Updated<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Edit_button_for_admin_banner
+      </td>
+  <td class="duration">
+    58.980s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Location_field_by_tap_on_Dropdown_icon
+      </td>
+  <td class="duration">
+    54.964s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Clicked on Location Dropdown Button<br>
+                                Location Dropdown Opened with list of countries<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Location_field_of_EDIT_PROFILE_screen
+      </td>
+  <td class="duration">
+    44.036s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Clicked on Location Dropdown Button<br>
+                                Location Dropdown Opened with list of countries<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Location_icon
+      </td>
+  <td class="duration">
+    43.455s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Location Icon<br>
+                                Search Field is displayed<br>
+                                Map is displayed<br>
+                                Sliding Banners are displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Mobile_Number_field_by_entering_more_than_10_digit_number
+      </td>
+  <td class="duration">
+    53.895s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Entered Phone Number More than 10 digits<br>
+                                Clicked on Done Button<br>
+                                Profile Updated Toast Message<br>
+                                Alert :- Profile updated successfully.<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Mobile_Number_field_by_entering_more_than_10_digit_number_More_Than_10_Digits
+      </td>
+  <td class="duration">
+    53.907s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Entered Phone Number More than 10 digits<br>
+                                Clicked on Done Button<br>
+                                Number Not allowed more than 10 digits<br>
+                                Alert :- Profile updated successfully.<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_NEXT_button_of_UPDATE_TEAM_screen_by_entering_data_in_mandatory_fields
+      </td>
+  <td class="duration">
+    59.237s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_Profile_icon
+      </td>
+  <td class="duration">
+    39.845s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_REQUEST_tab_for_admin_banner
+      </td>
+  <td class="duration">
+    55.921s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Facebook icon is Displayed<br>
+                                Twitter icon is Displayed<br>
+                                Instagram icon is Displayed<br>
+                                Youtube icon is Displayed<br>
+                                Edit Button is Displayed<br>
+                                Request Tab is Displayed<br>
+                                News Tab is Displayed<br>
+                                Event Tab is Displayed<br>
+                                Shop Tab is Displayed<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Clicked On Navigation Right Arrow<br>
+                                Members Tab is Displayed<br>
+                                Links Tab is Displayed<br>
+                                Groups Tab is Displayed<br>
+                                Add New Article Button is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_banner_for_searched_club
+      </td>
+  <td class="duration">
+    55.196s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Search Icon<br>
+                                Search Page is displayed<br>
+                                Searched Sporty Tots<br>
+                                Map navigated to Sporty Tots Location<br>
+                                Sporty Tots banner is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_banner_for_searched_club_2_Verify_Pending_Request
+      </td>
+  <td class="duration">
+    63.017s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Search Icon<br>
+                                Search Page is displayed<br>
+                                Searched Sporty Tots<br>
+                                Map navigated to Sporty Tots Location<br>
+                                Sporty Tots banner is displayed<br>
+                                Clicked on Sporty Tots banner<br>
+                                Clicked on Join Team Button<br>
+                                Clicked on Back button<br>
+                                Verifying Pending Request button For the Team Joining<br>
+                                Clicked on Pending Request button<br>
+                                Pending Request for join team of Searched Team is displayed in Pending Requests<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_fields_display_on_Edit_Profile_screen
+      </td>
+  <td class="duration">
+    48.694s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                                Back button is Displayed<br>
+                                Done Button is Displayed<br>
+                                First Name is Displayed<br>
+                                Last Name is Displayed<br>
+                                Email is displayed<br>
+                                Date Of birth is displayed<br>
+                                Location is displayed<br>
+                                Mobile Number is displayed<br>
+                                Select Gender is displayed<br>
+                                Prefer Not to Say Gender Checkbox is displayed<br>
+                                Add Bio is displayed<br>
+                                Add Children is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_fields_display_on_Pending_Request_screen
+      </td>
+  <td class="duration">
+    41.377s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Pending Requests Button Clicked<br>
+                                Pending request page opened<br>
+                                Pending request page opened<br>
+                                Search Bar is Displayed<br>
+                                Back Button is Displayed<br>
+                                Request To Join Team is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_fields_display_on_first_screen_of_Update_Team
+      </td>
+  <td class="duration">
+    58.924s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Team Name Text field is Displayed<br>
+                                Agent Code Dropdown is Displayed<br>
+                                Primary Email Text field is Displayed<br>
+                                Team Name is Displayed<br>
+                                Team Name is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_fields_display_on_second_screen_of_Update_Team
+      </td>
+  <td class="duration">
+    59.496s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Edit Button<br>
+                                Update Team Page is Displayed<br>
+                                Clicked On Next Button<br>
+                                Country Dropdown is Displayed<br>
+                                Location TextField is Displayed<br>
+                                Team Logo is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_fields_of_Profile_screen
+      </td>
+  <td class="duration">
+    42.207s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Edit Button is displayed<br>
+                                back Button is displayed<br>
+                                UserName is displayed<br>
+                                Location is displayed<br>
+                                Mobile Number is displayed<br>
+                                Gender is displayed<br>
+                                Date Of Birth is displayed<br>
+                                USer Email ID is displayed<br>
+                                Profile Picture is displayed<br>
+                                My Club is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Edit_icon
+      </td>
+  <td class="duration">
+    42.447s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Clicked on Edit Profile Button<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Pending_Request_button
+      </td>
+  <td class="duration">
+    39.069s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Pending Requests Button Clicked<br>
+                                Pending request page opened<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Search_bar
+      </td>
+  <td class="duration">
+    54.474s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Search Icon<br>
+                                Search Page is displayed<br>
+                                Searched Sporty Tots<br>
+                                Map navigated to Sporty Tots Location<br>
+                                Sporty Tots banner is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Search_bar_From_Location_Icon
+      </td>
+  <td class="duration">
+    46.392s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Location Icon<br>
+                                Searched Sporty Tots<br>
+                                Map navigated to Sporty Tots Location<br>
+                                Sporty Tots banner is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Search_bar_Pending_Requests
+      </td>
+  <td class="duration">
+    38.872s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Pending Requests Button Clicked<br>
+                                Pending request page opened<br>
+                                Searched Team<br>
+                                Searched Team is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Search_bar_Request_Tab_Admin
+      </td>
+  <td class="duration">
+    55.999s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Club Banner in which user is Admin<br>
+                                Clicked On Update Team<br>
+                                Searched user request is displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Search_icon
+      </td>
+  <td class="duration">
+    50.213s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Search Icon<br>
+                                Search Page is displayed<br>
+                                Search Field is displayed<br>
+                                Map is displayed<br>
+                                Sliding Banners are displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_functionality_of_Sort_by_filter
+      </td>
+  <td class="duration">
+    40.206s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Sort by Button<br>
+                                Sort Panel Opened<br>
+                                All Option is Displayed<br>
+                                Bookmark option is Displayed<br>
+                                Cancel Sort is Displayed<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Team_screen
+      </td>
+  <td class="duration">
+    51.280s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Search Icon<br>
+                                Search Page is displayed<br>
+                                Clicked On back button of search<br>
+                                Back to Home Page<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Team_screen_From_Location_Icon
+      </td>
+  <td class="duration">
+    43.051s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked On Location Icon<br>
+                                Search Field is displayed<br>
+                                Map is displayed<br>
+                                Sliding Banners are displayed<br>
+                                Clicked On back button of search<br>
+                                Back to Home Page<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Verify_the_navigation_of_Back_icon_display_on_Profile_screen
+      </td>
+  <td class="duration">
+    41.016s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Application Launched.<br>
+                                Clicked on skip button.<br>
+                                Clicked on next button.<br>
+                                Entered Email :- sagarnandha11+1@gmail.com<br>
+                                Entered Password :- Plai@1234<br>
+                                Clicked On Login Button<br>
+                                App name is verified on login splash screen<br>
+                                Day Greeting is verified on login splash screen<br>
+                                Username with Profile Picture is verified on login splash screen<br>
+                                Welcome Greeting is verified on login splash screen<br>
+                                Clicked on Profile Icon<br>
+                                Back Button Clicked<br>
+                                Back To Home Page<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

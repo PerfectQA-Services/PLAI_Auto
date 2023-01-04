@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="SignUp Functionality : Verify user signup" verbose="2">
+    <classes>
+      <class name="Tests.SignUpTests">
+        <methods>
+          <include name="Verify_the_UI_of_Sign_Up_screen"></include>
+          <include name="Verify_the_navigation_by_clicking_on_Back_icon"></include>
+          <include name="Verify_the_Next_button_without_entering_data_in_mandatory_fields"></include>
+          <include name="Verify_the_Next_button_after_entering_data_in_First_Name_and_Last_Name"></include>
+          <include name="Verify_the_Enter_your_email_field_with_invalid_email_id"></include>
+          <include name="Verify_the_Enter_your_email_field_with_valid_email_id"></include>
+          <include name="Verify_the_Password_field_by_entering_7_characters"></include>
+          <include name="Verify_the_Password_field_by_entering_8_characters"></include>
+          <include name="Verify_the_Password_field_by_entering_password_which_contain_8_character_including_1_uppercase_and_1_number"></include>
+          <include name="Verify_the_Password_field_by_entering_password_which_contain_8_character_including_1_uppercase_and_1_number_special_symbol"></include>
+          <include name="Verify_the_Password_field_by_entering_9_characters_including_uppercase_and_number"></include>
+          <include name="Verify_the_Eye_icon_functionality_for_Password_field"></include>
+          <include name="Verify_the_Confirm_Password_field_by_entering_different_password_then_Password_field"></include>
+          <include name="Verify_the_Confirm_Password_field_by_entering_same_password_as_Password_field"></include>
+          <include name="Verify_Terms_of_use_link"></include>
+          <include name="Verify_navigation_by_click_on_Back_icon_of_Terms_of_use_screen"></include>
+          <include name="Verify_Next_button_after_entering_valid_data_in_all_mandatory_fields"></include>
+          <include name="Verify_the_Country_field"></include>
+          <include name="Verify_the_Country_field_by_tap_on_Dropdown_icon"></include>
+          <include name="Verify_Done_link_without_selecting_country"></include>
+          <include name="Verify_Done_link_after_selecting_country"></include>
+          <include name="Verify_the_functionality_of_Search_bar"></include>
+          <include name="Verify_the_Country_Code_dropdown_list_of_Mobile_Number_field"></include>
+          <include name="Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Country_screen"></include>
+          <include name="Verify_the_Search_icon_of_Select_Country"></include>
+          <include name="Verify_the_functionality_of_Search_bar_country_code"></include>
+          <include name="Verify_the_list_of_country_by_selecting_any_country"></include>
+          <include name="Verify_the_Mobile_Number_field"></include>
+          <include name="Verify_the_Mobile_Number_field_by_entering_more_than_10_digit_number"></include>
+          <include name="Verify_the_Mobile_Number_field_by_entering_10_digit_number"></include>
+          <include name="Verify_the_Date_of_Birth_field"></include>
+          <include name="Verify_the_Year_by_click_on_it"></include>
+          <include name="Verify_the_cancel_button_of_Calendar"></include>
+          <include name="Verify_the_ok_button_of_Calendar"></include>
+          <include name="Verify_the_Next_button_before_entering_data_in_fields"></include>
+          <include name="Verify_the_Next_button_after_entering_data_in_all_mandatory_fields"></include>
+          <include name="Verify_the_fields_display_on_SPORT_THAT_YOU_PLAY_screen"></include>
+          <include name="Verify_navigation_by_click_on_Back_icon"></include>
+          <include name="Verify_the_functionality_of_Search_bar_sport_page "></include>
+          <include name="Verify_the_list_of_sports_by_selecting_one_or_more_sports"></include>
+          <include name="Verify_the_functionality_of_Next_button_of_sport_page"></include>
+          <include name="Verify_the_Upload_Photo_button"></include>
+          <include name="Verify_the_Camera_Option"></include>
+          <include name="Verify_the_Gallery_option"></include>
+          <include name="Verify_the_screen_after_photo_select_from_Gallery"></include>
+          <include name="Verify_the_functionality_of_Rotation_icon"></include>
+          <include name="Verify_the_functionality_of_Flip_icon"></include>
+          <include name="Verify_the_functionality_of_Crop_link"></include>
+          <include name="Verify_the_Select_Gender_field"></include>
+          <include name="Verify_Prefer_not_to_say_checkbox"></include>
+          <include name="Verify_the_functionality_of_Sign_Up_button"></include>
+          <include name="Verify_the_Close_button"></include>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

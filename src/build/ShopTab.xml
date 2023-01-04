@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Shop Tab">
+  <test  name="Shop Tab : Verify Shop Tab Functionalities" verbose="2">
+           <classes>
+                 <class name="Tests.ShopTabTests">
+                 <methods>
+                     <include name="Verify_the_EVENT_tab_for_Admin_banner"></include>
+                     <include name="Verify_the_Search_bar_of_SHOP_tab"></include>
+                     <include name="Verify_the_Hamburger_menu_icon"></include>
+                     <include name="Verify_the_View_All_Link_of_category"></include>
+                     <include name="Verify_the_Search_bar_of_CLOTHING_screen"></include>
+                     <include name="Verify_the_banners_for_product"></include>
+                     <include name="Verify_the_Back_icon"></include>
+                     <include name="Verify_the_functionality_of_BUY_NOW_button"></include>
+                     <include name="Verify_the_functionality_of_PROCEED_TO_PAYMENT_button"></include>
+                     <include name="Verify_the_Card_Number_field_of_CHECKOUT_screen"></include>
+                     <include name="Verify_the_Expiration_field_of_CHECKOUT_screen"></include>
+                     <include name="Verify_the_Expiration_field_by_entering_invalid_value"></include>
+                     <include name="Verify_the_CVC_field_by_entering_2_digit_CVC_Code"></include>
+                     <include name="Verify_the_CVC_field_by_entering_4_digit_CVC_Code"></include>
+                     <include name="Verify_the_Country_field_of_CHECKOUT_screen"></include>
+                     <include name="Verify_the_Search_bar_with_Done_link_of_Country_field"></include>
+                     <include name="Verify_the_CONFIRM_PURCHASE_button"></include>
+                 </methods>
+                 </class>
+             </classes>
+         </test>
+</suite>

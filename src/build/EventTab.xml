@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Verify EventTab Functionality" verbose="2">
+    <classes>
+      <class name="Tests.EventTabTests">
+        <methods>
+          <include name="Verify_the_EVENT_tab_for_Admin_banner"></include>
+          <include name="Verify_the_Search_bar_for_EVENT_tab"></include>
+          <include name="Verify_the_Sort_by_filter_of_event_tab"></include>
+          <include name="Verify_the_Past_option"></include>
+          <include name="Verify_the_option_of_Filter_list"></include>
+          <include name="Verify_the_RESET_button"></include>
+          <include name="Verify_the_ADD_NEW_EVENT_button"></include>
+          <include name="Verify_the_first_screen_of_CREATE_EVENT"></include>
+          <include name="Verify_the_Location_field"></include>
+          <include name="Verify_the_Search_bar"></include>
+          <include name="Verify_Start_Time_and_End_Time_field_before_entering_Date"></include>
+          <include name="Verify_Start_Date_and_End_Date_fields"></include>
+          <include name="Verify_the_Close_button_of_calendar_Create_Event"></include>
+          <include name="Verify_the_OK_button_of_calendar_Create_Event"></include>
+          <include name="Verify_the_calendar_for_End_Date"></include>
+          <include name="Verify_Start_Time_and_End_Time_field_after_entering_Date"></include>
+          <include name="Verify_Keyboard_icon_time_picker"></include>
+          <include name="Verify_fields_of_Set_Time_popup"></include>
+          <include name="Verify_Clock_icon_of_Set_Time_popup"></include>
+          <include name="Verify_the_Cancel_button_of_Time_picker"></include>
+          <include name="Verify_the_OK_button_of_Time_picker"></include>
+          <include name="Verify_the_Unlimited_Capacity_field_by_selecting_No_option"></include>
+          <include name="Verify_the_Capacity_field"></include>
+          <include name="Verify_the_NEXT_button_of_CREATE_EVENT"></include>
+          <include name="Verify_the_fields_for_second_screen_of_CREATE_EVENT"></include>
+          <include name="Verify_the_Repeats_field_by_selecting_menu_option"></include>
+          <include name="Verify_the_How_many_times_field"></include>
+          <include name="Verify_Send_an_email_field_by_clicking_on_NO_button_Create_Event"></include>
+          <include name="Verify_Send_an_notification_field_by_clicking_on_NO_button_Create_Event"></include>
+          <include name="Verify_Allow_Comments_field_by_clicking_on_NO_button_Create_EventVerify_Allow_Comments_field_by_clicking_on_NO_button_Create_Event"></include>
+          <include name="Verify_the_PREVIEW_button"></include>
+          <include name="Verify_the_CONFIRM_button"></include>
+          <include name="Verify_the_Close_button_Create_Event"></include>
+          <include name="Verify_the_banner_for_event_display_in_EVENT_tab"></include>
+          <include name="Verify_the_ADD_TO_CALENDAR_button_for_past_event"></include>
+          <include name="Verify_the_functionality_of_RESPOND_button"></include>
+          <include name="Verify_the_fields_of_SUBMIT_A_RESPONSE_screen"></include>
+          <include name="Verify_the_Select_Attendees_field"></include>
+          <include name="Verify_the_functionality_of_Select_all_button"></include>
+          <include name="Verify_the_functionality_of_DeSelect_all_button"></include>
+          <include name="Verify_the_Search_bar_and_Done_link"></include>
+          <include name="Verify_Availability_field_by_selecting_option_from_list"></include>
+          <include name="Verify_the_Add_a_note_field"></include>
+          <include name="Verify_the_CONFIRM_button_of_SUBMIT_A_RESPONSE_screen"></include>
+          <include name="Verify_the_Overview_tab_of_EVENT_screen"></include>
+          <include name="Verify_the_navigation_of_Back_icon"></include>
+          <include name="Verify_the_Angle_right_icon_placed_below_the_Edit_button"></include>
+          <include name="Verify_the_Angle_left_icon"></include>
+          <include name="Verify_the_fields_of_the_SHOP_tab"></include>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- EventTab -->
+</suite> <!-- Suite -->
