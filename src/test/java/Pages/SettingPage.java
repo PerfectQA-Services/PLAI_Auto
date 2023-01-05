@@ -55,7 +55,6 @@ public class SettingPage extends Abstract{
         common.isElementPresent(Youtube_Icon);
         common.log("You tube icon is verified.");
 
-
     }
 
     public void Click_On_Report_An_Issue_Label() throws InterruptedException {
@@ -262,6 +261,225 @@ public class SettingPage extends Abstract{
         common.log("Clicked On submit a feature request label.");
         common.isElementPresent(FeedBack_Form_Header);
         common.log("FeedBack form header is verified.");
+
+    }
+
+    public void Click_On_Legal_Label() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Legal_Label)).click();
+        common.log("Clicked On Legal label.");
+
+    }
+
+    public void Verify_Legal_page_Header() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isElementPresent(Legal_Header);
+        common.log("Legal header is verified.");
+
+    }
+
+    public void Verify_Legal_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isElementPresent(Terms_Of_Use_Label);
+        common.log("Terms of use label is Verified.");
+        common.isElementPresent(Privacy_Policy_Label);
+        common.log("privacy and policy label is verified");
+        common.isElementPresent(Buyer_And_Seller_Terms_Label);
+        common.log("Buyer and seller terms label is verified.");
+        common.isElementPresent(Delete_Account_Label);
+        common.log("Delete account label is verified.");
+
+    }
+
+    public void Verify_Terms_Of_Use_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Terms_Of_Use_Label)).click();
+        common.log("Clicked On terms of use label.");
+        common.isElementPresent(Terms_Of_Use_Header);
+        common.log("Terms of use header is Verified.");
+        common.isElementPresent(Back_Button);
+        common.log("Back button is verified");
+
+    }
+
+    public void Verify_Privacy_Policy_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Privacy_Policy_Label)).click();
+        common.log("Clicked On privacy and policy label.");
+        common.isElementPresent(Privacy_Policy_Header);
+        common.log("privacy and policy header is Verified.");
+        common.isElementPresent(Back_Button);
+        common.log("Back button is verified");
+
+    }
+
+    public void Verify_Buyer_And_Seller_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Buyer_And_Seller_Terms_Label)).click();
+        common.log("Clicked On buyer and seller terms label.");
+        common.isElementPresent(Buyer_And_Seller_Terms_Header);
+        common.log("buyer and seller terms header is Verified.");
+        common.isElementPresent(Back_Button);
+        common.log("Back button is verified");
+
+    }
+
+    public void Verify_Delete_Account_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Delete_Account_Label)).click();
+        common.log("Clicked On delete account label.");
+        common.isElementPresent(Delete_Account_Popup);
+        common.log("Delete account popup is Verified.");
+        common.isElementPresent(Confirm_Delete);
+        common.log("Delete button is verified");
+        common.isElementPresent(Dismiss_Button);
+        common.log("Dismiss button is verified");
+
+    }
+
+    public void Click_On_Dismiss_Button_And_Verify_Result() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Delete_Account_Label)).click();
+        common.log("Clicked On delete account label.");
+        driver.findElement(By.xpath(Dismiss_Button)).click();
+        common.log("Clicked on dismiss button ");
+        if(common.isElementPresent(Delete_Account_Popup)){
+            common.log("Popup is not closed");
+        }else{
+            common.log("Delete account popup is closed");
+        }
+    }
+//    public void Click_On_Confirm_Button_And_Verify_Result() throws InterruptedException {
+//
+//        Thread.sleep(2000);
+//        driver.findElement(By.xpath(Delete_Account_Label)).click();
+//        common.log("Clicked On delete account label.");
+//        driver.findElement(By.xpath(Confirm_Delete)).click();
+//        common.log("Clicked on dismiss button ");
+//
+//    }
+
+    public void Click_On_Change_Password_Label() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Change_Password_Label)).click();
+        common.log("Clicked On Change password label.");
+
+    }
+
+    public void Verify_Change_Password_page_Header() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isElementPresent(Change_Password_Header);
+        common.log("Change password header is verified.");
+
+    }
+
+    public void Verify_Change_Password_Page_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isElementPresent(Current_Password_Field);
+        common.log("Current password field is Verified.");
+        common.isElementPresent(Current_Password_Field_Show_Password_Icon);
+        common.log("Current password show password icon is verified");
+        common.isElementPresent(New_Password_Field);
+        common.log("New password field is verified");
+        common.isElementPresent(New_Password_Field_Show_Password_Icon_Change_Password);
+        common.log("New password show password icon is verified");
+        common.isElementPresent(New_Password_Field);
+        common.log("New password field is verified");
+        common.isElementPresent(Confirm_Password_Field_Show_Password_Icon_Change_Password);
+        common.log("Confirm password show password icon is verified");
+        common.isElementPresent(Update_Password_Button);
+        common.log("Update password button is verified.");
+
+    }
+
+    public void Click_On_Update_Password_Button() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Update_Password_Button)).click();
+        common.log("Clicked On update password button.");
+
+    }
+
+    public void Enter_Current_password_And_Verify_Functionality_Of_Eye_Icon() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Current_Password_Field)).click();
+        common.log("Clicked on current password field.");
+        common.sendkeywords(driver,"Test123.");
+        common.log("Entered Current password is:-Test123.");
+        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
+        common.log("Clicked on eye icon.");
+
+    }
+
+    public void Enter_New_password_And_Verify_Functionality_Of_Eye_Icon() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(New_Password_Field)).click();
+        common.log("Clicked on new password field.");
+        common.sendkeywords(driver,"Test123");
+        common.log("Entered new password is:-Test123.");
+        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
+        common.log("Clicked on eye icon.");
+
+    }
+
+    public void Enter_wrong_Confirm_password() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Confirm_Password_Field)).click();
+        common.log("Clicked on confirm password field.");
+        common.sendkeywords(driver,"Test123");
+        common.log("Entered wrong confirmed password is:-Test123.");
+        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
+        common.log("Clicked on eye icon.");
+
+    }
+
+//    public void Enter_Same_New_and_Confirm_password() throws InterruptedException {
+//
+//        Thread.sleep(4000);
+//        driver.findElement(By.xpath(Confirm_Password_Field)).click();
+//        common.log("Clicked on confirm password field.");
+//        common.sendkeywords(driver,"Test@123");
+//        common.log("Entered wrong confirmed password is:-Test@123");
+//        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
+//        common.log("Clicked on eye icon.");
+//
+//    }
+
+    public void Enter_New_7_char_password_And_Verify_text_In_Red_Colour() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(New_Password_Field)).click();
+        common.log("Clicked On new password field.");
+        common.sendkeywords(driver,"Test@12");
+        common.log("Entered 7 char password is:-Test@12");
+        common.isElementPresent(Text_In_Red_Colour);
+        common.log("Text in red colour is verified.");
+
+    }
+
+    public void Enter_New_8_char_Valid_password_And_Verify_text_In_Green_Colour() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(New_Password_Field)).click();
+        common.log("Clicked On new password field.");
+        common.sendkeywords(driver,"Test@123");
+        common.log("Entered 8 char password is:-Test@123");
+        common.isElementPresent(Text_In_Red_Colour);
+        common.log("Text in green colour is verified.");
 
     }
 
