@@ -36,6 +36,27 @@
           <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button_Request_A_Feature"></include>
           <include name="Verify_the_Description_field_Request_A_Feature"></include>
           <include name="Verify_the_functionality_of_CONFIRM_button_Request_A_Feature"></include>
+          <include name="Verify_the_Legal_field"></include>
+          <include name="Verify_the_field_display_on_LEGAL_screen"></include>
+          <include name="Verify_the_Terms_of_usefield"></include>
+          <include name="Verify_the_Back_icon_of_TERMS_OF_USE_screen"></include>
+          <include name="Verify_the_Privacy_Policy_field"></include>
+          <include name="Verify_the_Back_icon_of_PRIVACY_POLICY_screen"></include>
+          <include name="Verify_the_Buyer_And_Seller_Terms_field"></include>
+          <include name="Verify_the_Back_icon_of_BUYER_And_SELLER_TERMS_screen"></include>
+          <include name="Verify_the_Delete_Account_field"></include>
+          <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>
+          <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>
+          <include name="Verify_the_Back_icon_of_LEGAL_screen"></include>
+          <include name="Verify_the_Change_Password_field"></include>
+          <include name="Verify_the_field_display_on_CHANGE_PASSWORD_field"></include>
+          <include name="Verify_the_UPDATE_PASSWORD_button_without_entering_data_in_mandatory_field"></include>
+          <include name="Verify_the_Eye_icon_of_Current_Password_field"></include>
+          <include name="Verify_the_New_Password_field_by_entering_7_characters"></include>
+          <include name="Verify_the_New_Password_field_by_entering_password_which_contain_8_character_including_uppercase_letter_and_special_symbol"></include>
+          <include name="Verify_the_Eye_icon_functionality_for_New_Password_field"></include>
+          <include name="Verify_the_Confirm_Password_field_by_entering_different_password_than_New_Password_field"></include>
+          <include name="Verify_the_Confirm_Password_field_by_entering_same_password_than_New_Password_field"></include>
         </methods>
       </class>
     </classes>
