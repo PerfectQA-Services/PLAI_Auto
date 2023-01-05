@@ -2,7 +2,6 @@ package Tests;
 
 import Config.Configuration;
 import Pages.LaunchAppPage;
-import Pages.SignUpPage;
 import org.testng.annotations.Test;
 
 public class LaunchAppTests extends Configuration {

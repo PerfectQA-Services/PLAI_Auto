@@ -16,11 +16,15 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Augmenter;
 import org.testng.Reporter;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.awt.*;
 import java.io.*;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
 
@@ -270,6 +274,14 @@ public class Common{
         LocalDateTime now = LocalDateTime.now();
         String date = dtf.format(now);
         return date;
+    }
+
+
+    public void Verify_Past_Date(String PastDate) throws ParseException {
+        Date curDate = new Date(String.valueOf(new SimpleDateFormat("dd MMM yyyy")));
+//        curDate = new SimpleDateFormat("dd MMM yyyy");
+        Date date1=new SimpleDateFormat("dd MMM yyyy").parse(PastDate);
+        date1.before(curDate);
     }
 
 }

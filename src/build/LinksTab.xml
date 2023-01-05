@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="News Tab Functionality">
+  <test name="Verify Links Tab Functionality" verbose="2">
+    <classes>
+      <class name="Tests.LinksTabTests">
+        <methods>
+          <include name="Verify_the_fields_display_on_LINKS_tab"></include>
+          <include name="Verify_the_functionality_of_Search_bar"></include>
+          <include name="Verify_the_functionality_of_Link_banner"></include>
+          <include name="Verify_the_Angle_Up_and_Angle_Down_icon_display_on_Link_banner"></include>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -2,17 +2,12 @@ package Pages;
 
 import Config.Common;
 import com.google.common.collect.ImmutableMap;
-import com.sun.java.swing.action.CancelAction;
 import io.appium.java_client.AppiumDriver;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.How;
-import org.w3c.dom.stylesheets.LinkStyle;
-import Pages.LoginPage;
 
 import java.io.IOException;
-import java.util.Locale;
 
 public class HomePage extends Abstract{
 
