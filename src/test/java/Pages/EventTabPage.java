@@ -4,6 +4,8 @@ import Config.Common;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
+import java.text.ParseException;
+
 public class EventTabPage extends Abstract{
 
     public AppiumDriver driver;
@@ -54,6 +56,13 @@ public class EventTabPage extends Abstract{
 
     public void Select_Past_Type_Event_Sort(){
         driver.findElement(By.xpath(Sort_By_Past_Event)).click();
+        common.log("Sort Type Past is Selected");
+    }
+
+    public void Verify_Past_Type_Event_Sort() throws InterruptedException, ParseException {
+        Thread.sleep(4000);
+        String date = driver.findElement(By.xpath(Verify_Past_Date)).getText();
+        common.Verify_Past_Date(date);
         common.log("Sort Type Past is Selected");
     }
 

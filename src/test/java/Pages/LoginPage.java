@@ -4,7 +4,6 @@ import Config.Common;
 import io.appium.java_client.AppiumDriver;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -59,7 +58,7 @@ public class LoginPage extends Abstract{
     }
 
     public void Verify_Splash_Welcome_Screen_Elements_After_Login() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         common.isElementPresent(Plai_Logo_On_Login_Splash_Screen);
         common.log("App name is verified on login splash screen");
         common.isElementPresent(Day_Greeting_On_Login_Splash_Screen);

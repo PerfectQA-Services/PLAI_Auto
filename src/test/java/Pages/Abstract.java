@@ -298,6 +298,7 @@ public class Abstract {
     String Filter_By_Other = "//android.widget.TextView[@text=\"Other\"]";
     String Apply_Sort_And_Filter = "//android.widget.TextView[@text=\"APPLY\"]";
     String Reset_Sort_And_Filter = "//android.widget.TextView[@text=\"RESET\"]";
+    String Verify_Past_Date = "//android.view.View[10]/android.view.View[1]/android.widget.TextView[3]";
     String Create_Event_Header = "//android.widget.TextView[@text=\"CREATE EVENT\"]";
     String Location_Field_Create_Event = "//android.widget.TextView[@text=\"Location\"]//..//..//..//android.widget.EditText";
     String Search_Location = "com.app.plaisports:id/places_autocomplete_search_bar";
@@ -393,6 +394,22 @@ public class Abstract {
     String Description_Field="//android.widget.EditText[4]";
     String Attach_A_Screenshot="//android.widget.TextView[@text=\"Select Files...\"]";
     String Report_And_Privacy_link="//android.widget.TextView[@text=\"Never submit your passwords here. Report abuse or check out our Privacy Policy.\"]";
+    String Legal_Header="//android.widget.TextView[@text=\"LEGAL\"]";
+    String Terms_Of_Use_Label="//android.widget.TextView[@text=\"Terms of use\"]";
+    String Privacy_Policy_Label="//android.widget.TextView[@text=\"Privacy Policy\"]";
+    String Buyer_And_Seller_Terms_Label="//android.widget.TextView[@text=\"Buyer & Seller Terms\"]";
+    String Delete_Account_Label="//android.widget.TextView[@text=\"Delete Account\"]";
+    String Terms_Of_Use_Header="//android.widget.TextView[@text=\"TERMS OF USE\"]";
+    String Privacy_Policy_Header="//android.widget.TextView[@text=\"PRIVACY POLICY\"]";
+    String Buyer_And_Seller_Terms_Header="//android.widget.TextView[@text=\"BUYER & SELLER TERMS\"]";
+    String Delete_Account_Popup="(//android.view.View/android.view.View/android.view.View)[1]";
+    String Change_Password_Header="//android.widget.TextView[@text=\"CHANGE PASSWORD\"]";
+    String Current_Password_Field="//android.widget.TextView[@text=\"Current Password\"]";
+    String Update_Password_Button="//android.widget.TextView[@text=\"UPDATE PASSWORD\"]";
+    String Current_Password_Field_Show_Password_Icon = "(//android.view.View[@content-desc=\"Show password\"])[1]";
+    String New_Password_Field_Show_Password_Icon_Change_Password= "(//android.view.View[@content-desc=\"Show password\"])[2]";
+    String Confirm_Password_Field_Show_Password_Icon_Change_Password = "(//android.view.View[@content-desc=\"Show password\"])[3]";
+    String Text_In_Red_Colour="//android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView";
 
 
     /**
@@ -447,6 +464,24 @@ public class Abstract {
     String Submit_Button_Invite_Member = "//android.widget.TextView[@text=\"SUBMIT\"]";
     String Search_Field_Country_Code = "//android.widget.TextView[@text=\"Search…\"]//..";
 
+    /**
+     *  Links Tab Locators
+     */
+    String Add_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
+    String Link_Google_Link_After_Search = "//android.view.View[10]/android.view.View/android.widget.TextView[1]";
+    String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
+    String Verify_Browser_Opened = "com.android.chrome:id/url_bar";
+
+    /**
+     *  Support Tab Locators
+     */
+    String Support_Header = "//android.widget.TextView[@text=\"SUPPORT\"]";
+    String User_Support_Button = "//android.widget.TextView[@text=\"General User Support\"]";
+    String Admin_Support_Button = "//android.widget.TextView[@text=\"Team Admin Support\"]";
+    String First_Name_Field_Support = "//android.widget.TextView[@text=\"First Name\"]//..//..";
+    String Last_Name_Field_Support = "//android.widget.EditText[2]";
+    String Select_Team_Dropdown = "//android.widget.TextView[@text=\"Select Team\"]";
+    String Support_Description_Field = "//android.widget.EditText[3]";
 
 
 }

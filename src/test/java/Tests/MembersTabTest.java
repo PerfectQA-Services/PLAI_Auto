@@ -4,8 +4,6 @@ import Config.Configuration;
 import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 
@@ -14,7 +12,7 @@ public class MembersTabTest extends Configuration {
     
     //TC-242
     @Test
-    public void Verify_the_NEWS_tab_for_Admin_banner()throws InterruptedException, IOException, AWTException, ParseException {
+    public void Verify_the_Members_tab_for_Admin_banner()throws InterruptedException, IOException, AWTException, ParseException {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);

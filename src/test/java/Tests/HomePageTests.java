@@ -7,7 +7,6 @@ import Pages.LoginPage;
 import Pages.SignUpPage;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
 import java.awt.*;
 import java.io.IOException;
 

@@ -4,8 +4,6 @@ import Config.Configuration;
 import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
-
-import javax.sound.midi.ShortMessage;
 import java.awt.*;
 import java.io.IOException;
 

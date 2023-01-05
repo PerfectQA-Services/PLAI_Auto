@@ -2,7 +2,6 @@ package Pages;
 
 import Config.Common;
 import io.appium.java_client.AppiumDriver;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 
 public class CreateTeamPage extends Abstract {

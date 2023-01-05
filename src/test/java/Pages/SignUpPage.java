@@ -2,28 +2,10 @@ package Pages;
 
 import Config.Common;
 import io.appium.java_client.*;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-
-
-import java.awt.*;
-import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.touch.TouchActions;
-
-
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Locale;
 
 public class SignUpPage extends Abstract{

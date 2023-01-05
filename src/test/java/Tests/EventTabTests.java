@@ -67,7 +67,7 @@ public class EventTabTests extends Configuration {
 
     //TC-162
     @Test
-    public void Verify_the_Past_option()throws InterruptedException, IOException, AWTException, ParseException {
+    public void Verify_the_Past_option() throws InterruptedException, IOException, AWTException, ParseException, java.text.ParseException {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
@@ -83,6 +83,7 @@ public class EventTabTests extends Configuration {
         eventTab.Click_Sort_Button_Event();
         eventTab.Select_Past_Type_Event_Sort();
         eventTab.Click_Apply_Sort_Button_Event();
+        eventTab.Verify_Past_Type_Event_Sort();
     }
 
     //TC-163
