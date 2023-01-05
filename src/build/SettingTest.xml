@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Tests.SettingTest">
+        <methods>
+          <include name="Verify_the_Setting_icon_placed_at_bottom_right_of_the_Home_screen"></include>
+          <include name="Verify_the_fields_display_on_SETTINGS"></include>
+          <include name="Verify_Report_an_issue_field"></include>
+          <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
+          <include name="Verify_the_Submission_Type_field"></include>
+          <include name="Verify_the_Select_Device_field"></include>
+          <include name="Verify_the_Full_name_field"></include>
+          <include name="Verify_the_Email_field_by_entering_invalid_email_id"></include>
+          <include name="Verify_the_Email_field_by_entering_valid_email_id"></include>
+          <include name="Verify_the_Location_field"></include>
+          <include name="Verify_the_Location_field_without_selecting_location"></include>
+          <include name="Verify_the_Search_bar_with_Done_link"></include>
+          <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field"></include>
+          <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button"></include>
+          <include name="Verify_the_Description_field"></include>
+          <include name="Verify_the_functionality_of_CONFIRM_button"></include>
+          <include name="Verify_the_Back_icon_of_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
+          <include name="Verify_the_Submit_a_feature_request_field"></include>
+          <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen_Request_A_Feature"></include>
+          <include name="Verify_the_Submission_Type_field_Request_A_Feature"></include>
+          <include name="Verify_the_Select_Device_field_Request_A_Feature"></include>
+          <include name="Verify_the_Full_name_field_Request_A_Feature"></include>
+          <include name="Verify_the_Email_field_by_entering_invalid_email_id_Request_A_Feature"></include>
+          <include name="Verify_the_Email_field_by_entering_valid_email_id_Request_A_Feature"></include>
+          <include name="Verify_the_Location_field_Request_A_Feature"></include>
+          <include name="Verify_the_Location_field_without_selecting_location_Request_A_Feature"></include>
+          <include name="Verify_the_Search_bar_with_Done_link_Request_A_Feature"></include>
+          <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_Request_A_Feature"></include>
+          <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button_Request_A_Feature"></include>
+          <include name="Verify_the_Description_field_Request_A_Feature"></include>
+          <include name="Verify_the_functionality_of_CONFIRM_button_Request_A_Feature"></include>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
