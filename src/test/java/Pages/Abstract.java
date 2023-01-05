@@ -363,7 +363,7 @@ public class Abstract {
 
 
     /***
-     * CreateTeam page Locators
+     * Setting page Locators
      */
     String Setting_Header="//android.widget.TextView[@text=\"SETTINGS\"]";
     String Logout_Button="//android.view.View/android.view.View/android.widget.ImageView[2]";

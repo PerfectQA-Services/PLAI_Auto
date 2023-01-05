@@ -248,27 +248,41 @@
             </class>
         </classes>
     </test>
-    <test  name="Shop Tab : Verify Shop Tab Functionalities" verbose="2">
+    <test name="Verify SettingTab Functionality" verbose="2">
         <classes>
-            <class name="Tests.ShopTabTests">
+            <class name="Tests.SettingTest">
                 <methods>
-                    <include name="Verify_the_EVENT_tab_for_Admin_banner"></include>
-                    <include name="Verify_the_Search_bar_of_SHOP_tab"></include>
-                    <include name="Verify_the_Hamburger_menu_icon"></include>
-                    <include name="Verify_the_View_All_Link_of_category"></include>
-                    <include name="Verify_the_Search_bar_of_CLOTHING_screen"></include>
-                    <include name="Verify_the_banners_for_product"></include>
-                    <include name="Verify_the_Back_icon"></include>
-                    <include name="Verify_the_functionality_of_BUY_NOW_button"></include>
-                    <include name="Verify_the_functionality_of_PROCEED_TO_PAYMENT_button"></include>
-                    <include name="Verify_the_Card_Number_field_of_CHECKOUT_screen"></include>
-                    <include name="Verify_the_Expiration_field_of_CHECKOUT_screen"></include>
-                    <include name="Verify_the_Expiration_field_by_entering_invalid_value"></include>
-                    <include name="Verify_the_CVC_field_by_entering_2_digit_CVC_Code"></include>
-                    <include name="Verify_the_CVC_field_by_entering_4_digit_CVC_Code"></include>
-                    <include name="Verify_the_Country_field_of_CHECKOUT_screen"></include>
-                    <include name="Verify_the_Search_bar_with_Done_link_of_Country_field"></include>
-                    <include name="Verify_the_CONFIRM_PURCHASE_button"></include>
+                    <include name="Verify_the_Setting_icon_placed_at_bottom_right_of_the_Home_screen"></include>
+                    <include name="Verify_the_fields_display_on_SETTINGS"></include>
+                    <include name="Verify_Report_an_issue_field"></include>
+                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
+                    <include name="Verify_the_Submission_Type_field"></include>
+                    <include name="Verify_the_Select_Device_field"></include>
+                    <include name="Verify_the_Full_name_field"></include>
+                    <include name="Verify_the_Email_field_by_entering_invalid_email_id"></include>
+                    <include name="Verify_the_Email_field_by_entering_valid_email_id"></include>
+                    <include name="Verify_the_Location_field"></include>
+                    <include name="Verify_the_Location_field_without_selecting_location"></include>
+                    <include name="Verify_the_Search_bar_with_Done_link"></include>
+                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field"></include>
+                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button"></include>
+                    <include name="Verify_the_Description_field"></include>
+                    <include name="Verify_the_functionality_of_CONFIRM_button"></include>
+                    <include name="Verify_the_Back_icon_of_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
+                    <include name="Verify_the_Submit_a_feature_request_field"></include>
+                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen_Request_A_Feature"></include>
+                    <include name="Verify_the_Submission_Type_field_Request_A_Feature"></include>
+                    <include name="Verify_the_Select_Device_field_Request_A_Feature"></include>
+                    <include name="Verify_the_Full_name_field_Request_A_Feature"></include>
+                    <include name="Verify_the_Email_field_by_entering_invalid_email_id_Request_A_Feature"></include>
+                    <include name="Verify_the_Email_field_by_entering_valid_email_id_Request_A_Feature"></include>
+                    <include name="Verify_the_Location_field_Request_A_Feature"></include>
+                    <include name="Verify_the_Location_field_without_selecting_location_Request_A_Feature"></include>
+                    <include name="Verify_the_Search_bar_with_Done_link_Request_A_Feature"></include>
+                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_Request_A_Feature"></include>
+                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button_Request_A_Feature"></include>
+                    <include name="Verify_the_Description_field_Request_A_Feature"></include>
+                    <include name="Verify_the_functionality_of_CONFIRM_button_Request_A_Feature"></include>
                 </methods>
             </class>
         </classes>
