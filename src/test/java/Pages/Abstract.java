@@ -378,6 +378,21 @@ public class Abstract {
     String Instagram_Icon="//android.widget.ImageView[@content-desc=\"insta\"]";
     String Youtube_Icon="//android.widget.ImageView[@content-desc=\"youtube\"]";
     String FeedBack_Form_Header="//android.widget.TextView[@text=\"PLAI PUBLIC FEEDBACK FORUM\"]";
+    String User_Information_Text="(//android.widget.TextView)[2]";
+    String Submission_Type_text="//android.view.View[@content-desc=\"Dropdown menu\"]";
+    String Submission_Type_Problem_Text="//android.widget.TextView[@text=\"PROBLEM\"]";
+    String Submission_Type_Bug_Text="//android.widget.TextView[@text=\"BUG\"]";
+    String Select_Device_Android="//android.view.View[@content-desc=\"android\"]";
+    String Select_Device_Ios="//android.view.View[@content-desc=\"ios\"]";
+    String Full_Name="//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"7\"]";
+    String Email_Field="//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"9\"]";
+    String Location_Field_Setting="//android.view.View[@content-desc=\"Trailing icon for exposed dropdown menu\"]";
+    String Member_Of_Team_No_Button="//android.widget.TextView[@text=\"NO\"]";
+    String Member_Of_Team_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
+    String Sport_Team_Name="(//android.widget.TextView[@text=\"Type Here\"])[1]";
+    String Description_Field="//android.widget.EditText[4]";
+    String Attach_A_Screenshot="//android.widget.TextView[@text=\"Select Files...\"]";
+    String Report_And_Privacy_link="//android.widget.TextView[@text=\"Never submit your passwords here. Report abuse or check out our Privacy Policy.\"]";
 
 
     /**

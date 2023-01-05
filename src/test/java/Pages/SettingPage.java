@@ -4,7 +4,7 @@ import Config.Common;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
-public class SettingPage extends Abstrract{
+public class SettingPage extends Abstract{
 
     public AppiumDriver driver;
     Common common = new Common();
