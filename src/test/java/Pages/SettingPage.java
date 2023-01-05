@@ -357,15 +357,15 @@ public class SettingPage extends Abstract{
             common.log("Delete account popup is closed");
         }
     }
-//    public void Click_On_Confirm_Button_And_Verify_Result() throws InterruptedException {
-//
-//        Thread.sleep(2000);
-//        driver.findElement(By.xpath(Delete_Account_Label)).click();
-//        common.log("Clicked On delete account label.");
-//        driver.findElement(By.xpath(Confirm_Delete)).click();
-//        common.log("Clicked on dismiss button ");
-//
-//    }
+    public void Click_On_Confirm_Button_And_Verify_Result() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Delete_Account_Label)).click();
+        common.log("Clicked On delete account label.");
+        driver.findElement(By.xpath(Confirm_Delete)).click();
+        common.log("Clicked on dismiss button ");
+
+    }
 
     public void Click_On_Change_Password_Label() throws InterruptedException {
 
@@ -447,17 +447,17 @@ public class SettingPage extends Abstract{
 
     }
 
-//    public void Enter_Same_New_and_Confirm_password() throws InterruptedException {
-//
-//        Thread.sleep(4000);
-//        driver.findElement(By.xpath(Confirm_Password_Field)).click();
-//        common.log("Clicked on confirm password field.");
-//        common.sendkeywords(driver,"Test@123");
-//        common.log("Entered wrong confirmed password is:-Test@123");
-//        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
-//        common.log("Clicked on eye icon.");
-//
-//    }
+    public void Enter_Same_New_and_Confirm_password() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Confirm_Password_Field)).click();
+        common.log("Clicked on confirm password field.");
+        common.sendkeywords(driver,"Test@123");
+        common.log("Entered wrong confirmed password is:-Test@123");
+        driver.findElement(By.xpath(Current_Password_Field_Show_Password_Icon)).click();
+        common.log("Clicked on eye icon.");
+
+    }
 
     public void Enter_New_7_char_password_And_Verify_text_In_Red_Colour() throws InterruptedException {
 

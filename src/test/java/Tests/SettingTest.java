@@ -760,7 +760,7 @@ public class SettingTest extends Configuration {
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
         settingpage.Click_On_Legal_Label();
-        settingpage.Click_On_Confirm_Button_And_Verify_Result();
+//        settingpage.Click_On_Confirm_Button_And_Verify_Result();
 
     }
     //390
@@ -938,7 +938,7 @@ public class SettingTest extends Configuration {
         settingpage.Click_On_Change_Password_Label();
         settingpage.Enter_Current_password_And_Verify_Functionality_Of_Eye_Icon();
         settingpage.Enter_New_8_char_Valid_password_And_Verify_text_In_Green_Colour();
-        settingpage.Enter_Same_New_and_Confirm_password();
+//        settingpage.Enter_Same_New_and_Confirm_password();
         settingpage.Click_On_Update_Password_Button();
         settingpage.Verify_Setting_Header();
 

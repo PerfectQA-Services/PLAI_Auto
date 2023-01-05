@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="CreateTeam Functionality">
-  <test thread-count="5" name="Test">
+<suite name="Create Team Functionality">
+  <test name="Verify Create Team Functionality" verbose="2">
     <classes>
-      <class name="Tests.CreateTeamTests"/>
+      <class name="Tests.CreateTeamTests">
+        <methods>
+          <include name="Verify_the_Create_Team_icon_placed_at_bottom_left_of_the_Home_screen"></include>
+          <include name="Verify_the_fields_display_on_first_screen_of_CREATE_TEAM"></include>
+          <include name="Verify_the_NEXT_button_of_CREATE_TEAM_screen_without_entering_data_in_mandatory_fields"></include>
+          <include name="Verify_the_NEXT_button_of_CREATE_TEAM_screen_by_entering_data_in_mandatory_fields"></include>
+          <include name="Verify_the_Agent_Code_field"></include>
+          <include name="Verify_the_Search_bar_and_Done_link_Agent_code"></include>
+          <include name="Verify_the_Sport_field"></include>
+          <include name="Verify_the_Search_bar_and_Done_link_Sport"></include>
+          <include name="Verify_the_fields_display_on_second_screen_of_CREATE_TEAM"></include>
+          <include name="Verify_dropdown_list_for_Country_field_Create_Team_Page"></include>
+          <include name="Verify_Done_link_by_selecting_country_from_the_list"></include>
+          <include name="Verify_Search_bar_of_dropdown_list_for_Country"></include>
+          <include name="Verify_CREATE_TEAM_button"></include>
+        </methods>
+      </class>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>
