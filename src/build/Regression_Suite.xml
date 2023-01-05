@@ -308,4 +308,119 @@
             </class>
         </classes>
     </test>
+
+    <test  name="Verify Members Tab Functionality" verbose="2">
+        <classes>
+            <class name="Tests.MembersTabTest">
+                <methods>
+                    <include name="Verify_the_Members_tab_for_Admin_banner"></include>
+                    <include name="Verify_the_Search_bar_of_MEMBER_tab"></include>
+                    <include name="Verify_the_Edit_icon_placed_on_each_banner"></include>
+                    <include name="Verify_the_Delete_icon_placed_on_each_banner"></include>
+                    <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>
+                    <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>
+                    <include name="Verify_the_checkbox_of_Make_This_Member_a_Team_Admin"></include>
+                    <include name="Verify_the_Groups_field_of_EDIT_MEMBER_screen"></include>
+                    <include name="Verify_the_Deselect_All_button"></include>
+                    <include name="Verify_the_Select_All_button"></include>
+                    <include name="Verify_the_Done_link_with_Search_bar"></include>
+                    <include name="Verify_the_ADD_button_without_entering_data_in_Field_Name_and_Field_Value"></include>
+                    <include name="Verify_the_ADD_button_with_entering_data_in_Field_Name_and_Field_Value"></include>
+                    <include name="Verify_ADD_button_after_enter_data_in_Field_Name_and_Field_Value"></include>
+                    <include name="Verify_the_Delete_icon_of_added_custom_fields"></include>
+                    <include name="Verify_the_functionality_of_Save_button"></include>
+                    <include name="Verify_the_INVITE_MEMBER_button"></include>
+                    <include name="Verify_the_fields_display_on_INVITE_MEMBER_screen"></include>
+                    <include name="Verify_the_Country_Code_list_of_Mobile_Number_field"></include>
+                    <include name="Verify_the_navigation_by_clicking_on_Back_icon_of_Search_Country_screen"></include>
+                    <include name="Verify_the_Search_icon_of_Select_Country_screen"></include>
+                    <include name="Verify_the_functionality_of_Search_bar"></include>
+                    <include name="Verify_the_list_of_country_by_selecting_any_country"></include>
+                    <include name="Verify_the_Mobile_Number_field"></include>
+                    <include name="Verify_the_Groups_field_of_INVITE_MEMBER_screen"></include>
+                    <include name="Verify_the_Select_All_button_Groups_Invite_Member"></include>
+                    <include name="Verify_the_Deselect_All_button_Group_Invites_Member"></include>
+                    <include name="Verify_the_Done_link_with_Search_bar_Groups_Invite_Member"></include>
+                    <include name="Verify_the_functionality_of_Make_This_Member_a_Taem_Admin_checkbox"></include>
+                    <include name="Verify_the_functionality_of_SUBMIT_button_without_entering_data_in_mandatory_field"></include>
+                    <include name="Verify_the_functionality_of_SUBMIT_button_after_entering_data_in_mandatory_field"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Links Tab Functionality" verbose="2">
+        <classes>
+            <class name="Tests.LinksTabTests">
+                <methods>
+                    <include name="Verify_the_fields_display_on_LINKS_tab"></include>
+                    <include name="Verify_the_functionality_of_Search_bar"></include>
+                    <include name="Verify_the_functionality_of_Link_banner"></include>
+                    <include name="Verify_the_Angle_Up_and_Angle_Down_icon_display_on_Link_banner"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Verify Create Team Functionality" verbose="2">
+        <classes>
+            <class name="Tests.CreateTeamTests">
+                <methods>
+                    <include name="Verify_the_Create_Team_icon_placed_at_bottom_left_of_the_Home_screen"></include>
+                    <include name="Verify_the_fields_display_on_first_screen_of_CREATE_TEAM"></include>
+                    <include name="Verify_the_NEXT_button_of_CREATE_TEAM_screen_without_entering_data_in_mandatory_fields"></include>
+                    <include name="Verify_the_NEXT_button_of_CREATE_TEAM_screen_by_entering_data_in_mandatory_fields"></include>
+                    <include name="Verify_the_Agent_Code_field"></include>
+                    <include name="Verify_the_Search_bar_and_Done_link_Agent_code"></include>
+                    <include name="Verify_the_Sport_field"></include>
+                    <include name="Verify_the_Search_bar_and_Done_link_Sport"></include>
+                    <include name="Verify_the_fields_display_on_second_screen_of_CREATE_TEAM"></include>
+                    <include name="Verify_dropdown_list_for_Country_field_Create_Team_Page"></include>
+                    <include name="Verify_Done_link_by_selecting_country_from_the_list"></include>
+                    <include name="Verify_Search_bar_of_dropdown_list_for_Country"></include>
+                    <include name="Verify_CREATE_TEAM_button"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Shop Tab : Verify Shop Tab Functionalities" verbose="2">
+        <classes>
+            <class name="Tests.ShopTabTests">
+                <methods>
+                    <include name="Verify_the_EVENT_tab_for_Admin_banner"></include>
+                    <include name="Verify_the_Search_bar_of_SHOP_tab"></include>
+                    <include name="Verify_the_Hamburger_menu_icon"></include>
+                    <include name="Verify_the_View_All_Link_of_category"></include>
+                    <include name="Verify_the_Search_bar_of_CLOTHING_screen"></include>
+                    <include name="Verify_the_banners_for_product"></include>
+                    <include name="Verify_the_Back_icon"></include>
+                    <include name="Verify_the_functionality_of_BUY_NOW_button"></include>
+                    <include name="Verify_the_functionality_of_PROCEED_TO_PAYMENT_button"></include>
+                    <include name="Verify_the_Card_Number_field_of_CHECKOUT_screen"></include>
+                    <include name="Verify_the_Expiration_field_of_CHECKOUT_screen"></include>
+                    <include name="Verify_the_Expiration_field_by_entering_invalid_value"></include>
+                    <include name="Verify_the_CVC_field_by_entering_2_digit_CVC_Code"></include>
+                    <include name="Verify_the_CVC_field_by_entering_4_digit_CVC_Code"></include>
+                    <include name="Verify_the_Country_field_of_CHECKOUT_screen"></include>
+                    <include name="Verify_the_Search_bar_with_Done_link_of_Country_field"></include>
+                    <include name="Verify_the_CONFIRM_PURCHASE_button"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Verify support tab functionality" verbose="2">
+        <classes>
+            <class name="Tests.SupportTabTests">
+                <methods>
+                    <include name="Verify_the_Support_field"></include>
+                    <include name="Verify_the_field_display_on_SUPPORT_field"></include>
+                    <include name="Verify_the_General_User_Support_and_Team_Admin_Support_button"></include>
+                    <include name="Verify_the_First_Name_field"></include>
+                    <include name="Verify_the_Last_Name_field"></include>
+                    <include name="Verify_the_Select_Team_field"></include>
+                    <include name="Verify_the_Description_field"></include>
+                    <include name="Verify_the_CONFIRM_button_after_entering_data_in_mandatory_field"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
