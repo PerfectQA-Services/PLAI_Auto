@@ -943,5 +943,69 @@ public class SettingTest extends Configuration {
         settingpage.Verify_Setting_Header();
 
     }
+    //411
+    @Test
+    public void Verify_the_social_media_icon_display_on_the_SETTINGS_screen() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Verify_Setting_Header();
+        settingpage.Verify_Social_Media_Icons();
+
+    }
+    //412
+    @Test
+    public void Verify_the_Logout_icon() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Log_Out_Icon();
+        settingpage.Verify_Logout_Icon_Element();
+
+    }
+    //413
+    @Test
+    public void Verify_the_Dismiss_button_of_confirmation_popup_Logout_Icon() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Log_Out_Icon();
+        settingpage.Click_On_Dismiss_Button_And_Verify_Result_Logout();
+
+    }
+    //414
+    @Test
+    public void Verify_the_Confirm_button_of_confirmation_popup_Logout_Icon() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Log_Out_Icon();
+        settingpage.Click_On_Confirm_Button_And_Verify_Result_Logout();
+
+    }
 
 }
