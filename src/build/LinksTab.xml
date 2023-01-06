@@ -9,6 +9,8 @@
           <include name="Verify_the_functionality_of_Search_bar"></include>
           <include name="Verify_the_functionality_of_Link_banner"></include>
           <include name="Verify_the_Angle_Up_and_Angle_Down_icon_display_on_Link_banner"></include>
+          <include name="Verify_the_Angle_Up_icon_of_the_link_banner"></include>
+          <include name="Verify_the_Angle_down_icon_of_the_link_banner"></include>
         </methods>
       </class>
     </classes>

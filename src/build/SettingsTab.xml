@@ -57,6 +57,10 @@
           <include name="Verify_the_Eye_icon_functionality_for_New_Password_field"></include>
           <include name="Verify_the_Confirm_Password_field_by_entering_different_password_than_New_Password_field"></include>
           <include name="Verify_the_Confirm_Password_field_by_entering_same_password_than_New_Password_field"></include>
+          <include name="Verify_the_social_media_icon_display_on_the_SETTINGS_screen"></include>
+          <include name="Verify_the_Logout_icon"></include>
+          <include name="Verify_the_Dismiss_button_of_confirmation_popup_Logout_Icon"></include>
+          <include name="Verify_the_Confirm_button_of_confirmation_popup_Logout_Icon"></include>
         </methods>
       </class>
     </classes>
