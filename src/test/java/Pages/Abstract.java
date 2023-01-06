@@ -467,13 +467,21 @@ public class Abstract {
     /**
      *  Links Tab Locators
      */
-    String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
     String Add_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
     String Link_Google_Link_After_Search = "//android.view.View[10]/android.view.View/android.widget.TextView[1]";
-    String Link_Banner = "//android.view.View[9]/android.view.View[1]";
+    String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
     String Verify_Browser_Opened = "com.android.chrome:id/url_bar";
-    String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
-    String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
+    String Angel_Up_Icon="//android.view.View[9]/android.view.View[2]/android.view.View[1]";
+    String Angel_Down_Icon="//android.view.View[9]/android.view.View[1]/android.view.View[2]";
+    String Update_Team_Header= "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
+    String Add_New_Link_Button="//android.widget.TextView[@text=\"ADD NEW LINK\"]";
+    String Create_Link_Header="//android.widget.TextView[@text=\"CREATE LINK\"]";
+    String Link_Title_Label="//android.widget.TextView[@text=\"Link Title *\"]";
+    String Url_Label="//android.widget.TextView[@text=\"Url *\"]";
+    String Icon_Label="//android.widget.TextView[@text=\"Icon *\"]";
+    String Groups_Label="//android.widget.TextView[@text=\"Groups\"]";
+    String Show_Url_No_Button="//android.widget.TextView[@text=\"NO\"]";
+    String Show_Url_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
 
     /**
      *  Support Tab Locators
