@@ -2,6 +2,7 @@ package Pages;
 
 import Config.Common;
 import io.appium.java_client.AppiumDriver;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
 
 public class LinksTabPage extends Abstract{
@@ -44,6 +45,22 @@ public class LinksTabPage extends Abstract{
         common.log("Link Opened in browser");
     }
 
+    public void Click_On_Angel_Up_icon() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Angel_Up_Icon)).click();
+        common.log("Clicked On angel up icon.");
+
+    }
+
+    public void Click_On_Angel_down_icon() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Angel_Up_Icon)).click();
+        common.log("Clicked On angel up icon.");
+
+    }
+
     public void Verify_Up_And_Down_Arrows_Functionality() throws InterruptedException {
         driver.findElement(By.xpath(Down_Arrow)).click();
         common.log("Clicked On Down Arrow");
@@ -51,5 +68,4 @@ public class LinksTabPage extends Abstract{
         driver.findElement(By.xpath(Up_Arrow)).click();
         common.log("Clicked On Up Arrow");
     }
-
 }

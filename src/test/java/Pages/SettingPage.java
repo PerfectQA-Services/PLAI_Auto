@@ -482,5 +482,57 @@ public class SettingPage extends Abstract{
         common.log("Text in green colour is verified.");
 
     }
+    public void Verify_Social_Media_Icons() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isElementPresent(Facebook_Icon);
+        common.log("Facebook icon is verified.");
+        common.isElementPresent(Twitter_Icon);
+        common.log("Twitter icon is verified.");
+        common.isElementPresent(Instagram_Icon);
+        common.log("Instagram icon is verified.");
+        common.isElementPresent(Youtube_Icon);
+        common.log("You tube icon is verified.");
+
+    }
+
+    public void Verify_Logout_Icon_Element() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isElementPresent(Delete_Account_Popup);
+        common.log("Delete account popup is Verified.");
+        common.isElementPresent(Confirm_Delete);
+        common.log("Delete button is verified");
+        common.isElementPresent(Dismiss_Button);
+        common.log("Dismiss button is verified");
+
+    }
+    public void Click_On_Dismiss_Button_And_Verify_Result_Logout() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Dismiss_Button)).click();
+        common.log("Clicked on dismiss button ");
+        if(common.isElementPresent(Delete_Account_Popup)){
+            common.log("Popup is not closed");
+        }else{
+            common.log("Logout popup is closed.");
+        }
+    }
+
+    public void Click_On_Confirm_Button_And_Verify_Result_Logout() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Confirm_Delete)).click();
+        common.log("Clicked on dismiss button ");
+
+    }
+
+    public void Click_On_Log_Out_Icon() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Logout_Button)).click();
+        common.log("Clicked On logout icon.");
+
+    }
 
 }

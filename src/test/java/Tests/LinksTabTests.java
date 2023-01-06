@@ -86,5 +86,41 @@ public class LinksTabTests extends Configuration {
         linksTab.Open_Links_Tab();
         linksTab.Verify_Up_And_Down_Arrows_Functionality();
     }
+    //TC-278
+    @Test
+    public void Verify_the_Angle_Up_icon_of_the_link_banner()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        LinksTabPage linksTab = new LinksTabPage(driver);
+        MembersTabPage memberPage = new MembersTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        linksTab.Open_Links_Tab();
+        linksTab.Click_On_Angel_Up_icon();
+    }
+    //TC-279
+    @Test
+    public void Verify_the_Angle_down_icon_of_the_link_banner()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        LinksTabPage linksTab = new LinksTabPage(driver);
+        MembersTabPage memberPage = new MembersTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        linksTab.Open_Links_Tab();
+        linksTab.Click_On_Angel_down_icon();
+    }
 
 }
