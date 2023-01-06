@@ -73,7 +73,7 @@ public class Abstract {
     String Upload_Photo_Button = "//android.widget.TextView[@text=\"UPLOAD PHOTO\"]";
     String Upload_Photo_Optional_Text = "//android.widget.TextView[@text=\"Optional\"]";
     String Phone_Gallery_Files = "com.android.documentsui:id/dir_list";
-    String Jpg_To_Upload = "//android.widget.LinearLayout[@content-desc=\"Test.jpg, 3.75 MB, 21 Dec\"]";
+    String Jpg_To_Upload = "//android.widget.LinearLayout[contains(@content-desc,\"Test.jpg\")]";
     String Crop_Button = "com.app.plaisports:id/crop_image_menu_crop";
     String Rotate_Button = "com.app.plaisports:id/ic_rotate_right_24";
     String Crop_Overlay = "com.app.plaisports:id/CropOverlayView";
@@ -467,10 +467,13 @@ public class Abstract {
     /**
      *  Links Tab Locators
      */
+    String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
     String Add_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
     String Link_Google_Link_After_Search = "//android.view.View[10]/android.view.View/android.widget.TextView[1]";
-    String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
+    String Link_Banner = "//android.view.View[9]/android.view.View[1]";
     String Verify_Browser_Opened = "com.android.chrome:id/url_bar";
+    String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
+    String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
 
     /**
      *  Support Tab Locators

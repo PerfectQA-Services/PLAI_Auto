@@ -14,10 +14,12 @@ public class LinksTabPage extends Abstract{
     }
 
     public void Open_Links_Tab() throws InterruptedException {
-        for(int i=0;i<=4;i++){
-        driver.findElement(By.xpath(Navigation_Right_Arrow)).click();}
-        driver.findElement(By.xpath(LINK_Tab)).click();
+        for(int i=0;i<=3;i++){
+            driver.findElement(By.xpath(Navigation_Right_Arrow)).click();}
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(LINKS_Tab)).click();
         common.log("Opened Links Tab");
+        Thread.sleep(4000);
     }
 
     public void Verify_Links_Tab(){
@@ -40,6 +42,14 @@ public class LinksTabPage extends Abstract{
         Thread.sleep(2000);
         common.isElementPresent(Verify_Browser_Opened);
         common.log("Link Opened in browser");
+    }
+
+    public void Verify_Up_And_Down_Arrows_Functionality() throws InterruptedException {
+        driver.findElement(By.xpath(Down_Arrow)).click();
+        common.log("Clicked On Down Arrow");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath(Up_Arrow)).click();
+        common.log("Clicked On Up Arrow");
     }
 
 }

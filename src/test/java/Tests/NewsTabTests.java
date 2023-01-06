@@ -251,7 +251,7 @@ public class NewsTabTests extends Configuration {
         newsTab.Verify_Sort_Filter_News_Tab();
         newsTab.Open_News_Article();
         newsTab.Click_Delete_Article();
-        homePage.Click_Confirm_Button();
+//        homePage.Click_Confirm_Button();
     }
 
     //TC-145

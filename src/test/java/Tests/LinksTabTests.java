@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class LinksTabTests extends Configuration {
 
-    
+
     //TC-274
     @Test
     public void Verify_the_fields_display_on_LINKS_tab()throws InterruptedException, IOException, AWTException, ParseException {
@@ -84,7 +84,7 @@ public class LinksTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         linksTab.Open_Links_Tab();
-        linksTab.Click_Link_Banner_And_Verify();
+        linksTab.Verify_Up_And_Down_Arrows_Functionality();
     }
 
 }

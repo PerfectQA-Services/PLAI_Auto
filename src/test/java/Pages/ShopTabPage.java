@@ -12,7 +12,7 @@ public class ShopTabPage extends Abstract{
     public ShopTabPage(AppiumDriver driver) {
         this.driver=driver;
     }
-    
+
     public void Open_PLAIERS_Snooker_Club() throws InterruptedException {
         driver.findElement(By.xpath(PLAIers_Snooker_Club)).click();
         common.log("Clicked On PLAIers Snooker Club Banner");
@@ -73,9 +73,10 @@ public class ShopTabPage extends Abstract{
         common.log("Searched Product Is Displayed");
     }
 
-    public void Open_Clothing_Product(){
+    public void Open_Clothing_Product() throws InterruptedException {
         driver.findElement(By.xpath(T_Shirt_Product)).click();
         common.log("Clicked On T-Shirt Product_Banner");
+        Thread.sleep(5000);
     }
 
     public void Verify_Product_page(){
