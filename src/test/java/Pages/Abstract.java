@@ -482,6 +482,9 @@ public class Abstract {
     String Groups_Label="//android.widget.TextView[@text=\"Groups\"]";
     String Show_Url_No_Button="//android.widget.TextView[@text=\"NO\"]";
     String Show_Url_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
+    String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
+    String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
+    String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
 
     /**
      *  Support Tab Locators
