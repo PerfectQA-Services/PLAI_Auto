@@ -367,6 +367,7 @@ public class HomePage extends Abstract{
 
     public void Click_Test27_Admin_Club_Banner() throws InterruptedException {
         common.scrollMyClubsBanners(driver);
+        common.scrollMyClubsBanners(driver);
         Thread.sleep(1000);
         common.isElementPresent(Admin_Tag_On_Banner);
         driver.findElement(By.xpath(Admin_Tag_On_Banner)).click();
