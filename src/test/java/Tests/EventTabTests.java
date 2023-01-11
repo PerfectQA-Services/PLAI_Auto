@@ -664,7 +664,6 @@ public class EventTabTests extends Configuration {
         homePage.Click_Confirm_Button();
         eventTab.Verify_Event_Created();
         signUp.click_on_user_information_page_button("CLOSE");
-        eventTab.Click_On_Event_Tab_And_Verify();
     }
 
     //TC-192

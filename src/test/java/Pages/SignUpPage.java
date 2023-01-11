@@ -344,8 +344,7 @@ public class SignUpPage extends Abstract{
     }
 
     public void click_on_searchbar() throws InterruptedException {
-
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(searchbar)).click();
         common.log("Clicked on search bar.");
 
@@ -730,7 +729,6 @@ public class SignUpPage extends Abstract{
         Thread.sleep(1000);
         driver.findElement(By.xpath("//android.widget.TextView[@text=\""+button_name+"\"]")).click();
         common.log("Clicked on "+button_name.toLowerCase(Locale.ROOT)+" button.");
-
     }
 
     public void click_on_next_button_of_sport_page() throws InterruptedException {

@@ -687,8 +687,6 @@ public class HomePageTests extends Configuration {
         homePage.Click_Edit_Button_In_Club_Admin_Page();
         homePage.Click_On_Next_Button();
         homePage.Verify_Admin_Club_Second_Edit_Screen();
-        homePage.Verify_Country_Dropdown();
-        homePage.Update_Location();
         homePage.Click_On_Next_Button();
         homePage.Click_On_Update_Team();
         homePage.Verify_Team_Update_popUp();

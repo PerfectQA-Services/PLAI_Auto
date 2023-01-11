@@ -208,24 +208,21 @@ public class CreateTeamPage extends Abstract {
 
     public void Verify_Country_Field_Element() throws InterruptedException {
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Country_Label)).click();
         common.log("Clicked on Country label");
         common.isElementPresent(done_link);
-        common.log("Done link iis verified.");
+        common.log("Done link is verified.");
         common.isElementPresent(searchbar);
         common.log("Search bar is verified.");
         common.isElementPresent(Agent_code_Checkbox);
         common.log("Checkbox is verified.");
-
-        common.log("_____________________________Available_Country_Name_Landing_Page_________________________________");
+        common.log("______Available_Country_Names______");
+        Thread.sleep(2000);
         for(int i=3 ; i<=15 ; i++){
-
             String Country_Name=driver.findElement(By.xpath("(//android.widget.TextView)["+i+"]")).getText();
             common.log(Country_Name);
         }
-
-
     }
 
     public void Enter_Country_Name_In_Searchbar_Verify_Done_Link() throws InterruptedException {

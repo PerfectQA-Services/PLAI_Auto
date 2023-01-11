@@ -169,12 +169,13 @@ public class EventTabPage extends Abstract{
         common.log("Switch Keyboard is displayed");
     }
 
-    public void Click_Keyboard_Icon_Time_Picker(){
-        driver.findElement(By.xpath(Toggle_Between_Clock_And_Keyboard)).click();
+    public void Click_Keyboard_Icon_Time_Picker() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.id(Toggle_Between_Clock_And_Keyboard)).click();
         common.log("Clicked On Switch Keyboard Icon");
     }
 
-    public void Verify_Keyboard_Input_popup_Time(){
+    public void Verify_Keyboard_Input_popup_Time() throws InterruptedException {
         this.Click_Keyboard_Icon_Time_Picker();
         common.isElementPresent(Input_Hour);
         common.log("Input Hour Field is displayed");
@@ -325,7 +326,7 @@ public class EventTabPage extends Abstract{
     }
 
     public void Open_An_Event() throws InterruptedException {
-        driver.findElement(By.xpath("//android.widget.TextView[@text=\"monday event\"]")).click();
+        driver.findElement(By.xpath("//android.view.View[10]/android.view.View[2]/android.widget.Button")).click();
         common.log("Event Opened");
         Thread.sleep(4000);
     }

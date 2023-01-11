@@ -189,6 +189,7 @@ public class NewsTabTests extends Configuration {
         newsTab.Verify_Sort_Filter_News_Tab();
         newsTab.Open_News_Article();
         newsTab.Edit_Article();
+        newsTab.Click_Preview_Button();
         homePage.Click_Confirm_Button();
         newsTab.Verify_Article_Updated_Popup();
         signUp.Click_Close_Button();

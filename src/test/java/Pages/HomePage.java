@@ -311,7 +311,6 @@ public class HomePage extends Abstract{
         common.log("Clicked On Bookmark Option");
         common.isElementPresent(Article_Banner);
         common.log("Article is Bookmarked");
-        driver.findElement(By.xpath(Bookmark_Icon_Article_Banner)).click();
     }
 
     public void Click_Location_Icon() throws InterruptedException {
@@ -346,6 +345,8 @@ public class HomePage extends Abstract{
         common.log("Shop Tab is Displayed");
         common.isElementPresent(MEMBERS_Tab);
         common.log("Members Tab is Displayed");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Navigation_Previous_Arrow)).click();
         for(int i=0;i<=4;i++) {
             driver.findElement(By.xpath(Navigation_Right_Arrow)).click();
             common.log("Clicked On Navigation Right Arrow");
@@ -357,7 +358,6 @@ public class HomePage extends Abstract{
     }
 
     public void Click_Admin_Club_Banner() throws InterruptedException {
-        common.scrollMyClubsBanners(driver);
         common.scrollMyClubsBanners(driver);
         Thread.sleep(1000);
         common.isElementPresent(Admin_Tag_On_Banner);

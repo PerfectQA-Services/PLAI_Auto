@@ -134,6 +134,11 @@ public class MembersTabPage extends Abstract{
         common.log("Clicked Back Button");
     }
 
+    public void Click_Back_Button_From_Country_Code() {
+        driver.findElement(By.xpath("//android.view.View[1]/android.widget.Button")).click();
+        common.log("Clicked Back Button from country code list");
+    }
+
     public void Verify_Search_Icon() throws InterruptedException {
         Thread.sleep(1500);
         driver.findElement(By.xpath(Search_Icon)).click();

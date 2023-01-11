@@ -190,12 +190,12 @@ public class Abstract {
     /***
      * Article Banner Locators
      */
-    String Article_Banner = "//android.widget.TextView[@text=\"Article\"]";
+    String Article_Banner = "//android.widget.TextView[contains(@text,\"Article\")]";
     String Article_Creator_Text_Verification = "//android.widget.TextView[contains(@text,\"Created By\")]";
     String Read_Article_Button = "//android.widget.TextView[@text=\"Article\"]//..//android.widget.TextView[contains(@text,\"Read Article\")]";
     String Share_Article_Button = "//android.widget.TextView[@text=\"Article\"]//..//android.view.View[2]";
     String Share_Panel = "//android.widget.TextView[contains(@text,\"Click here to view on PLAI.\")]";
-    String Bookmark_Icon_Article_Banner = "//android.widget.TextView[@text=\"Article\"]//..//android.view.View[1]";
+    String Bookmark_Icon_Article_Banner = "//android.view.View[5]/android.view.View[1]/android.view.View[1]";
 
 
     /***
@@ -254,7 +254,7 @@ public class Abstract {
     String News_Article = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
     String Bookmark_News_Article = "//android.view.View[9]/android.view.View[1]/android.view.View[1]";
     String Share_News_Article = "//android.view.View[9]/android.view.View[1]/android.view.View[3]";
-    String Edit_Button_News_Article = "//android.view.View[2]";
+    String Edit_Button_News_Article = "//android.widget.ScrollView/android.view.View[1]";
     String Update_Article = "//android.widget.TextView[@text=\"UPDATE ARTICLE\"]";
     String Update_Article_Title_Field = "//android.widget.TextView[@text=\"Title*\"]";
     String Preview_Button = "//android.widget.TextView[@text=\"PREVIEW\"]";
@@ -380,7 +380,7 @@ public class Abstract {
     String Youtube_Icon="//android.widget.ImageView[@content-desc=\"youtube\"]";
     String FeedBack_Form_Header="//android.widget.TextView[@text=\"PLAI PUBLIC FEEDBACK FORUM\"]";
     String User_Information_Text="(//android.widget.TextView)[2]";
-    String Submission_Type_text="//android.view.View[@content-desc=\"Dropdown menu\"]";
+    String Submission_Type_text="//android.widget.EditText[@text=\"PROBLEM\"]";
     String Submission_Type_Problem_Text="//android.widget.TextView[@text=\"PROBLEM\"]";
     String Submission_Type_Bug_Text="//android.widget.TextView[@text=\"BUG\"]";
     String Select_Device_Android="//android.view.View[@content-desc=\"android\"]";

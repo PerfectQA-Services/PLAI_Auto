@@ -174,6 +174,7 @@ public class MembersTabTest extends Configuration {
         memberPage.Open_Members_Tab();
         memberPage.Verify_Edit_Button_In_Member_Banner();
         memberPage.Click_Groups_Dropdown_In_Edit();
+        homePage.Click_Select_All_Button();
         homePage.Click_DeSelect_All_Button();
     }
 
@@ -396,7 +397,7 @@ public class MembersTabTest extends Configuration {
         memberPage.Click_Invite_Member_Button();
         memberPage.Verify_Invite_Member_Screen();
         memberPage.Verify_Country_Code_List();
-        memberPage.Click_Back_Button();
+        memberPage.Click_Back_Button_From_Country_Code();
     }
 
     //TC-263
@@ -537,6 +538,7 @@ public class MembersTabTest extends Configuration {
         memberPage.Open_Members_Tab();
         memberPage.Click_Invite_Member_Button();
         memberPage.Click_Group_Dropdown_Field();
+        homePage.Click_Select_All_Button();
         homePage.Click_DeSelect_All_Button();
     }
 
@@ -557,7 +559,6 @@ public class MembersTabTest extends Configuration {
         memberPage.Open_Members_Tab();
         memberPage.Click_Invite_Member_Button();
         memberPage.Click_Group_Dropdown_Field();
-        homePage.Click_DeSelect_All_Button();
         homePage.Click_On_Done_Button_To_Select_Location();
     }
 

@@ -78,7 +78,6 @@ public class SettingTest extends Configuration {
     //342
     @Test
     public void Verify_the_Submission_Type_field() throws InterruptedException, IOException, ParseException {
-
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
@@ -89,7 +88,6 @@ public class SettingTest extends Configuration {
         settingpage.Click_On_Setting_Icon();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Submission_Type_Field_Element();
-
     }
     //343
     @Test

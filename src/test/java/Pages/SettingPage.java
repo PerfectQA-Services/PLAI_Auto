@@ -108,7 +108,6 @@ public class SettingPage extends Abstract{
     }
 
     public void Verify_Submission_Type_Field_Element() throws InterruptedException {
-
         Thread.sleep(2000);
         driver.findElement(By.xpath(Submission_Type_text)).click();
         common.log("Clicked on submission type");
@@ -116,17 +115,12 @@ public class SettingPage extends Abstract{
         common.log("Problem text is verified");
         common.isElementPresent(Submission_Type_Bug_Text);
         common.log("Bug text is verified.");
-
-
     }
 
     public void Click_On_Ios_Button() throws InterruptedException {
-
         Thread.sleep(2000);
         driver.findElement(By.xpath(Select_Device_Ios)).click();
         common.log("Clicked on Ios button.");
-
-
     }
 
     public void Verify_Full_Name_Field() throws InterruptedException {
