@@ -529,4 +529,46 @@ public class SettingPage extends Abstract{
 
     }
 
+    public void Click_On_Attach_Screen_Shot_Field() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Attach_A_Screenshot)).click();
+        common.log("Clicked On attach screen shot field.");
+
+    }
+
+    public void Verify_Displayed_Field_After_Click_On_Attach_Screen_Shot_Field() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isElementPresent(Capture_an_Image_Option);
+        common.log("Verified capture an image option.");
+        common.isElementPresent(Pick_An_Image_Option);
+        common.log("Verified pick an image option.");
+
+    }
+
+    public void Click_On_Capture_An_Image_Option_And_Verify_Result() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Capture_an_Image_Option)).click();
+        common.log("Clicked On capture an image option.");
+        Thread.sleep(2000);
+        common.isElementPresent(Camera_Take_Picture);
+        common.log("Camera is verified");
+
+    }
+
+    public void Click_On_Pick_An_Image_Option_And_Verify_Result() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Pick_An_Image_Option)).click();
+        common.log("Clicked On pick an image option.");
+        Thread.sleep(2000);
+        driver.findElements(By.id(Phone_Gallery_Files));
+        common.log("Gallery is verified");
+
+    }
+
+
+
 }
