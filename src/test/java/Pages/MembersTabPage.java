@@ -14,6 +14,7 @@ public class MembersTabPage extends Abstract{
     }
 
     public void Open_Members_Tab() throws InterruptedException {
+        driver.findElement(By.xpath("//android.view.View[6]")).click();
         driver.findElement(By.xpath(MEMBERS_Tab)).click();
         common.log("Clicked On Members Tabb");
     }

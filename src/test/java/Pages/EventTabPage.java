@@ -15,7 +15,9 @@ public class EventTabPage extends Abstract{
         this.driver=driver;
     }
 
-    public void Click_On_Event_Tab_And_Verify(){
+    public void Click_On_Event_Tab_And_Verify() throws InterruptedException {
+
+        Thread.sleep(4000);
         driver.findElement(By.xpath(EVENT_Tab)).click();
         common.log("Event Tab Opened");
         common.isElementPresent(Add_New_Event);
@@ -62,6 +64,7 @@ public class EventTabPage extends Abstract{
     public void Verify_Past_Type_Event_Sort() throws InterruptedException, ParseException {
         Thread.sleep(4000);
         String date = driver.findElement(By.xpath(Verify_Past_Date)).getText();
+        common.log(date);
         common.Verify_Past_Date(date);
         common.log("Sort Type Past is Selected");
     }
@@ -244,7 +247,8 @@ public class EventTabPage extends Abstract{
     }
 
     public void Click_No_For_Allow_Comments() throws InterruptedException {
-        common.scrollDownMobile(driver);
+
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Send_Notification_No)).click();
         common.log("Clicked On No Button to Allow Comments");
     }

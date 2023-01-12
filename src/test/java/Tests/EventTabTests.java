@@ -812,6 +812,7 @@ public class EventTabTests extends Configuration {
         eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
+        homePage.Click_Select_All_Button();
         homePage.Click_DeSelect_All_Button();
     }
 

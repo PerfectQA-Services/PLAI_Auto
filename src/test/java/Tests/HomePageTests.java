@@ -224,7 +224,7 @@ public class HomePageTests extends Configuration {
         homePage.Navigate_To_Profile_Screen();
         homePage.Navigate_To_Edit_Profile_Screen();
         homePage.Verify_Edit_Location_In_Edit_Profile();
-        homePage.Click_On_Done_Button_To_Select_Location();
+        homePage.Unselect_Location_In_Edit_Profile();
         loginPage.Get_Toast_Alert("Verify Toast Message Please selected minimum 1 item");
     }
 
@@ -553,8 +553,8 @@ public class HomePageTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Admin_Club_Banner();
         homePage.Click_Edit_Button_In_Club_Admin_Page();
-        homePage.Click_On_Next_Button();
         homePage.Clear_Data_In_Edit_Form();
+        homePage.Click_On_Next_Button();
         loginPage.Get_Toast_Alert("Validation for Mandatory Field :- ");
     }
 
@@ -797,6 +797,7 @@ public class HomePageTests extends Configuration {
         homePage.Accept_User_Request();
         homePage.Verify_Assign_Groups_Popup();
         homePage.Click_Assign_Groups_Dropdown();
+        homePage.Click_Select_All_Button();
         homePage.Click_DeSelect_All_Button();
     }
 

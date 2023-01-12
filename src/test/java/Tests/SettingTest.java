@@ -275,6 +275,66 @@ public class SettingTest extends Configuration {
         settingpage.Enter_Description();
 
     }
+    //353
+    @Test
+    public void Verify_the_Attach_a_screenshot_field() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Report_An_Issue_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Verify_Displayed_Field_After_Click_On_Attach_Screen_Shot_Field();
+
+    }
+    //354
+    @Test
+    public void Verify_the_Capture_an_Image_option() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Report_An_Issue_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Click_On_Capture_An_Image_Option_And_Verify_Result();
+
+    }
+    //355
+    @Test
+    public void Verify_the_Select_a_Image_option() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Report_An_Issue_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Click_On_Pick_An_Image_Option_And_Verify_Result();
+
+    }
     //358
     @Test
     public void Verify_the_functionality_of_CONFIRM_button() throws InterruptedException, IOException, ParseException {
@@ -549,6 +609,66 @@ public class SettingTest extends Configuration {
         settingpage.Click_On_Setting_Icon();
         settingpage.Click_On_Submit_A_Feature_Request_Label();
         settingpage.Enter_Description();
+
+    }
+    //373
+    @Test
+    public void Verify_the_Attach_a_screenshot_field_Request_A_Feature() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Submit_A_Feature_Request_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Verify_Displayed_Field_After_Click_On_Attach_Screen_Shot_Field();
+
+    }
+    //354
+    @Test
+    public void Verify_the_Capture_an_Image_option_Request_A_Feature() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Submit_A_Feature_Request_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Click_On_Capture_An_Image_Option_And_Verify_Result();
+
+    }
+    //355
+    @Test
+    public void Verify_the_Select_a_Image_option_Request_A_Feature() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Submit_A_Feature_Request_Label();
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        settingpage.Click_On_Attach_Screen_Shot_Field();
+        settingpage.Click_On_Pick_An_Image_Option_And_Verify_Result();
 
     }
     //378

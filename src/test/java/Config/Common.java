@@ -15,6 +15,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import java.text.ParseException;
@@ -24,6 +26,7 @@ import java.time.LocalDateTime;
 import java.awt.*;
 import java.io.*;
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
@@ -277,11 +280,26 @@ public class Common{
     }
 
 
-    public void Verify_Past_Date(String PastDate) throws ParseException {
-        Date curDate = new Date(String.valueOf(new SimpleDateFormat("dd MMM yyyy")));
-//        curDate = new SimpleDateFormat("dd MMM yyyy");
-        Date date1=new SimpleDateFormat("dd MMM yyyy").parse(PastDate);
-        date1.before(curDate);
+    public void Verify_Past_Date(String d2) throws ParseException {
+//        Date curDate = new Date(String.valueOf(new SimpleDateFormat("dd-MM-yyyy")));
+////        curDate = new SimpleDateFormat("dd MMM yyyy");
+//        Date date1=new SimpleDateFormat("dd-MM-yyyy").parse(PastDate);
+//        date1.before(curDate);
+
+        String pattern = "dd MMM yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String d1 = simpleDateFormat.format(new Date());
+        System.out.println(d1);
+        if(d1.compareTo(d2) > 0) {
+            System.out.println("past date is verified");
+        } else if(d1.compareTo(d2) == 0) {
+            System.out.println("Both dates are equal");
+        }
     }
 
+    public void waitUntillElementPresent(String str,MobileDriver driver) {
+
+        WebDriverWait wait = new WebDriverWait(driver, 50);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(str)));
+    }
 }

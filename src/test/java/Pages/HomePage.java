@@ -64,7 +64,7 @@ public class HomePage extends Abstract{
     public void Verify_Search_Functionality() throws InterruptedException {
         driver.findElement(By.xpath(Search_Field)).click();
         driver.findElement(By.xpath(Search_Field)).sendKeys("Sporty Tots");
-        driver.executeScript("mobile: performEditorAction", ImmutableMap.of("action", "search"));
+        driver.hideKeyboard();
         common.log("Searched Sporty Tots");
         Thread.sleep(2000);
         common.isElementPresent(SportyTots_Location);
@@ -74,8 +74,10 @@ public class HomePage extends Abstract{
     }
 
     public void Verify_Join_Team_Button(){
+        common.waitUntillElementPresent(Sporty_Tots_Banner,driver);
         driver.findElement(By.xpath(Sporty_Tots_Banner)).click();
         common.log("Clicked on Sporty Tots banner");
+        common.waitUntillElementPresent(Join_Team_Button,driver);
         driver.findElement(By.xpath(Join_Team_Button)).click();
         common.log("Clicked on Join Team Button");
     }
@@ -176,7 +178,10 @@ public class HomePage extends Abstract{
         common.log("Location Dropdown Opened with list of countries");
     }
 
+
+
     public void Click_On_Done_Button_To_Select_Location() throws InterruptedException {
+        Thread.sleep(5000);
         driver.findElement(By.xpath(done_link)).click();
         common.log("Clicked on Done Button");
     }
@@ -290,9 +295,10 @@ public class HomePage extends Abstract{
         common.log("Article Creator is Displayed");
     }
 
-    public void Verify_Share_Article(){
+    public void Verify_Share_Article() throws InterruptedException {
         common.isElementPresent(Share_Article_Button);
         common.log("Share Article Button is displayed");
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Share_Article_Button)).click();
         common.log("Clicked On Share Button");
         common.isElementPresent(Share_Panel);
@@ -456,9 +462,12 @@ public class HomePage extends Abstract{
         common.log("Search bar is Displayed");
     }
 
-    public void Click_On_Update_Team(){
+    public void Click_On_Update_Team() throws InterruptedException {
+
+        Thread.sleep(3000);
         driver.findElement(By.xpath(Update_Team)).click();
         common.log("Clicked On Update Team");
+
     }
 
     public void Verify_Team_Update_popUp(){
@@ -507,14 +516,18 @@ public class HomePage extends Abstract{
     }
 
     public void Search_And_Select_Group() throws InterruptedException {
+
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Search_Bar)).sendKeys("Fhchb");
         common.log("Clicked On DeSelect All Button");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         String group = driver.findElement(By.xpath(Group)).getText();
-        driver.findElement(By.xpath(Assign_Group_Dropdown)).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Group)).click();
         common.log("Selected Group : "+group);
         driver.findElement(By.xpath(done_link)).click();
         common.log("Clicked On Done Button");
+
     }
 
     public void Click_Confirm_Button(){
@@ -530,6 +543,8 @@ public class HomePage extends Abstract{
         }
         common.isElementPresent(MEMBERS_Tab);
         common.log("Members Tab is Displayed");
+        driver.findElement(By.xpath(MEMBERS_Tab)).click();
+        common.log(" Member button Clicked");
         driver.findElement(By.xpath(Delete_Member_Button)).click();
         common.log("Delete Member button Clicked");
         driver.findElement(By.xpath(Confirm_Delete)).click();
@@ -555,6 +570,17 @@ public class HomePage extends Abstract{
         driver.findElement(By.xpath(Join_Team_Button)).click();
         common.log("Clicked on Join Team Button");
         Thread.sleep(2000);
+    }
+
+    public void Unselect_Location_In_Edit_Profile() throws InterruptedException {
+
+        Thread.sleep(2000);
+        for(int i=0;i<16;i++){
+            common.scrollDownMobile(driver);
+        }
+        driver.findElement(By.xpath("//android.widget.TextView[@text=\"India\"]//..//android.widget.CheckBox")).click();
+        driver.findElement(By.xpath(done_link)).click();
+        driver.findElement(By.xpath("//android.widget.ImageView[3]")).click();
     }
 
 }

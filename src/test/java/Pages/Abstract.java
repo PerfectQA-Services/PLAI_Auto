@@ -192,8 +192,8 @@ public class Abstract {
      */
     String Article_Banner = "//android.widget.TextView[contains(@text,\"Article\")]";
     String Article_Creator_Text_Verification = "//android.widget.TextView[contains(@text,\"Created By\")]";
-    String Read_Article_Button = "//android.widget.TextView[@text=\"Article\"]//..//android.widget.TextView[contains(@text,\"Read Article\")]";
-    String Share_Article_Button = "//android.widget.TextView[@text=\"Article\"]//..//android.view.View[2]";
+    String Read_Article_Button = "//android.view.View[1]/android.widget.TextView[@text=\"Read Article\"]";
+    String Share_Article_Button = "(//android.widget.TextView[@text=\"Test Article 2\"]//..//android.view.View[2])[1]";
     String Share_Panel = "//android.widget.TextView[contains(@text,\"Click here to view on PLAI.\")]";
     String Bookmark_Icon_Article_Banner = "//android.view.View[5]/android.view.View[1]/android.view.View[1]";
 
@@ -237,7 +237,7 @@ public class Abstract {
     String Country_Dropdown = "//android.widget.TextView[@text=\"Country*\"]//..//..//..//android.widget.EditText";
     String Location_Text_Field = "//android.widget.ScrollView/android.view.View[2]/android.widget.EditText";
     String Team_Logo = "//android.widget.TextView[@text=\"Team logo\"]";
-    String Update_Team = "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
+    String Update_Team = "//android.widget.TextView[@text=\"UPDATE TEAM\"]//..//android.widget.Button";
     String Team_Updated_Message = "//android.widget.TextView[@text=\"Team is updated successfully.\"]";
     String User_Request = "//android.widget.TextView[@text=\"Riya Test\"]";
     String Accept_Request_Button = "//android.widget.TextView[@text=\"3ynrhm Eynryn\"]//..//android.view.View//android.widget.TextView[@text=\"ACCEPT\"]";
@@ -328,7 +328,7 @@ public class Abstract {
     String Old_Event = "//android.widget.TextView[contains(@text,\"Dec 2022\")]";
     String Add_TO_Calender_Button = "//android.widget.TextView[@text=\"ADD TO CALENDER\"]//..//android.widget.Button";
     String Respond_Button_Event_Banner = "//android.widget.TextView[@text=\"monday event\"]//..//android.widget.TextView[@text=\"RESPOND\"] | //android.widget.TextView[@text=\"monday event\"]//..//android.widget.TextView[@text=\"SUBMITTED\"]";
-    String Respond_Button = "//android.widget.TextView[@text=\"RESPOND\"]//..//android.widget.Button";
+    String Respond_Button = "//android.widget.TextView[@text=\"RESPONDED\"]//..//android.widget.Button";
     String Respond_Screen_Header = "//android.widget.TextView[@text=\"SUBMIT A RESPONSE\"]";
     String Select_Attendees_Dropdown = "//android.widget.TextView[@text=\"Select Attendees*\"]";
     String Availability_Dropdown = "//android.widget.TextView[@text=\"Availability *\"]";
@@ -393,6 +393,8 @@ public class Abstract {
     String Sport_Team_Name="(//android.widget.TextView[@text=\"Type Here\"])[1]";
     String Description_Field="//android.widget.EditText[4]";
     String Attach_A_Screenshot="//android.widget.TextView[@text=\"Select Files...\"]";
+    String Capture_an_Image_Option="//android.widget.TextView[@text=\"Capture an Image\"]";
+    String Pick_An_Image_Option="//android.widget.TextView[@text=\"Pick an Image\"]";
     String Report_And_Privacy_link="//android.widget.TextView[@text=\"Never submit your passwords here. Report abuse or check out our Privacy Policy.\"]";
     String Legal_Header="//android.widget.TextView[@text=\"LEGAL\"]";
     String Terms_Of_Use_Label="//android.widget.TextView[@text=\"Terms of use\"]";
