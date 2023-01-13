@@ -60,7 +60,12 @@
           <include name="Verify_the_social_media_icon_display_on_the_SETTINGS_screen"></include>
           <include name="Verify_the_Logout_icon"></include>
           <include name="Verify_the_Dismiss_button_of_confirmation_popup_Logout_Icon"></include>
-          <include name="Verify_the_Confirm_button_of_confirmation_popup_Logout_Icon"></include>
+          <include name="Verify_the_Attach_a_screenshot_field_Request_A_Feature"></include>
+          <include name="Verify_the_Capture_an_Image_option_Request_A_Feature"></include>
+          <include name="Verify_the_Select_a_Image_option_Request_A_Feature"></include>
+          <include name="Verify_the_Attach_a_screenshot_field"></include>
+          <include name="Verify_the_Capture_an_Image_option"></include>
+          <include name="Verify_the_Select_a_Image_option"></include>
         </methods>
       </class>
     </classes>
