@@ -205,6 +205,25 @@
                     <include name="Verify_the_Add_a_note_field"></include>
                     <include name="Verify_the_CONFIRM_button_of_SUBMIT_A_RESPONSE_screen"></include>
                     <include name="Verify_the_Overview_tab_of_EVENT_screen"></include>
+                    <include name="Verify_the_Edit_icon_of_OVERVIEW_tab"></include>
+                    <include name="Verify_the_EDIT_EVENT_screen"></include>
+                    <include name="Verify_the_CONFIRM_button_Edit_Event"></include>
+                    <include name="Verify_the_CLOSE_button_Edit_Event"></include>
+                    <include name="Verify_the_Delete_icon_on_OVERVIEW_tab"></include>
+                    <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>
+                    <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>
+                    <include name="Verify_ADD_TO_CALENDAR_button"></include>
+                    <include name="Verify_the_fields_display_on_the_RESPONSES_tab"></include>
+                    <include name="Verify_the_functionality_of_Accept_button"></include>
+                    <include name="Verify_the_functionality_of_CONFIRM_button"></include>
+                    <include name="Verify_the_functionality_of_Decline_button"></include>
+                    <include name="Verify_the_functionality_of_CONFIRM_button_Responses_Tab"></include>
+                    <include name="Verify_ADD_TO_CALENDAR_button_Responses_Tab"></include>
+                    <include name="Verify_the_fields_display_on_the_ATTENDENCE_tab"></include>
+                    <include name="Verify_the_DID_NOT_ATTEND_checkbox"></include>
+                    <include name="Verify_the_ATTENDED_checkbox"></include>
+                    <include name="Verify_ADD_TO_CALENDAR_button_Attendance_Tab"></include>
+                    <include name="Verify_the_Overview_tab_of_EVENT_screen"></include>
                     <include name="Verify_the_navigation_of_Back_icon"></include>
                     <include name="Verify_the_Angle_right_icon_placed_below_the_Edit_button"></include>
                     <include name="Verify_the_Angle_left_icon"></include>
@@ -369,6 +388,17 @@
                     <include name="Verify_the_Angle_Up_and_Angle_Down_icon_display_on_Link_banner"></include>
                     <include name="Verify_the_Angle_Up_icon_of_the_link_banner"></include>
                     <include name="Verify_the_Angle_down_icon_of_the_link_banner"></include>
+                    <include name="Verify_the_ADD_NEW_LINK_button"></include>
+                    <include name="Verify_the_fields_display_on_CREATE_LINK_screen"></include>
+                    <include name="Verify_the_field_screen"></include>
+                    <include name="Select_Icon_Style"></include>
+                    <include name="Verify_the_Groups_field_of_CREATE_LINK_screen"></include>
+                    <include name="Verify_the_Select_All_button"></include>
+                    <include name="Verify_the_DeSelect_All_button"></include>
+                    <include name="Verify_the_Done_link_with_Search_bar"></include>
+                    <include name="Verify_the_Show_URL_field_by_click_on_YES_button"></include>
+                    <include name="Verify_the_Show_URL_field_by_click_on_No_button"></include>
+                    <include name="Verify_the_SUBMIT_button_of_CREATE_LINK_screen"></include>
                 </methods>
             </class>
         </classes>
@@ -431,6 +461,37 @@
                     <include name="Verify_the_Select_Team_field"></include>
                     <include name="Verify_the_Description_field"></include>
                     <include name="Verify_the_CONFIRM_button_after_entering_data_in_mandatory_field"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Verify GroupTab Functionality" verbose="2">
+        <classes>
+            <class name="Tests.GroupTabTests">
+                <methods>
+                    <include name="Verify_the_fields_display_on_GROUPS_tab"></include>
+                    <include name="Verify_the_Angle_Up_and_Angle_Down_icon_display_on_Link_banner"></include>
+                    <include name="Verify_the_Angle_Up_icon_of_the_link_banner"></include>
+                    <include name="Verify_the_Angle_down_icon_of_the_link_banner"></include>
+                    <include name="Verify_the_functionality_of_Search_bar"></include>
+                    <include name="Verify_the_functionality_of_GROUPS_banner"></include>
+                    <include name="Verify_the_Delete_icon"></include>
+                    <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>
+                    <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>
+                    <include name="Verify_the_Edit_icon_of_group_banner"></include>
+                    <include name="Verify_the_fields_of_EDIT_GROUP_popup"></include>
+                    <include name="Verify_the_CONFIRM_button_after_editing_the_data"></include>
+                    <include name="Verify_the_Team_Name_field_by_entering_more_than_20_character"></include>
+                    <include name="Verify_the_Team_Bio_field_by_entering_more_than_70_character"></include>
+                    <include name="Verify_the_CONFIRM_button_after_editing_the_data_Close_Button"></include>
+                    <include name="Verify_the_CLOSE_button"></include>
+                    <include name="Verify_the_functionality_of_ADD_NEW_GROUP_button"></include>
+                    <include name="Verify_the_CONFIRM_button_without_entering_data_in_mandatory_field"></include>
+                    <include name="Verify_the_Team_Name_field_by_entering_more_than_20_character_Add_New_Group"></include>
+                    <include name="Verify_the_Team_Bio_field_by_entering_more_than_70_character_Add_New_Group"></include>
+                    <include name="Verify_the_CLOSE_button_Add_New_Group"></include>
+                    <include name="Verify_the_social_media_icon"></include>
+                    <include name="Verify_the_navigation_by_tap_on_Back_icon"></include>
                 </methods>
             </class>
         </classes>

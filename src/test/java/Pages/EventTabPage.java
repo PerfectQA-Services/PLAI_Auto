@@ -386,6 +386,141 @@ public class EventTabPage extends Abstract{
         common.log("Clicked On Next Arrow Button for next tab");
     }
 
+    public void Click_On_Edit_Icon() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Edit_Icon)).click();
+        common.log("Clicked On Back Button");
+
+    }
+
+    public void Click_On_Delete_Icon() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Delete_Icon)).click();
+        common.log("Clicked On Delete Button");
+
+    }
+    public void Verify_Dismiss_And_Confirm_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isElementDisplayed(Dismiss_Button);
+        common.log("Dismiss button is verified");
+        common.isElementDisplayed(Confirm_Button);
+        common.log("Confirm button is verified");
+
+    }
+
+    public void Click_On_PreView_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        for(int i=0;i<7;i++){
+            common.scrollDownMobile(driver);
+        }
+        driver.findElement(By.xpath(Preview_Button)).click();
+        common.log("Clicked On Preview button.");
+        common.isDisplayed(Confirm_Button);
+        common.log("Confirm Button is verified.");
+
+    }
+    public void Click_On_Confirm_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Confirm_Button)).click();
+        common.log("Clicked On confirm button.");
+        common.isDisplayed(Close_Button);
+        common.log("Close button is verified.");
+
+    }
+
+    public void Click_On_Close_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Close_Button)).click();
+        common.log("Clicked On close button.");
+
+
+    }
+
+    public void Click_ON_Add_To_Calender() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Add_TO_Calender_Button)).click();
+        common.log("Clicked On add to calender button.");
+
+    }
+
+    public void Click_On_Responses_Tab() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Responses_Tab)).click();
+        common.log("Clicked on Responses tab.");
+
+    }
+
+    public void Verify_Responses_Tab_Element(){
+        common.isDisplayed(Count_For_Approved_And_Available);
+        common.log("Count_For_Approved_And_Available is displayed");
+        common.isElementPresent(Count_For_Approved_And_More_Time_Needed);
+        common.log("Count_For_Approved_And_More_Time_Needed is displayed");
+        common.isElementPresent(Count_For_Approved_And_Unavailable);
+        common.log("Count_For_Approved_And_Unavailable is displayed");
+        common.isElementPresent(Count_For_Pending);
+        common.log("Count_For_Pending is displayed");
+        common.isElementPresent(Decline_Button);
+        common.log("Decline button is displayed");
+        common.isElementPresent(Add_TO_Calender_Button);
+        common.log("Add to calender button is displayed");
+    }
+
+    public void Click_On_Accept_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Accept_Button)).click();
+        common.log("Clicked on accept button.");
+        common.isDisplayed(Confirm_Button);
+        common.log("Confirm button is displayed");
+    }
+
+    public void Click_On_Decline_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Decline_Button)).click();
+        common.log("Clicked on accept button.");
+        common.isDisplayed(Confirm_Button);
+        common.log("Confirm button is displayed");
+    }
+
+    public void Click_On_Attendance_Tab() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Attendance_TAB)).click();
+        common.log("Clicked on attendance tab.");
+
+    }
+
+    public void Verify_Attendance_Tab_Element(){
+        common.isDisplayed(Did_Not_Attend_Checkbox);
+        common.log("Did_Not_Attend_Checkbox) is displayed");
+        common.isElementPresent(Add_TO_Calender_Button);
+        common.log("Add to calender button is displayed");
+    }
+
+    public void Click_On_Did_Not_Attend_Checkbox() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Did_Not_Attend_Checkbox)).click();
+        common.log("Clicked on did not attended checkbox.");
+
+    }
+
+    public void Click_On_Attend_Checkbox() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Attended_Checkbox)).click();
+        common.log("Clicked attended checkbox.");
+
+    }
 
 
 }

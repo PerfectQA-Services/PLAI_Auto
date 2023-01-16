@@ -924,7 +924,375 @@ public class EventTabTests extends Configuration {
         eventTab.Open_An_Event();
         eventTab.Click_Overview_Button();
     }
+    //TC-204
+    @Test
+    public void Verify_the_Edit_icon_of_OVERVIEW_tab()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Edit_Icon();
+        eventTab.Verify_Create_Event_Screen();
+    }
+    //TC-205
+    @Test
+    public void Verify_the_EDIT_EVENT_screen ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Edit_Icon();
+        eventTab.Verify_Create_Event_Screen();
+        eventTab.Click_On_PreView_Button();
+    }
+    //TC-206
+    @Test
+    public void Verify_the_CONFIRM_button_Edit_Event ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Edit_Icon();
+        eventTab.Verify_Create_Event_Screen();
+        eventTab.Click_On_PreView_Button();
+        eventTab.Click_On_Confirm_Button();
+    }
+    //TC-207
+    @Test
+    public void Verify_the_CLOSE_button_Edit_Event ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Edit_Icon();
+        eventTab.Verify_Create_Event_Screen();
+        eventTab.Click_On_PreView_Button();
+        eventTab.Click_On_Confirm_Button();
+        eventTab.Click_On_Close_Button();
+    }
+    //TC-208
+    @Test
+    public void Verify_the_Delete_icon_on_OVERVIEW_tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Delete_Icon();
+        eventTab.Verify_Dismiss_And_Confirm_Button();
+    }
+    //TC-209
+    @Test
+    public void Verify_the_Dismiss_button_of_confirmation_popup ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Delete_Icon();
+        grouptab.Click_On_Dismiss_Button();
+    }
+    //TC-210
+    @Test
+    public void Verify_the_Confirm_button_of_confirmation_popup ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Delete_Icon();
+//        grouptab.Click_On_Confirm_Button();
+    }
+    //TC-211
+    @Test
+    public void Verify_ADD_TO_CALENDAR_button ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_ON_Add_To_Calender();
+        loginPage.Get_Toast_Alert("Alert after click on add to calendar button :- ");
+    }
+    //TC-212
+    @Test
+    public void Verify_the_fields_display_on_the_RESPONSES_tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Verify_Attendance_Tab_Element();
+    }
+    //TC-213
+    @Test
+    public void Verify_the_functionality_of_Accept_button ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Click_On_Accept_Button();
 
+    }
+    //TC-214
+    @Test
+    public void Verify_the_functionality_of_CONFIRM_button ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Click_On_Accept_Button();
+        eventTab.Click_On_Confirm_Button();
+
+    }
+    //TC-215
+    @Test
+    public void Verify_the_functionality_of_Decline_button ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Click_On_Decline_Button();
+
+    }
+    //TC-216
+    @Test
+    public void Verify_the_functionality_of_CONFIRM_button_Responses_Tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Click_On_Decline_Button();
+        eventTab.Click_On_Confirm_Button();
+
+    }
+    //TC-217
+    @Test
+    public void Verify_ADD_TO_CALENDAR_button_Responses_Tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Responses_Tab();
+        eventTab.Click_ON_Add_To_Calender();
+        loginPage.Get_Toast_Alert("Alert after click on add to calendar button :- ");
+    }
+    //TC-218
+    @Test
+    public void Verify_the_fields_display_on_the_ATTENDENCE_tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Attendance_Tab();
+        eventTab.Verify_Attendance_Tab_Element();
+    }
+    //TC-219
+    @Test
+    public void Verify_the_DID_NOT_ATTEND_checkbox ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Attendance_Tab();
+        eventTab.Click_On_Did_Not_Attend_Checkbox();
+    }
+    //TC-220
+    @Test
+    public void Verify_the_ATTENDED_checkbox ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Attendance_Tab();
+        eventTab.Click_On_Attend_Checkbox();
+    }
+    //TC-221
+    @Test
+    public void Verify_ADD_TO_CALENDAR_button_Attendance_Tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        EventTabPage eventTab = new EventTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        GroupTabPage grouptab=new GroupTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        eventTab.Click_On_Event_Tab_And_Verify();
+        eventTab.Open_An_Event();
+        eventTab.Click_On_Attendance_Tab();
+        eventTab.Click_ON_Add_To_Calender();
+        loginPage.Get_Toast_Alert("Alert after click on add to calendar button :- ");
+    }
 
     //TC-222
     @Test
