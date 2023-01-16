@@ -302,7 +302,7 @@ public class Abstract {
     String Create_Event_Header = "//android.widget.TextView[@text=\"CREATE EVENT\"]";
     String Location_Field_Create_Event = "//android.widget.TextView[@text=\"Location\"]//..//..//..//android.widget.EditText";
     String Search_Location = "com.app.plaisports:id/places_autocomplete_search_bar";
-    String Name_Field_Create_Event = "//android.widget.TextView[@text=\"Name\"]//..//..";
+    String Name_Field_Create_Event = "(//android.widget.TextView[@text=\"Name\"]//..//..)[1]";
     String Capacity_Dropdown_Create_Event = "(//android.view.View[@content-desc=\"Drop-down menu\"])[1]";
     String Capacity_Field = "//android.widget.TextView[@text=\"Capacity\"]//..//..//..//android.widget.EditText[2]";
     String Type_Dropdown_Create_Event = "(//android.view.View[@content-desc=\"Drop-down menu\"])[2]";
@@ -338,6 +338,17 @@ public class Abstract {
     String Unavailable_Option = "//android.widget.TextView[@text=\"Unavailable\"]";
     String Overview_Button = "//android.widget.TextView[@text=\"OVERVIEW\"]";
     String Back_Button_Event = "//android.widget.ImageView[@index=\"0\"]";
+    String Responses_Tab="//android.widget.TextView[@text=\"RESPONSES\"]";
+    String Attendance_TAB="//android.widget.TextView[@text=\"ATTENDANCE\"]";
+    String Count_For_Approved_And_Available="(//android.view.View/android.widget.TextView[2])[1]";
+    String Count_For_Approved_And_Unavailable="(//android.view.View/android.widget.TextView[3])[1]";
+    String Count_For_Approved_And_More_Time_Needed="(//android.view.View/android.widget.TextView[4])[1]";
+    String Count_For_Pending="(//android.view.View/android.widget.TextView[5])[1]";
+    String Decline_Button="//android.widget.TextView[@text=\"DECLINE\"] | //android.widget.TextView[@text=\"ACCEPT\"]";
+    String Accept_Button="//android.widget.TextView[@text=\"ACCEPT\"] | //android.widget.TextView[@text=\"DECLINE\"]";
+    String Did_Not_Attend_Checkbox="//android.widget.TextView[@text=\"DID NOT ATTEND\"]//..//android.view.View";
+    String Attended_Checkbox="//android.widget.TextView[@text=\"ATTENDED\"]//..//android.view.View";
+
 
 
     /***
@@ -508,8 +519,8 @@ public class Abstract {
      */
 
     String Groups_Tab="//android.widget.TextView[@text=\"GROUPS\"]";
-    String Edit_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[3]";
-    String Delete_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[4]";
+    String Edit_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[3] | //android.view.View/android.widget.ScrollView/android.view.View[2]";
+    String Delete_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[4] | //android.view.View/android.widget.ScrollView/android.view.View[3]";
     String Add_New_Group_Button="//android.widget.TextView[@text=\"ADD NEW GROUP\"]";
     String Group_Banner="//android.view.View[1]/android.widget.Button";
     String Group_Information="//android.view.View/android.widget.Button";
