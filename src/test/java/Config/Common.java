@@ -302,4 +302,13 @@ public class Common{
         WebDriverWait wait = new WebDriverWait(driver, 50);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(str)));
     }
+
+    public boolean isDisplayed(String Element){
+        try {
+            driver.findElement(By.xpath(Element)).isDisplayed();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

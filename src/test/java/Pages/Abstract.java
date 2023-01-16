@@ -18,7 +18,7 @@ public class Abstract {
     String next_button="//android.view.View[2]/android.view.View[3]/android.widget.Button";
     String Back_Button = "//android.widget.ImageView[@index=\"0\"]";
     String LogOut_Button = "//android.widget.ImageView[@index=\"2\"]";
-    String Search_Bar = "//android.widget.EditText";
+    String Search_Bar = "//android.widget.EditText[@text=\"Search Now\"] | //android.widget.TextView[@text=\"Search Now\"]";
 
 
     /***
@@ -206,9 +206,9 @@ public class Abstract {
     String Member_Club_Name = "//android.widget.TextView[2]";
     String Welcome_Message_Club_Page = "//android.widget.TextView[contains(@text,\"Welcome to\")]";
     String Social_Media_Icon_Facebook = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]";
-    String Social_Media_Icon_Twitter = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]";
-    String Social_Media_Icon_Instagram = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]";
-    String Social_Media_Icon_YouTube = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]";
+    String Social_Media_Icon_Twitter = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]";
+    String Social_Media_Icon_Instagram = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[3]";
+    String Social_Media_Icon_YouTube = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[4]";
     String Navigation_Right_Arrow = "//android.view.View[7]";
     String Navigation_Previous_Arrow = "//android.view.View[6]";
     String NEWS_Tab = "//android.widget.TextView[@text=\"NEWS\"]";
@@ -478,15 +478,19 @@ public class Abstract {
     String Update_Team_Header= "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
     String Add_New_Link_Button="//android.widget.TextView[@text=\"ADD NEW LINK\"]";
     String Create_Link_Header="//android.widget.TextView[@text=\"CREATE LINK\"]";
-    String Link_Title_Label="//android.widget.TextView[@text=\"Link Title *\"]";
-    String Url_Label="//android.widget.TextView[@text=\"Url *\"]";
-    String Icon_Label="//android.widget.TextView[@text=\"Icon *\"]";
-    String Groups_Label="//android.widget.TextView[@text=\"Groups\"]";
+    String Link_Title_Field="//android.widget.EditText[1]";
+    String Url_Field="//android.widget.EditText[2]";
+    String Icon_Dropdown="//android.widget.TextView[@text=\"Icon *\"]";
+    String Website_Icon = "//android.widget.TextView[@text=\"Website\"]";
+    String Groups_Dropdown_Create_Link="//android.widget.TextView[@text=\"Groups\"]";
+    String Fhchb_Group = "//android.widget.TextView[@text=\"Fhchb\"]";
     String Show_Url_No_Button="//android.widget.TextView[@text=\"NO\"]";
     String Show_Url_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
     String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
     String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
     String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
+    String Delete_Link_Button = "//android.view.View[9]/android.view.View/android.view.View[4]";
+
 
     /**
      *  Support Tab Locators
@@ -498,6 +502,22 @@ public class Abstract {
     String Last_Name_Field_Support = "//android.widget.EditText[2]";
     String Select_Team_Dropdown = "//android.widget.TextView[@text=\"Select Team\"]";
     String Support_Description_Field = "//android.widget.EditText[3]";
+
+    /**
+     *  Group Tab Locators
+     */
+
+    String Groups_Tab="//android.widget.TextView[@text=\"GROUPS\"]";
+    String Edit_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[3]";
+    String Delete_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[4]";
+    String Add_New_Group_Button="//android.widget.TextView[@text=\"ADD NEW GROUP\"]";
+    String Group_Banner="//android.view.View[1]/android.widget.Button";
+    String Group_Information="//android.view.View/android.widget.Button";
+    String Edit_Group_Popup="//android.view.View[2]";
+    String Group_Name_Field="//android.widget.EditText[1]";
+    String Group_Description="//android.widget.EditText[2]";
+    String Successful_Message="//android.widget.TextView";
+
 
 
 }

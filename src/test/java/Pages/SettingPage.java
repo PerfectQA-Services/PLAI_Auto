@@ -517,7 +517,7 @@ public class SettingPage extends Abstract{
 
         Thread.sleep(2000);
         driver.findElement(By.xpath(Confirm_Delete)).click();
-        common.log("Clicked on dismiss button ");
+        common.log("Clicked on confirm button ");
 
     }
 
