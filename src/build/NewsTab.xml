@@ -32,6 +32,11 @@
           <include name="Verify_the_PREVIEW_button_after_entering_data_in_mandatory_field__Add_New_Article"></include>
           <include name="Verify_the_functionality_of_CONFIRM_button_Add_New_Article"></include>
           <include name="Verify_Close_button_Add_New_Article"></include>
+          <include name="Verify_the_SMS_functionality_for_NEWS"></include>
+          <include name="Verify_the_fields_display_on_the_PAYMENT_screen"></include>
+          <include name="Verify_the_CHANGE_CARD_button"></include>
+          <include name="Verify_the_CONFIRM_button_display_on_PAYMENT_screen"></include>
+          <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
         </methods>
       </class>
     </classes>

@@ -258,7 +258,7 @@ public class SignUpPage extends Abstract{
     public void click_on_next_button() throws InterruptedException {
 
         Thread.sleep(1000);
-        driver.findElement(By.xpath(signup_page_next_button)).click();
+        driver.findElement(By.xpath(Next_Button)).click();
         common.log("Next button is clicked.");
 
     }

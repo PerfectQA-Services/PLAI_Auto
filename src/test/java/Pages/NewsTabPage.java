@@ -197,12 +197,17 @@ public class NewsTabPage extends Abstract{
         common.log("Selected No for Send Email");
         driver.findElement(By.xpath(Send_Notification_No)).click();
         common.log("Selected No for Send Notification");
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Groups_Dropdown)).click();
         common.log("Groups Dropdown is Clicked");
         driver.findElement(By.xpath(SelectAll_Button)).click();
         common.log("Selected All Groups");
         driver.findElement(By.xpath(done_link)).click();
         common.log("Clicked On Done Button");
+        Thread.sleep(2000);
+        common.scrollDownMobile(driver);
         common.scrollDownMobile(driver);
         driver.findElement(By.xpath(Allow_Comments_No)).click();
         common.log("Selected No to Allow Notifications");
@@ -212,6 +217,70 @@ public class NewsTabPage extends Abstract{
         common.isElementPresent(Confirm_Button);
         common.log("Preview Screen is Displayed");
     }
+
+    public void Create_New_Article_With_Sms() throws InterruptedException {
+        driver.findElement(By.xpath(Title_Text_Field)).sendKeys("Test Article 2");
+        common.log("Entered Article Title");
+        driver.findElement(By.xpath(Article_Description_TF)).sendKeys("Test Article 2 Description");
+        common.log("Entered Article Description");
+        driver.findElement(By.xpath(Send_Email_No)).click();
+        common.log("Selected No for Send Email");
+        driver.findElement(By.xpath(Send_Notification_No)).click();
+        common.log("Selected No for Send Notification");
+        driver.findElement(By.xpath(Send_A_SMS_Yes)).click();
+        common.log("Selected Yes for Send a SMS");
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Groups_Dropdown)).click();
+        common.log("Groups Dropdown is Clicked");
+        driver.findElement(By.xpath(SelectAll_Button)).click();
+        common.log("Selected All Groups");
+        driver.findElement(By.xpath(done_link)).click();
+        common.log("Clicked On Done Button");
+        Thread.sleep(2000);
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        driver.findElement(By.xpath(Allow_Comments_No)).click();
+        common.log("Selected No to Allow Notifications");
+    }
+
+    public void Verify_Payment_Page_Header() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isDisplayed(Payment_page_Header);
+        common.log("Payment page is verified.");
+
+    }
+    public void Verify_Payment_Page_Elements() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isDisplayed(Back_Button);
+        common.log("Back button is verified.");
+        common.isDisplayed(User_Information_Text_Payment);
+        common.log("User information text is verified.");
+        common.isDisplayed(Change_Card_Button);
+        common.log("Change card button is verified.");
+        common.isDisplayed(Confirm_Button);
+        common.log("Confirm button is verified.");
+
+    }
+    public void Click_Change_Card_Button_Verify_Result() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Change_Card_Button)).click();
+        common.log("Clicked On change card Button.");
+        common.isDisplayed(Saved_Card_Text);
+        common.log("Saved card screen is verified.");
+    }
+
+    public void Click_Confirm_Button() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Confirm_Button)).click();
+        common.log("Clicked On continue Button of Payment page");
+
+    }
+
+
 
 
 }

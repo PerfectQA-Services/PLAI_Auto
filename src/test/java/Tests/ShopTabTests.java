@@ -371,6 +371,89 @@ public class ShopTabTests extends Configuration {
         shopTab.Click_Confirm_Purchase();
         loginPage.Get_Toast_Alert("");
     }
+    //Nov-Dec Sprint
+    //TC-114
+    @Test
+    public void Verify_the_cards_display_on_the_CHECKOUT_screen()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        ShopTabPage shopTab = new ShopTabPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        shopTab.Open_PLAIERS_Snooker_Club();
+        shopTab.Open_Shop_Tab();
+        shopTab.Click_Snooker_Membership_Item_Proceed_To_Payment();
+        newsTab.Click_Change_Card_Button_Verify_Result();
+
+
+    }
+    //TC-115
+    @Test
+    public void Verify_the_CHANGE_CARD_button_display_on_the_CHECKOUT_screen()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        ShopTabPage shopTab = new ShopTabPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        shopTab.Open_PLAIERS_Snooker_Club();
+        shopTab.Open_Shop_Tab();
+        shopTab.Click_Snooker_Membership_Item_Proceed_To_Payment();
+        newsTab.Click_Change_Card_Button_Verify_Result();
+        shopTab.Select_Different_Card();
+
+    }
+    //TC-116
+    @Test
+    public void Verify_the_CHANGE_CARD_option_by_selecting_other_card()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        ShopTabPage shopTab = new ShopTabPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        shopTab.Open_PLAIERS_Snooker_Club();
+        shopTab.Open_Shop_Tab();
+        shopTab.Click_Snooker_Membership_Item_Proceed_To_Payment();
+        newsTab.Click_Change_Card_Button_Verify_Result();
+        shopTab.Select_Different_Card();
+
+    }
+    //TC-117
+    @Test
+    public void Verify_the_CHANGE_CARD_option_by_entering_new_card_detail()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        ShopTabPage shopTab = new ShopTabPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        shopTab.Open_PLAIERS_Snooker_Club();
+        shopTab.Open_Shop_Tab();
+        shopTab.Click_Snooker_Membership_Item_Proceed_To_Payment();
+        newsTab.Click_Change_Card_Button_Verify_Result();
+        shopTab.Select_Different_Card();
+
+    }
+
+
 
 
 }

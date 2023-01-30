@@ -1363,4 +1363,5 @@ public class EventTabTests extends Configuration {
         eventTab.Verify_Navigation_To_Previous_Tab();
     }
 
+
 }

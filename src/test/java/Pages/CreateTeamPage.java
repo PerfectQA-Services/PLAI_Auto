@@ -114,7 +114,7 @@ public class CreateTeamPage extends Abstract {
         common.log("Search bar is verified.");
         common.isElementPresent(Agent_code_Checkbox);
         common.log("Checkbox is verified.");
-
+        Thread.sleep(2000);
         common.log("_____________________________Available_Agent_code_________________________________");
         for(int i=3 ; i<=15 ; i++){
 
@@ -146,7 +146,7 @@ public class CreateTeamPage extends Abstract {
 
     public void Verify_sport_field_Element_In_Create_Team_Page() throws InterruptedException {
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Sport_Label)).click();
         common.log("Clicked on agent code label");
         common.isElementPresent(done_link);
@@ -155,7 +155,7 @@ public class CreateTeamPage extends Abstract {
         common.log("Search bar is verified.");
         common.isElementPresent(Agent_code_Checkbox);
         common.log("Checkbox is verified.");
-
+        Thread.sleep(2000);
         common.log("_____________________________Available_sport_on_landing_page_________________________________");
         for(int i=3 ; i<=18 ; i++){
 
@@ -179,7 +179,7 @@ public class CreateTeamPage extends Abstract {
         common.log("Clicked on done link.");
         Thread.sleep(1000);
         String sport_Name=driver.findElement(By.xpath(Sport_Text)).getText();
-        common.log("Selected agent code:-"+sport_Name);
+        common.log("Selected sport name:-"+sport_Name);
 
     }
 
@@ -232,7 +232,7 @@ public class CreateTeamPage extends Abstract {
         common.log("Clicked on country label");
         driver.findElement(By.xpath(searchbar)).click();
         common.sendkeywords(driver,"Angola");
-        common.log("Entered sport name in search bar.");
+        common.log("Entered country name in search bar.");
         driver.findElement(By.xpath(Agent_code_Checkbox)).click();
         common.log("Clicked on sport name checkbox.");
         driver.findElement(By.xpath(done_link)).click();
