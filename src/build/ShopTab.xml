@@ -22,6 +22,10 @@
                      <include name="Verify_the_Country_field_of_CHECKOUT_screen"></include>
                      <include name="Verify_the_Search_bar_with_Done_link_of_Country_field"></include>
                      <include name="Verify_the_CONFIRM_PURCHASE_button"></include>
+                     <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
+                     <include name="Verify_the_CHANGE_CARD_button_display_on_the_CHECKOUT_screen"></include>
+                     <include name="Verify_the_CHANGE_CARD_option_by_selecting_other_card"></include>
+                     <include name="Verify_the_CHANGE_CARD_option_by_entering_new_card_detail"></include>
                  </methods>
                  </class>
              </classes>

@@ -521,5 +521,107 @@ public class NewsTabTests extends Configuration {
         homePage.Click_Confirm_Button();
         signUp.click_on_user_information_page_button("CLOSE");
     }
+    //Nov-Dec Sprint
+    //TC-118
+    @Test
+    public void Verify_the_SMS_functionality_for_NEWS()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Payment_Page_Header();
+
+    }
+    //TC-119
+    @Test
+    public void Verify_the_fields_display_on_the_PAYMENT_screen()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Payment_Page_Elements();
+
+    }
+    //TC-120
+    @Test
+    public void Verify_the_CHANGE_CARD_button ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Click_Change_Card_Button_Verify_Result();
+
+    }
+    //TC-121
+    @Test
+    public void Verify_the_CONFIRM_button_display_on_PAYMENT_screen ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Click_Confirm_Button();
+
+    }
+    //Nov-Dec Sprint
+    //TC-114
+    @Test
+    public void Verify_the_cards_display_on_the_CHECKOUT_screen ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Click_Confirm_Button();
+
+    }
 
 }

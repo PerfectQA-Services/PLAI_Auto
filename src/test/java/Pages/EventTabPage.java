@@ -330,7 +330,7 @@ public class EventTabPage extends Abstract{
     }
 
     public void Open_An_Event() throws InterruptedException {
-        driver.findElement(By.xpath("//android.view.View[10]/android.view.View[2]/android.widget.Button")).click();
+        driver.findElement(By.xpath("//android.view.View[12]/android.view.View[1]/android.widget.Button")).click();
         common.log("Event Opened");
         Thread.sleep(4000);
     }
@@ -343,7 +343,8 @@ public class EventTabPage extends Abstract{
     }
 
     public void Select_Attendees() throws InterruptedException {
-        driver.findElement(By.xpath(Search_Bar)).sendKeys("Sagar");
+        driver.findElement(By.xpath(Search_Bar)).click();
+        common.sendkeywords(driver,"Sagar");
         common.log("Searched Attendee");
         driver.findElement(By.xpath("//android.widget.TextView[contains(@text,\"Sagar\")]")).click();
         common.log("Attendee Selected");
@@ -521,6 +522,7 @@ public class EventTabPage extends Abstract{
         common.log("Clicked attended checkbox.");
 
     }
+
 
 
 }

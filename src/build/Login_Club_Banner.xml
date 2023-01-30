@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login of club banner Functionality">
+    <test  name="Login of club banner Functionality : Verify user login" verbose="2">
+        <classes>
+            <class name="Tests.LoginTests_Club_Banner">
+                <methods>
+                    <include name="Verify_the_fields_display_on_Login_screen"></include>
+                    <include name="Verify_the_functionality_of_Login_with_Google"></include>
+                    <include name="Verify_the_functionality_of_Login_with_Facebook"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

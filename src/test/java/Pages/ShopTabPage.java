@@ -184,5 +184,51 @@ public class ShopTabPage extends Abstract{
         Thread.sleep(5000);
     }
 
+    public void Click_Snooker_Membership_Item_Proceed_To_Payment() throws InterruptedException {
+        Thread.sleep(5000);
+        driver.findElement(By.xpath(Snooker_Membership_Item)).click();
+        common.log("Clicked On Snooker_Membership_Item ");
+        driver.findElement(By.xpath(Buy_Now_Button)).click();
+        common.log("Clicked On buy now button. ");
+        Thread.sleep(2000);
+        String Address=common.generateRandomChars(6);
+        driver.findElement(By.xpath(Address_Label)).click();
+        common.sendkeywords(driver,Address);
+        common.log("Entered address is:-"+Address);
+        driver.hideKeyboard();
+        driver.findElement(By.xpath(Proceed_To_Payment)).click();
+        common.log("Clicked On proceed to payment button. ");
+        common.isDisplayed(Change_Card_Button);
+        common.log("Change card button is verified.");
+    }
+
+    public void Select_Different_Card() throws InterruptedException {
+
+        Thread.sleep(5000);
+        driver.findElement(By.xpath(Different_Card)).click();
+        common.log("Clicked On different card. ");
+
+    }
+
+    public void Add_New_Card() throws InterruptedException {
+
+        Thread.sleep(5000);
+        driver.findElement(By.xpath(Add_New_Card_Button)).click();
+        common.log("Clicked On add new card button.");
+        int Card_Number=common.GenerateRandomNumber(18);
+        driver.findElement(By.xpath(Card_Number_Label)).click();
+        common.sendkeywords(driver, String.valueOf(Card_Number));
+        common.log("Entered card number:-"+Card_Number);
+        driver.hideKeyboard();
+        String Card_Holder_Name=common.generateRandomChars(6);
+        common.sendkeywords(driver, Card_Holder_Name);
+        common.log("Entered Card holder name:-"+Card_Holder_Name);
+        driver.hideKeyboard();
+        driver.findElement(By.xpath(Expiry_Date_Label)).click();
+
+
+    }
+
+
 
 }

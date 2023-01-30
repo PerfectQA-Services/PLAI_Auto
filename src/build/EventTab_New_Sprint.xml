@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Event Tab of club banner Functionality">
+    <test  name="Verify EventTab of club banner Functionality" verbose="2">
+        <classes>
+            <class name="Tests.EventTabTests_New_Sprint">
+                <methods>
+                    <include name="Verify_the_CALENDAR_SYNC_icon_of_EVENTS_tab"></include>
+                    <include name="Verify_the_ADD_TO_CALENDAR_button_of_OVERVIEW_tab_of_EVENT_screen"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users_but_Reminder_notification_selected_NO"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_Unavailable_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_More_time_needed_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Document_in_EVENTS_tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- EventTab -->
+</suite> <!-- Suite -->

@@ -1125,5 +1125,110 @@ public class SettingTest extends Configuration {
         settingpage.Click_On_Confirm_Button_And_Verify_Result_Logout();
 
     }
+    //Nov-dec Sprint
+    //90
+    @Test
+    public void Verify_the_My_Documents_field() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+
+    }
+    //91
+    @Test
+    public void Verify_the_fields_display_on_the_MY_DOCUMENTS_screen() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Verify_My_Documents_Page_Elements();
+
+    }
+    //92
+    @Test
+    public void Verify_the_ADD_DOCUMENTS_button() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Verify_Add_Documents_Page_Element();
+
+    }
+    //93
+    @Test
+    public void Verify_the_Teams_field () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+
+    }
+    //94
+    @Test
+    public void Verify_the_Select_All_and_Deselect_All_button () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_The_Functionality_Of_SelectAll_And_DeselectAll_Button();
+
+    }
+    //95
+    @Test
+    public void Verify_the_Documents_field () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_Upload_Documents();
+
+    }
 
 }

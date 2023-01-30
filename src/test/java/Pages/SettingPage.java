@@ -568,7 +568,85 @@ public class SettingPage extends Abstract{
         common.log("Gallery is verified");
 
     }
+    public void Click_On_My_Documents_Label_Verify_Header() throws InterruptedException {
 
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Settings_Icon_Button)).click();
+        common.log("Clicked On setting icon.");
+
+    }
+    public void Verify_My_Documents_Page_Elements() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isDisplayed(Add_New_Documents_Button);
+        common.log("Add new documents button is verified.");
+
+    }
+    public void Click_On_Add_Documents_Button() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Add_New_Documents_Button)).click();
+        common.log("Clicked On add new documents button.");
+
+    }
+    public void Verify_Add_Documents_Page_Element() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isDisplayed(Name_Label);
+        common.log("Name label is verified.");
+        common.isDisplayed(Teams_Label);
+        common.log("Teams label is verified.");
+        common.isDisplayed(Documents_Upload);
+        common.log("Documents upload field is verified.");
+        common.isDisplayed(Add_Button);
+        common.log("Add button is verified.");
+
+    }
+    public void Click_On_Teams_Field() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Teams_Label)).click();
+        common.log("Clicked On teams label.");
+
+    }
+    public void Verify_Teams_Page_Element() throws InterruptedException {
+
+        Thread.sleep(4000);
+        common.isDisplayed(Done_Button);
+        common.log("Done link is verified.");
+        common.isDisplayed(SelectAll_Button);
+        common.log("Select all button is verified.");
+        common.isDisplayed(Search_Bar);
+        common.log("Search bar is verified.");
+        common.isDisplayed(Add_Button);
+        common.log("Add button is verified.");
+        common.log("______Teams_Name______");
+        Thread.sleep(2000);
+        for(int i=4 ; i<=18 ; i++){
+            String Teams_Name=driver.findElement(By.xpath("(//android.widget.TextView)["+i+"]")).getText();
+            common.log(Teams_Name);
+        }
+
+    }
+    public void Verify_The_Functionality_Of_SelectAll_And_DeselectAll_Button() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(SelectAll_Button)).click();
+        common.log("Clicked on SelectAll button.");
+        driver.findElement(By.xpath(DeselectAll_Button)).click();
+        common.log("Clicked on deselectAll button.");
+
+    }
+
+    public void Verify_Upload_Documents() throws InterruptedException {
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(Documents_Upload)).click();
+        common.log("Clicked on Documents upload");
+        driver.findElement(By.xpath(My_File_Option)).isDisplayed();
+        common.log("File manager is opened");
+
+    }
 
 
 }

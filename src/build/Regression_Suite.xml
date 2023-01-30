@@ -263,11 +263,16 @@
                     <include name="Verify_the_PREVIEW_button_after_entering_data_in_mandatory_field__Add_New_Article"></include>
                     <include name="Verify_the_functionality_of_CONFIRM_button_Add_New_Article"></include>
                     <include name="Verify_Close_button_Add_New_Article"></include>
+                    <include name="Verify_the_SMS_functionality_for_NEWS"></include>
+                    <include name="Verify_the_fields_display_on_the_PAYMENT_screen"></include>
+                    <include name="Verify_the_CHANGE_CARD_button"></include>
+                    <include name="Verify_the_CONFIRM_button_display_on_PAYMENT_screen"></include>
+                    <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="Verify SettingTab Functionality" verbose="2">
+    <test thread-count="5" name="Test">
         <classes>
             <class name="Tests.SettingTest">
                 <methods>
@@ -333,10 +338,16 @@
                     <include name="Verify_the_Attach_a_screenshot_field"></include>
                     <include name="Verify_the_Capture_an_Image_option"></include>
                     <include name="Verify_the_Select_a_Image_option"></include>
+                    <include name="Verify_the_My_Documents_field"></include>
+                    <include name="Verify_the_fields_display_on_the_MY_DOCUMENTS_screen"></include>
+                    <include name="Verify_the_ADD_DOCUMENTS_button"></include>
+                    <include name="Verify_the_Teams_field"></include>
+                    <include name="Verify_the_Select_All_and_Deselect_All_button"></include>
+                    <include name="Verify_the_Documents_field"></include>
                 </methods>
             </class>
         </classes>
-    </test>
+    </test> <!-- Test -->
 
     <test  name="Verify Members Tab Functionality" verbose="2">
         <classes>
@@ -445,6 +456,10 @@
                     <include name="Verify_the_Country_field_of_CHECKOUT_screen"></include>
                     <include name="Verify_the_Search_bar_with_Done_link_of_Country_field"></include>
                     <include name="Verify_the_CONFIRM_PURCHASE_button"></include>
+                    <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
+                    <include name="Verify_the_CHANGE_CARD_button_display_on_the_CHECKOUT_screen"></include>
+                    <include name="Verify_the_CHANGE_CARD_option_by_selecting_other_card"></include>
+                    <include name="Verify_the_CHANGE_CARD_option_by_entering_new_card_detail"></include>
                 </methods>
             </class>
         </classes>
@@ -496,4 +511,78 @@
             </class>
         </classes>
     </test>
+    <test  name="Verify EventTab of club banner Functionality" verbose="2">
+        <classes>
+            <class name="Tests.EventTabTests_New_Sprint">
+                <methods>
+                    <include name="Verify_the_CALENDAR_SYNC_icon_of_EVENTS_tab"></include>
+                    <include name="Verify_the_ADD_TO_CALENDAR_button_of_OVERVIEW_tab_of_EVENT_screen"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users_but_Reminder_notification_selected_NO"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_Unavailable_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_More_time_needed_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Document_in_EVENTS_tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- EventTab -->
+    <test  name="Login of club banner Functionality : Verify user login" verbose="2">
+        <classes>
+            <class name="Tests.LoginTests_Club_Banner">
+                <methods>
+                    <include name="Verify_the_fields_display_on_Login_screen"></include>
+                    <include name="Verify_the_functionality_of_Login_with_Google"></include>
+                    <include name="Verify_the_functionality_of_Login_with_Facebook"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="SignUp of club banner Functionality : Verify user signup" verbose="2">
+        <classes>
+            <class name="Tests.SignUpTests_Club_Banner">
+                <methods>
+                    <include name="Verify_the_UI_of_Sign_Up_screen"></include>
+                    <include name="Verify_the_navigation_by_clicking_on_Back_icon"></include>
+                    <include name="Verify_the_Next_button_without_entering_data_in_mandatory_fields"></include>
+                    <include name="Verify_the_Next_button_after_entering_data_in_First_Name_and_Last_Name"></include>
+                    <include name="Verify_the_Enter_your_email_field_with_invalid_email_id"></include>
+                    <include name="Verify_the_Enter_your_email_field_with_valid_email_id"></include>
+                    <include name="Verify_the_Password_field_by_entering_7_characters"></include>
+                    <include name="Verify_the_Password_field_by_entering_8_characters"></include>
+                    <include name="Verify_the_Password_field_by_entering_password_which_contain_8_character_including_1_uppercase_and_1_number"></include>
+                    <include name="Verify_the_Password_field_by_entering_password_which_contain_8_character_including_1_uppercase_and_1_number_special_symbol"></include>
+                    <include name="Verify_the_Password_field_by_entering_9_characters_including_uppercase_and_number"></include>
+                    <include name="Verify_the_Eye_icon_functionality_for_Password_field"></include>
+                    <include name="Verify_the_Confirm_Password_field_by_entering_different_password_then_Password_field"></include>
+                    <include name="Verify_the_Confirm_Password_field_by_entering_same_password_as_Password_field"></include>
+                    <include name="Verify_Terms_of_use_link"></include>
+                    <include name="Verify_navigation_by_click_on_Back_icon_of_Terms_of_use_screen"></include>
+                    <include name="Verify_Next_button_after_entering_valid_data_in_all_mandatory_fields"></include>
+                    <include name="Verify_the_functionality_of_Upload_Photo_button"></include>
+                    <include name="Verify_the_Camera_Option"></include>
+                    <include name="Verify_the_Gallery_option"></include>
+                    <include name="Verify_the_screen_after_photo_select_from_Gallery"></include>
+                    <include name="Verify_the_functionality_of_Rotation_icon"></include>
+                    <include name="Verify_the_functionality_of_Flip_icon"></include>
+                    <include name="Verify_the_Next_button_without_entering_data_in_mandatory_fields_Team_Information_Page"></include>
+                    <include name="Verify_the_Team_Name_field"></include>
+                    <include name="Verify_the_Agent_Code_field"></include>
+                    <include name="Verify_the_Done_link"></include>
+                    <include name="Verify_the_Sport_field"></include>
+                    <include name="Verify_the_Search_bar_with_Done_link"></include>
+                    <include name="Verify_the_Next_button_without_entering_data_in_Team_Bio_field"></include>
+                    <include name="verify_the_Next_button_of_second_screen_after_entering_data_in_mandatory_fields"></include>
+                    <include name="Verify_the_fields_display_on_the_third_screen_of_sign_up"></include>
+                    <include name="Verify_the_Country_field"></include>
+                    <include name="Verify_the_functionality_of_Search_bar"></include>
+                    <include name="Verify_the_functionality_of_Search_bar_by_selecting_country"></include>
+                    <include name="Verify_the_Next_button_after_selecting_county"></include>
+                    <include name="Verify_the_Location_field"></include>
+                    <include name="Verify_the_functionality_of_Search_bar_Location_Field"></include>
+                    <include name="Verify_the_links_display_in_the_Facebook_Twitter_Instagram_and_Youtube_field"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
 </suite>
