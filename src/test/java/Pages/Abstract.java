@@ -286,6 +286,7 @@ public class Abstract {
     String User_Information_Text_Payment="(//android.widget.TextView[2])[1]";
     String Change_Card_Button="//android.widget.TextView[@text=\"CHANGE CARD\"]";
     String Saved_Card_Text="//android.widget.TextView[@text=\"SAVED CARDS\"]";
+    String Ads_Position="//android.view.View[4]/android.widget.Button";
 
 
 
@@ -370,7 +371,7 @@ public class Abstract {
     String Agent_code_Checkbox="(//android.widget.CheckBox)[1]";
     String Agent_Code_Text="(//android.widget.EditText)[2]";
     String Sport_Text="(//android.widget.EditText)[4]";
-    String Country_Label="//android.widget.TextView[@text=\"Country*\"]";
+    String Country_Label="//android.widget.TextView[@text=\"Country*\"] | //android.widget.TextView[@text=\"Country\"]";
     String Facebook_Label="//android.widget.TextView[@text=\"Facebook\"]";
     String Twitter_Label="//android.widget.TextView[@text=\"Twitter\"]";
     String Instagram_Label="//android.widget.TextView[@text=\"Instagram\"]";
@@ -473,6 +474,8 @@ public class Abstract {
     String Expiry_Date_Label="//android.widget.TextView[@text=\"Expiry Date\"]";
     String Expiry_Date_Year="//android.widget.TextView[@text=\"2023\"]";
     String CVC_Label="//android.widget.TextView[@text=\"CVC\"]";
+    String Connect_Stripe_Button="//android.widget.TextView[@text=\"CONNECT STRIPE\"]";
+    String Connect_Stripe_Page_Element="//android.widget.TextView[@text=\"About your business\"]";
 
 
 
@@ -603,4 +606,21 @@ public class Abstract {
     String My_File_Option="//android.widget.LinearLayout[3]/android.widget.ImageView[1]";
     String Document_CheckBox="(//android.widget.CheckBox)[1]";
     String Done_Button="//android.widget.TextView[@text=\"Done\"]";
+
+    /***
+     * Manage Ads page Locators
+     */
+
+    String Manage_Ads_Tab="//android.widget.TextView[@text=\"MANAGE ADS\"]";
+    String Add_New_Ads_Button="//android.widget.TextView[@text=\"ADD NEW ADS\"]";
+    String Add_Ads_Header="//android.widget.TextView[@text=\"ADD ADS\"]";
+    String Gender_Label="//android.widget.TextView[@text=\"Gender*\"]";
+    String Age_Label="//android.widget.TextView[@text=\"Age*\"]";
+    String App_Ads_Image_Label="(//android.widget.TextView[@text=\"Select File...\"])[1]";
+    String Web_Ads_Image="(//android.widget.TextView[@text=\"Select File...\"])[2]";
+    String Redirect_Url_Label="//android.widget.TextView[@text=\"Redirect URL*\"]";
+    String Range_Of_Age="//android.widget.ScrollView/android.widget.TextView[3]";
+    String Gallery_Back_Icon="//android.widget.ImageButton[@content-desc=\"Navigate up\"]";
+
+
 }

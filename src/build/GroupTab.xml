@@ -28,6 +28,9 @@
                     <include name="Verify_the_CLOSE_button_Add_New_Group"></include>
                     <include name="Verify_the_social_media_icon"></include>
                     <include name="Verify_the_navigation_by_tap_on_Back_icon"></include>
+                    <include name="Verify_the_Calendar_icon_display_on_the_home_page"></include>
+                    <include name="Verify_the_functionality_to_show_next_previous_month_calendar"></include>
+                    <include name="Verify_the_functionality_of_date_on_which_one_event_is_booked"></include>
                 </methods>
             </class>
         </classes>

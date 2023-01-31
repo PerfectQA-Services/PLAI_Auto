@@ -37,6 +37,8 @@
           <include name="Verify_the_CHANGE_CARD_button"></include>
           <include name="Verify_the_CONFIRM_button_display_on_PAYMENT_screen"></include>
           <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
+          <include name="Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab"></include>
+          <include name="Verify_the_functionality_of_Ads_not_display_to_the_subscribed_team_member_of_groups_in_NEWS_tab"></include>
         </methods>
       </class>
     </classes>
