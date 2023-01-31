@@ -70,7 +70,7 @@ public class Common{
                         return null;
                     }
                 }
-                 else if (locator.startsWith("name=")) {
+                else if (locator.startsWith("name=")) {
 
                     locator = locator.substring(5); // remove "name=" from
                     // locator
@@ -272,6 +272,20 @@ public class Common{
         Thread.sleep(1000);
     }
 
+    public void scrollAtSpecificLocation(MobileDriver driver, int x1, int y, int z, int w, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+
+        Dimension dim = driver.manage().window().getSize();
+        int height = dim.getHeight();
+        int width = dim.getWidth();
+        int x = width / 2;
+        int top_y = (int) (height * 0.50);
+        int bottom_y = (int) (height * 0.20);
+        new TouchAction((MobileDriver)driver).press(ElementOption.point(x1, y)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(z, w)).release().perform();
+        this.log(msg);
+        Thread.sleep(1000);
+    }
+
     public static String Verify_Current_Date(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd");
         LocalDateTime now = LocalDateTime.now();
@@ -310,5 +324,11 @@ public class Common{
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public void Click_And_Slide(MobileDriver driver,int x,int y,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        new TouchAction((MobileDriver)driver).press(ElementOption.point(x,y));
+        this.log(msg);
     }
 }
