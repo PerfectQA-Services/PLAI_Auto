@@ -13,9 +13,9 @@ public class Abstract {
      * LunchApp page Locators
      */
     String bla = "msnbvjb";
-    String Logo_Verfication="//android.widget.ImageView[@content-desc=\"Logo\"]";
-    String skip_button="//android.view.View/android.view.View[2]/android.widget.Button";
-    String next_button="//android.view.View[2]/android.view.View[3]/android.widget.Button";
+    String Logo_Verfication = "//android.widget.ImageView[@content-desc=\"Logo\"]";
+    String skip_button = "//android.view.View/android.view.View[2]/android.widget.Button";
+    String next_button = "//android.view.View[2]/android.view.View[3]/android.widget.Button";
     String Back_Button = "//android.widget.ImageView[@index=\"0\"]";
     String LogOut_Button = "//android.widget.ImageView[@index=\"2\"]";
     String Search_Bar = "//android.widget.EditText[@text=\"Search Now\"] | //android.widget.TextView[@text=\"Search Now\"]";
@@ -24,51 +24,51 @@ public class Abstract {
     /***
      * Signup page Locators
      */
-    String signup_button="(//android.view.View/android.view.View/android.view.View/android.view.View[3]/android.widget.TextView)[2]";
-    String back_icon="//android.widget.ImageView[@content-desc=\"Back\"] | //android.view.View/android.view.View/android.widget.ImageView[2] | //android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button | //android.widget.ImageView[@content-desc=\"\"] | //android.view.View[@content-desc=\"Back\"]";
-    String first_name_field="//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[1]/android.view.View | //android.widget.EditText[1]/android.view.View/android.view.View[2]";
-    String first_name_field_1="//android.widget.TextView[@text=\"First Name\"]//..//android.view.View[2]";
-    String last_name_field="//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[2]/android.view.View | //android.widget.EditText[2]/android.view.View/android.view.View[2]";
-    String lst_name_field_2="//android.widget.EditText[2]/android.view.View/android.view.View[2]";
-    String email_field="//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[3]/android.view.View | //android.widget.EditText[3]/android.view.View/android.view.View[2]";
-    String email_field_1="//android.widget.EditText[3]/android.view.View/android.view.View[2]";
-    String password_field="//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[4]/android.view.View | //android.widget.EditText[4]/android.view.View/android.view.View[2]";
-    String password_field_1="//android.widget.EditText[4]/android.view.View/android.view.View[2]";
-    String confirm_password_field="//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[5]/android.view.View | //android.widget.EditText[5]/android.view.View/android.view.View[2]";
-    String confirm_password_field_1="//android.widget.EditText[5]/android.view.View/android.view.View[2]";
-    String eye_icon="//android.view.View[1]/android.widget.EditText[4]/android.view.View/android.view.View[2]/android.widget.Button |  //android.widget.EditText[5]/android.view.View/android.view.View[2]/android.widget.Button";
-    String eye_icon_2="//android.widget.EditText[4]/android.view.View/android.view.View[3]/android.widget.Button";
-    String terms_and_condition_text="//android.view.View/android.view.View[1]/android.widget.TextView[2]";
-    String signup_page_next_button="//android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button | //android.view.View/android.view.View/android.view.View[4]/android.widget.Button";
-    String login_link="(//android.view.View/android.view.View/android.view.View[2]/android.widget.TextView)[2]";
-    String login_text="(//android.view.View/android.view.View[1]/android.view.View[1]/android.widget.TextView)[1]";
-    String validation_message="//android.widget.Toast[@text=\"Please enter First Name\"] | //android.widget.Toast[@index=\"1\"]";
-    String email_validation_message="//android.widget.Toast[@text=\"Please enter email address\"]";
-    String password_validation_message="//android.widget.Toast[@index=\"1\"]";
-    String text_red_colour="(//android.view.View/android.view.View/android.view.View/android.widget.TextView)[2]";
-    String get_pass="//android.widget.EditText[@index=\"4\"]";
-    String terms_of_use="//android.widget.TextView[@text=\"TERMS OF USE\"]";
-    String country_field="//android.view.View[2]/android.widget.EditText/android.view.View";
-    String mobile_number_field="(//android.view.View/android.view.View/android.widget.EditText)[2]";
-    String date_of_birth_field="(//android.view.View/android.view.View/android.widget.EditText)[3]";
-    String done_link="//android.widget.TextView[@text=\"Done\"]";
-    String searchbar="(//android.view.View/android.view.View/android.widget.EditText)[1]";
-    String get_country_name="(//android.widget.EditText[@index=\"0\"])[1] | (//android.view.View/android.widget.TextView)[2] | //android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]";
-    String dropdown_icon="//android.widget.EditText/android.view.View/android.view.View[2]/android.widget.Button";
-    String country_checkbox="(//android.widget.CheckBox)[1]";
-    String country_checkbox_1="(//android.widget.CheckBox)[2]";
-    String country_code_dropdown="//android.widget.EditText/android.view.View[2] | (//android.widget.TextView[@class=\"android.widget.TextView\"])[4]";
-    String search_icon="//android.view.View[1]/android.view.View[2]/android.widget.Button";
-    String country_name_with_flag="//android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]";
-    String keybord="(//android.view.View/android.view.View/android.view.View/android.view.View)[1]";
-    String default_year="android:id/date_picker_header_year";
-    String default_date_month="android:id/date_picker_header_date";
-    String cancel_button="android:id/button2";
-    String calender_frame="//hierarchy/android.widget.FrameLayout";
-    String ok_button="android:id/button1";
-    String sport_that_you_play_text="//android.widget.TextView[@text=\"SPORT THAT YOU PLAY\"]";
-    String get_sport_name="//android.widget.TextView[@index=\"0\"]";
-    String next_button_1="//android.widget.TextView[@text=\"NEXT\"]";
+    String signup_button = "(//android.view.View/android.view.View/android.view.View/android.view.View[3]/android.widget.TextView)[2]";
+    String back_icon = "//android.widget.ImageView[@content-desc=\"Back\"] | //android.view.View/android.view.View/android.widget.ImageView[2] | //android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button | //android.widget.ImageView[@content-desc=\"\"] | //android.view.View[@content-desc=\"Back\"]";
+    String first_name_field = "//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[1]/android.view.View | //android.widget.EditText[1]/android.view.View/android.view.View[2]";
+    String first_name_field_1 = "//android.widget.TextView[@text=\"First Name\"]//..//android.view.View[2]";
+    String last_name_field = "//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[2]/android.view.View | //android.widget.EditText[2]/android.view.View/android.view.View[2]";
+    String lst_name_field_2 = "//android.widget.EditText[2]/android.view.View/android.view.View[2]";
+    String email_field = "//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[3]/android.view.View | //android.widget.EditText[3]/android.view.View/android.view.View[2]";
+    String email_field_1 = "//android.widget.EditText[3]/android.view.View/android.view.View[2]";
+    String password_field = "//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[4]/android.view.View | //android.widget.EditText[4]/android.view.View/android.view.View[2]";
+    String password_field_1 = "//android.widget.EditText[4]/android.view.View/android.view.View[2]";
+    String confirm_password_field = "//android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[5]/android.view.View | //android.widget.EditText[5]/android.view.View/android.view.View[2]";
+    String confirm_password_field_1 = "//android.widget.EditText[5]/android.view.View/android.view.View[2]";
+    String eye_icon = "//android.view.View[1]/android.widget.EditText[4]/android.view.View/android.view.View[2]/android.widget.Button |  //android.widget.EditText[5]/android.view.View/android.view.View[2]/android.widget.Button";
+    String eye_icon_2 = "//android.widget.EditText[4]/android.view.View/android.view.View[3]/android.widget.Button";
+    String terms_and_condition_text = "//android.view.View/android.view.View[1]/android.widget.TextView[2]";
+    String signup_page_next_button = "//android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button | //android.view.View/android.view.View/android.view.View[4]/android.widget.Button";
+    String login_link = "(//android.view.View/android.view.View/android.view.View[2]/android.widget.TextView)[2]";
+    String login_text = "(//android.view.View/android.view.View[1]/android.view.View[1]/android.widget.TextView)[1]";
+    String validation_message = "//android.widget.Toast[@text=\"Please enter First Name\"] | //android.widget.Toast[@index=\"1\"]";
+    String email_validation_message = "//android.widget.Toast[@text=\"Please enter email address\"]";
+    String password_validation_message = "//android.widget.Toast[@index=\"1\"]";
+    String text_red_colour = "(//android.view.View/android.view.View/android.view.View/android.widget.TextView)[2]";
+    String get_pass = "//android.widget.EditText[@index=\"4\"]";
+    String terms_of_use = "//android.widget.TextView[@text=\"TERMS OF USE\"]";
+    String country_field = "//android.view.View[2]/android.widget.EditText/android.view.View";
+    String mobile_number_field = "(//android.view.View/android.view.View/android.widget.EditText)[2]";
+    String date_of_birth_field = "(//android.view.View/android.view.View/android.widget.EditText)[3]";
+    String done_link = "//android.widget.TextView[@text=\"Done\"]";
+    String searchbar = "(//android.view.View/android.view.View/android.widget.EditText)[1]";
+    String get_country_name = "(//android.widget.EditText[@index=\"0\"])[1] | (//android.view.View/android.widget.TextView)[2] | //android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]";
+    String dropdown_icon = "//android.widget.EditText/android.view.View/android.view.View[2]/android.widget.Button";
+    String country_checkbox = "(//android.widget.CheckBox)[1]";
+    String country_checkbox_1 = "(//android.widget.CheckBox)[2]";
+    String country_code_dropdown = "//android.widget.EditText/android.view.View[2] | (//android.widget.TextView[@class=\"android.widget.TextView\"])[4]";
+    String search_icon = "//android.view.View[1]/android.view.View[2]/android.widget.Button";
+    String country_name_with_flag = "//android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]";
+    String keybord = "(//android.view.View/android.view.View/android.view.View/android.view.View)[1]";
+    String default_year = "android:id/date_picker_header_year";
+    String default_date_month = "android:id/date_picker_header_date";
+    String cancel_button = "android:id/button2";
+    String calender_frame = "//hierarchy/android.widget.FrameLayout";
+    String ok_button = "android:id/button1";
+    String sport_that_you_play_text = "//android.widget.TextView[@text=\"SPORT THAT YOU PLAY\"]";
+    String get_sport_name = "//android.widget.TextView[@index=\"0\"]";
+    String next_button_1 = "//android.widget.TextView[@text=\"NEXT\"]";
     String Camera_Take_Picture = "(//GLButton[@content-desc=\"NONE\"])[2]";
     String Upload_Photo_Button = "//android.widget.TextView[@text=\"UPLOAD PHOTO\"]";
     String Upload_Photo_Optional_Text = "//android.widget.TextView[@text=\"Optional\"]";
@@ -89,7 +89,7 @@ public class Abstract {
      * Log In page Locators
      */
     String EnterEmailTextField = "//android.widget.EditText[1]";
-    String PasswordTextField= "//android.widget.EditText[2]";
+    String PasswordTextField = "//android.widget.EditText[2]";
     String LoginButton = "//android.widget.Button//..//android.widget.TextView[@text=\"LOGIN\"]";
     String ForgotPasswordLink = "//android.widget.TextView[@text=\"Forgot Password?\"]";
     String ShowPasswordIcon = "//android.view.View[@content-desc=\"Show password\"]";
@@ -104,7 +104,7 @@ public class Abstract {
     String Confirm_Password_Field_Show_Password_Icon = "(//android.view.View[@content-desc=\"Show password\"])[2]";
     String Hide_Password_Icon = "//android.view.View[@content-desc=\"Hide password\"]";
     String Resend_OTP_Link = "//android.widget.TextView[@text=\"Resend OTP?\"]";
-    String Verify_Wrong_New_Password_Message= "//android.widget.TextView[@text=\"Password must contain at least 8 characters, including one upper case and one number.\"]";
+    String Verify_Wrong_New_Password_Message = "//android.widget.TextView[@text=\"Password must contain at least 8 characters, including one upper case and one number.\"]";
     String Plai_Logo_On_Login_Splash_Screen = "//android.widget.ImageView";
     String Day_Greeting_On_Login_Splash_Screen = "//android.widget.TextView[starts-with(@text,'GOOD')]";
     String Username_On_Login_Splash_Screen = "//android.widget.TextView[3]";
@@ -131,6 +131,12 @@ public class Abstract {
     String SportyTots_Location = "//android.view.View[contains(@content-desc,'Goa')]";
     String Sporty_Tots_Banner = "//android.widget.TextView[@text=\"Sporty Tots\"]";
     String Vzhx_Banner = "//android.widget.TextView[@text=\"Vzhx\"]";
+    String Calender_Icon = "//android.widget.ImageView[@content-desc=\"Search\"]";
+    String Calendar_Page = "//android.widget.TextView[@text=\"CALENDAR\"]";
+    String Calendar_Previous_Month_Arrow = "//android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]";
+    String Calendar_Next_Month_Arrow = "//android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]";
+    String EventDate = "//android.view.View[31]";
+    String SportsEventListBanner = "//android.widget.TextView[contains(@text,\"New Sports Event\")]";
 
 
     /***
@@ -279,18 +285,18 @@ public class Abstract {
     String Time_Eight = "//android.widget.TextView[@text=\"8\"]";
     String Send_Email_No = "//android.view.View[2]//android.widget.TextView[@text=\"NO\"]";
     String Send_Notification_No = "//android.view.View[4]//android.widget.TextView[@text=\"NO\"]";
-    String Send_A_SMS_Yes="//android.view.View[7]//android.widget.TextView[@text=\"YES\"]";
+    String Send_A_SMS_Yes = "//android.view.View[7]//android.widget.TextView[@text=\"YES\"]";
     String Groups_Dropdown = "//android.widget.TextView[@text=\"Groups*\"]";
     String Allow_Comments_No = "//android.view.View[8]//android.widget.TextView[@text=\"NO\"] | //android.view.View[5]//android.widget.TextView[@text=\"NO\"]";
-    String Payment_page_Header="//android.widget.TextView[@text=\"CHECKOUT\"]";
-    String User_Information_Text_Payment="(//android.widget.TextView[2])[1]";
-    String Change_Card_Button="//android.widget.TextView[@text=\"CHANGE CARD\"]";
-    String Saved_Card_Text="//android.widget.TextView[@text=\"SAVED CARDS\"]";
-
+    String Payment_page_Header = "//android.widget.TextView[@text=\"CHECKOUT\"]";
+    String User_Information_Text_Payment = "(//android.widget.TextView[2])[1]";
+    String Change_Card_Button = "//android.widget.TextView[@text=\"CHANGE CARD\"]";
+    String Saved_Card_Text = "//android.widget.TextView[@text=\"SAVED CARDS\"]";
+    String Ads_Position = "//android.view.View[4]/android.widget.Button";
 
 
     /**
-     *  Event Tab
+     * Event Tab
      */
     String Add_New_Event = "//android.widget.TextView[@text=\"ADD EVENT\"]";
     String Sort_Event = "//android.view.View[9]";
@@ -345,95 +351,94 @@ public class Abstract {
     String Unavailable_Option = "//android.widget.TextView[@text=\"Unavailable\"]";
     String Overview_Button = "//android.widget.TextView[@text=\"OVERVIEW\"]";
     String Back_Button_Event = "//android.widget.ImageView[@index=\"0\"]";
-    String Responses_Tab="//android.widget.TextView[@text=\"RESPONSES\"]";
-    String Attendance_TAB="//android.widget.TextView[@text=\"ATTENDANCE\"]";
-    String Count_For_Approved_And_Available="(//android.view.View/android.widget.TextView[2])[1]";
-    String Count_For_Approved_And_Unavailable="(//android.view.View/android.widget.TextView[3])[1]";
-    String Count_For_Approved_And_More_Time_Needed="(//android.view.View/android.widget.TextView[4])[1]";
-    String Count_For_Pending="(//android.view.View/android.widget.TextView[5])[1]";
-    String Decline_Button="//android.widget.TextView[@text=\"DECLINE\"] | //android.widget.TextView[@text=\"ACCEPT\"]";
-    String Accept_Button="//android.widget.TextView[@text=\"ACCEPT\"] | //android.widget.TextView[@text=\"DECLINE\"]";
-    String Did_Not_Attend_Checkbox="//android.widget.TextView[@text=\"DID NOT ATTEND\"]//..//android.view.View";
-    String Attended_Checkbox="//android.widget.TextView[@text=\"ATTENDED\"]//..//android.view.View";
-
+    String Responses_Tab = "//android.widget.TextView[@text=\"RESPONSES\"]";
+    String Attendance_TAB = "//android.widget.TextView[@text=\"ATTENDANCE\"]";
+    String Count_For_Approved_And_Available = "(//android.view.View/android.widget.TextView[2])[1]";
+    String Count_For_Approved_And_Unavailable = "(//android.view.View/android.widget.TextView[3])[1]";
+    String Count_For_Approved_And_More_Time_Needed = "(//android.view.View/android.widget.TextView[4])[1]";
+    String Count_For_Pending = "(//android.view.View/android.widget.TextView[5])[1]";
+    String Decline_Button = "//android.widget.TextView[@text=\"DECLINE\"] | //android.widget.TextView[@text=\"ACCEPT\"]";
+    String Accept_Button = "//android.widget.TextView[@text=\"ACCEPT\"] | //android.widget.TextView[@text=\"DECLINE\"]";
+    String Did_Not_Attend_Checkbox = "//android.widget.TextView[@text=\"DID NOT ATTEND\"]//..//android.view.View";
+    String Attended_Checkbox = "//android.widget.TextView[@text=\"ATTENDED\"]//..//android.view.View";
 
 
     /***
      * CreateTeam page Locators
      */
-    String Create_Team_Header="//android.widget.TextView[@text=\"CREATE TEAM\"]";
-    String Team_Name_Label="//android.widget.TextView[@text=\"Team Name*\"]";
-    String Agent_code_Label="//android.widget.TextView[@text=\"Agent Code (If you have one)\"]";
-    String Primary_Email_Label="//andro id.widget.TextView[@text=\"Primary Email*\"]";
-    String Sport_Label="//android.widget.TextView[@text=\"Sport*\"]";
-    String Team_Bio_Label="//android.widget.TextView[@text=\"Team Bio*\"]";
-    String Agent_code_Checkbox="(//android.widget.CheckBox)[1]";
-    String Agent_Code_Text="(//android.widget.EditText)[2]";
-    String Sport_Text="(//android.widget.EditText)[4]";
-    String Country_Label="//android.widget.TextView[@text=\"Country*\"]";
-    String Facebook_Label="//android.widget.TextView[@text=\"Facebook\"]";
-    String Twitter_Label="//android.widget.TextView[@text=\"Twitter\"]";
-    String Instagram_Label="//android.widget.TextView[@text=\"Instagram\"]";
-    String Youtube_Label="//android.widget.TextView[@text=\"Youtube\"]";
-    String Create_Team_Button="(//android.widget.TextView[@text=\"CREATE TEAM\"])[2]";
-    String Country_Text="(//android.widget.EditText)[1]";
-    String Team_Creation_Message="//android.widget.TextView";
-    String Close_Button="//android.widget.TextView[@text=\"CLOSE\"]";
+    String Create_Team_Header = "//android.widget.TextView[@text=\"CREATE TEAM\"]";
+    String Team_Name_Label = "//android.widget.TextView[@text=\"Team Name*\"]";
+    String Agent_code_Label = "//android.widget.TextView[@text=\"Agent Code (If you have one)\"]";
+    String Primary_Email_Label = "//andro id.widget.TextView[@text=\"Primary Email*\"]";
+    String Sport_Label = "//android.widget.TextView[@text=\"Sport*\"]";
+    String Team_Bio_Label = "//android.widget.TextView[@text=\"Team Bio*\"]";
+    String Agent_code_Checkbox = "(//android.widget.CheckBox)[1]";
+    String Agent_Code_Text = "(//android.widget.EditText)[2]";
+    String Sport_Text = "(//android.widget.EditText)[4]";
+    String Country_Label = "//android.widget.TextView[@text=\"Country*\"] | //android.widget.TextView[@text=\"Country\"]";
+    String Facebook_Label = "//android.widget.TextView[@text=\"Facebook\"]";
+    String Twitter_Label = "//android.widget.TextView[@text=\"Twitter\"]";
+    String Instagram_Label = "//android.widget.TextView[@text=\"Instagram\"]";
+    String Youtube_Label = "//android.widget.TextView[@text=\"Youtube\"]";
+    String Create_Team_Button = "(//android.widget.TextView[@text=\"CREATE TEAM\"])[2]";
+    String Country_Text = "(//android.widget.EditText)[1]";
+    String Team_Creation_Message = "//android.widget.TextView";
+    String Close_Button = "//android.widget.TextView[@text=\"CLOSE\"]";
 
 
     /***
      * Setting page Locators
      */
-    String Setting_Header="//android.widget.TextView[@text=\"SETTINGS\"]";
-    String Logout_Button="//android.view.View/android.view.View/android.widget.ImageView[2]";
-    String My_Orders_Label="//android.widget.TextView[@text=\"My Orders\"]";
-    String Report_An_Issue_Label="//android.widget.TextView[@text=\"Report an issue\"]";
-    String Submit_A_Feature_Request="//android.widget.TextView[@text=\"Submit a feature request\"]";
-    String Legal_Label="//android.widget.TextView[@text=\"Legal\"]";
-    String Change_Password_Label="//android.widget.TextView[@text=\"Change Password\"]";
-    String Support_Label="//android.widget.TextView[@text=\"Support\"]";
-    String Facebook_Icon="//android.widget.ImageView[@content-desc=\"fb\"]";
-    String Twitter_Icon="//android.widget.ImageView[@content-desc=\"ic_twitter\"]";
-    String Instagram_Icon="//android.widget.ImageView[@content-desc=\"insta\"]";
-    String Youtube_Icon="//android.widget.ImageView[@content-desc=\"youtube\"]";
-    String FeedBack_Form_Header="//android.widget.TextView[@text=\"PLAI PUBLIC FEEDBACK FORUM\"]";
-    String User_Information_Text="(//android.widget.TextView)[2]";
-    String Submission_Type_text="//android.widget.EditText[@text=\"PROBLEM\"]";
-    String Submission_Type_Problem_Text="//android.widget.TextView[@text=\"PROBLEM\"]";
-    String Submission_Type_Bug_Text="//android.widget.TextView[@text=\"BUG\"]";
-    String Select_Device_Android="//android.view.View[@content-desc=\"android\"]";
-    String Select_Device_Ios="//android.view.View[@content-desc=\"ios\"]";
-    String Full_Name="//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"7\"]";
-    String Email_Field="//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"9\"]";
-    String Location_Field_Setting="//android.view.View[@content-desc=\"Trailing icon for exposed dropdown menu\"]";
-    String Member_Of_Team_No_Button="//android.widget.TextView[@text=\"NO\"]";
-    String Member_Of_Team_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
-    String Sport_Team_Name="(//android.widget.TextView[@text=\"Type Here\"])[1]";
-    String Description_Field="//android.widget.EditText[4]";
-    String Attach_A_Screenshot="//android.widget.TextView[@text=\"Select Files...\"]";
-    String Capture_an_Image_Option="//android.widget.TextView[@text=\"Capture an Image\"]";
-    String Pick_An_Image_Option="//android.widget.TextView[@text=\"Pick an Image\"]";
-    String Report_And_Privacy_link="//android.widget.TextView[@text=\"Never submit your passwords here. Report abuse or check out our Privacy Policy.\"]";
-    String Legal_Header="//android.widget.TextView[@text=\"LEGAL\"]";
-    String Terms_Of_Use_Label="//android.widget.TextView[@text=\"Terms of use\"]";
-    String Privacy_Policy_Label="//android.widget.TextView[@text=\"Privacy Policy\"]";
-    String Buyer_And_Seller_Terms_Label="//android.widget.TextView[@text=\"Buyer & Seller Terms\"]";
-    String Delete_Account_Label="//android.widget.TextView[@text=\"Delete Account\"]";
-    String Terms_Of_Use_Header="//android.widget.TextView[@text=\"TERMS OF USE\"]";
-    String Privacy_Policy_Header="//android.widget.TextView[@text=\"PRIVACY POLICY\"]";
-    String Buyer_And_Seller_Terms_Header="//android.widget.TextView[@text=\"BUYER & SELLER TERMS\"]";
-    String Delete_Account_Popup="(//android.view.View/android.view.View/android.view.View)[1]";
-    String Change_Password_Header="//android.widget.TextView[@text=\"CHANGE PASSWORD\"]";
-    String Current_Password_Field="//android.widget.TextView[@text=\"Current Password\"]";
-    String Update_Password_Button="//android.widget.TextView[@text=\"UPDATE PASSWORD\"]";
+    String Setting_Header = "//android.widget.TextView[@text=\"SETTINGS\"]";
+    String Logout_Button = "//android.view.View/android.view.View/android.widget.ImageView[2]";
+    String My_Orders_Label = "//android.widget.TextView[@text=\"My Orders\"]";
+    String Report_An_Issue_Label = "//android.widget.TextView[@text=\"Report an issue\"]";
+    String Submit_A_Feature_Request = "//android.widget.TextView[@text=\"Submit a feature request\"]";
+    String Legal_Label = "//android.widget.TextView[@text=\"Legal\"]";
+    String Change_Password_Label = "//android.widget.TextView[@text=\"Change Password\"]";
+    String Support_Label = "//android.widget.TextView[@text=\"Support\"]";
+    String Facebook_Icon = "//android.widget.ImageView[@content-desc=\"fb\"]";
+    String Twitter_Icon = "//android.widget.ImageView[@content-desc=\"ic_twitter\"]";
+    String Instagram_Icon = "//android.widget.ImageView[@content-desc=\"insta\"]";
+    String Youtube_Icon = "//android.widget.ImageView[@content-desc=\"youtube\"]";
+    String FeedBack_Form_Header = "//android.widget.TextView[@text=\"PLAI PUBLIC FEEDBACK FORUM\"]";
+    String User_Information_Text = "(//android.widget.TextView)[2]";
+    String Submission_Type_text = "//android.widget.EditText[@text=\"PROBLEM\"]";
+    String Submission_Type_Problem_Text = "//android.widget.TextView[@text=\"PROBLEM\"]";
+    String Submission_Type_Bug_Text = "//android.widget.TextView[@text=\"BUG\"]";
+    String Select_Device_Android = "//android.view.View[@content-desc=\"android\"]";
+    String Select_Device_Ios = "//android.view.View[@content-desc=\"ios\"]";
+    String Full_Name = "//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"7\"]";
+    String Email_Field = "//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"9\"]";
+    String Location_Field_Setting = "//android.view.View[@content-desc=\"Trailing icon for exposed dropdown menu\"]";
+    String Member_Of_Team_No_Button = "//android.widget.TextView[@text=\"NO\"]";
+    String Member_Of_Team_Yes_Button = "//android.widget.TextView[@text=\"YES\"]";
+    String Sport_Team_Name = "(//android.widget.TextView[@text=\"Type Here\"])[1]";
+    String Description_Field = "//android.widget.EditText[4]";
+    String Attach_A_Screenshot = "//android.widget.TextView[@text=\"Select Files...\"]";
+    String Capture_an_Image_Option = "//android.widget.TextView[@text=\"Capture an Image\"]";
+    String Pick_An_Image_Option = "//android.widget.TextView[@text=\"Pick an Image\"]";
+    String Report_And_Privacy_link = "//android.widget.TextView[@text=\"Never submit your passwords here. Report abuse or check out our Privacy Policy.\"]";
+    String Legal_Header = "//android.widget.TextView[@text=\"LEGAL\"]";
+    String Terms_Of_Use_Label = "//android.widget.TextView[@text=\"Terms of use\"]";
+    String Privacy_Policy_Label = "//android.widget.TextView[@text=\"Privacy Policy\"]";
+    String Buyer_And_Seller_Terms_Label = "//android.widget.TextView[@text=\"Buyer & Seller Terms\"]";
+    String Delete_Account_Label = "//android.widget.TextView[@text=\"Delete Account\"]";
+    String Terms_Of_Use_Header = "//android.widget.TextView[@text=\"TERMS OF USE\"]";
+    String Privacy_Policy_Header = "//android.widget.TextView[@text=\"PRIVACY POLICY\"]";
+    String Buyer_And_Seller_Terms_Header = "//android.widget.TextView[@text=\"BUYER & SELLER TERMS\"]";
+    String Delete_Account_Popup = "(//android.view.View/android.view.View/android.view.View)[1]";
+    String Change_Password_Header = "//android.widget.TextView[@text=\"CHANGE PASSWORD\"]";
+    String Current_Password_Field = "//android.widget.TextView[@text=\"Current Password\"]";
+    String Update_Password_Button = "//android.widget.TextView[@text=\"UPDATE PASSWORD\"]";
     String Current_Password_Field_Show_Password_Icon = "(//android.view.View[@content-desc=\"Show password\"])[1]";
-    String New_Password_Field_Show_Password_Icon_Change_Password= "(//android.view.View[@content-desc=\"Show password\"])[2]";
+    String New_Password_Field_Show_Password_Icon_Change_Password = "(//android.view.View[@content-desc=\"Show password\"])[2]";
     String Confirm_Password_Field_Show_Password_Icon_Change_Password = "(//android.view.View[@content-desc=\"Show password\"])[3]";
-    String Text_In_Red_Colour="//android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView";
+    String Text_In_Red_Colour = "//android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView";
 
 
     /**
-     *  Shop Tab
+     * Shop Tab
      */
     String SHOP_Tab = "//android.widget.TextView[@text=\"SHOP\"]";
     String HamBurgerMenu_ShopTab = "//android.view.View[8]";
@@ -457,27 +462,28 @@ public class Abstract {
     String Country_Dropdown_Checkout = "//android.widget.TextView[@text=\"Country*\"]";
     String Confirm_Purchase = "//android.widget.TextView[@text=\"CONFIRM PURCHASE\"]//..//android.widget.Button";
     String Country_Selected = "//android.widget.EditText[contains(@text,\"UAE\")]";
-    String My_Documents_Label="//android.widget.TextView[@text=\"My Documents\"]";
-    String My_Documents_Header="//android.widget.TextView[@text=\"MY DOCUMENTS\"]";
-    String Add_New_Documents_Button="//android.widget.TextView[@text=\"ADD NEW DOCUMENT\"]";
-    String Name_Label="//android.widget.TextView[@text=\"Name*\"]";
-    String Teams_Label="//android.widget.TextView[@text=\"Teams*\"]";
-    String Save_Cards_Label="//android.widget.TextView[@text=\"Saved Cards\"]";
-    String Snooker_Membership_Item="//android.view.View[9]/android.view.View[1]/android.view.View/android.view.View";
-    String Address_Label="//android.widget.TextView[@text=\"Address\"]";
-    String Proceed_To_Payment="//android.widget.TextView[@text=\"PROCEED TO PAYMENT\"]";
-    String Different_Card="//android.view.View[3]/android.widget.Button";
-    String Add_New_Card_Button="//android.widget.TextView[@text=\"ADD NEW CARD\"]";
-    String Card_Number_Label="//android.widget.TextView[@text=\"Card Number\"]";
-    String Card_Holder_Name_Label="//android.widget.TextView[@text=\"Card Holder Name\"]";
-    String Expiry_Date_Label="//android.widget.TextView[@text=\"Expiry Date\"]";
-    String Expiry_Date_Year="//android.widget.TextView[@text=\"2023\"]";
-    String CVC_Label="//android.widget.TextView[@text=\"CVC\"]";
-
+    String My_Documents_Label = "//android.widget.TextView[@text=\"My Documents\"]";
+    String My_Documents_Header = "//android.widget.TextView[@text=\"MY DOCUMENTS\"]";
+    String Add_New_Documents_Button = "//android.widget.TextView[@text=\"ADD NEW DOCUMENT\"]";
+    String Name_Label = "//android.widget.TextView[@text=\"Name*\"]";
+    String Teams_Label = "//android.widget.TextView[@text=\"Teams*\"]";
+    String Save_Cards_Label = "//android.widget.TextView[@text=\"Saved Cards\"]";
+    String Snooker_Membership_Item = "//android.view.View[9]/android.view.View[1]/android.view.View/android.view.View";
+    String Address_Label = "//android.widget.TextView[@text=\"Address\"]";
+    String Proceed_To_Payment = "//android.widget.TextView[@text=\"PROCEED TO PAYMENT\"]";
+    String Different_Card = "//android.view.View[3]/android.widget.Button";
+    String Add_New_Card_Button = "//android.widget.TextView[@text=\"ADD NEW CARD\"]";
+    String Card_Number_Label = "//android.widget.TextView[@text=\"Card Number\"]";
+    String Card_Holder_Name_Label = "//android.widget.TextView[@text=\"Card Holder Name\"]";
+    String Expiry_Date_Label = "//android.widget.TextView[@text=\"Expiry Date\"]";
+    String Expiry_Date_Year = "//android.widget.TextView[@text=\"2023\"]";
+    String CVC_Label = "//android.widget.TextView[@text=\"CVC\"]";
+    String Connect_Stripe_Button = "//android.widget.TextView[@text=\"CONNECT STRIPE\"]";
+    String Connect_Stripe_Page_Element = "//android.widget.TextView[@text=\"About your business\"]";
 
 
     /**
-     *  Members Tab
+     * Members Tab
      */
     String MEMBERS_Tab = "//android.widget.TextView[@text=\"MEMBERS\"]";
     String Members_Banner = "//android.view.View[9]/android.view.View[1] | //android.view.View[9]/android.view.View[2]";
@@ -502,25 +508,25 @@ public class Abstract {
     String Search_Field_Country_Code = "//android.widget.TextView[@text=\"Search…\"]//..";
 
     /**
-     *  Links Tab Locators
+     * Links Tab Locators
      */
     String Add_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
     String Link_Google_Link_After_Search = "//android.view.View[10]/android.view.View/android.widget.TextView[1]";
     String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
     String Verify_Browser_Opened = "com.android.chrome:id/url_bar";
-    String Angel_Up_Icon="//android.view.View[9]/android.view.View[2]/android.view.View[1]";
-    String Angel_Down_Icon="//android.view.View[9]/android.view.View[1]/android.view.View[2]";
-    String Update_Team_Header= "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
-    String Add_New_Link_Button="//android.widget.TextView[@text=\"ADD NEW LINK\"]";
-    String Create_Link_Header="//android.widget.TextView[@text=\"CREATE LINK\"]";
-    String Link_Title_Field="//android.widget.EditText[1]";
-    String Url_Field="//android.widget.EditText[2]";
-    String Icon_Dropdown="//android.widget.TextView[@text=\"Icon *\"]";
+    String Angel_Up_Icon = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
+    String Angel_Down_Icon = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
+    String Update_Team_Header = "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
+    String Add_New_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
+    String Create_Link_Header = "//android.widget.TextView[@text=\"CREATE LINK\"]";
+    String Link_Title_Field = "//android.widget.EditText[1]";
+    String Url_Field = "//android.widget.EditText[2]";
+    String Icon_Dropdown = "//android.widget.TextView[@text=\"Icon *\"]";
     String Website_Icon = "//android.widget.TextView[@text=\"Website\"]";
-    String Groups_Dropdown_Create_Link="//android.widget.TextView[@text=\"Groups\"]";
+    String Groups_Dropdown_Create_Link = "//android.widget.TextView[@text=\"Groups\"]";
     String Fhchb_Group = "//android.widget.TextView[@text=\"Fhchb\"]";
-    String Show_Url_No_Button="//android.widget.TextView[@text=\"NO\"]";
-    String Show_Url_Yes_Button="//android.widget.TextView[@text=\"YES\"]";
+    String Show_Url_No_Button = "//android.widget.TextView[@text=\"NO\"]";
+    String Show_Url_Yes_Button = "//android.widget.TextView[@text=\"YES\"]";
     String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
     String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
     String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
@@ -528,7 +534,7 @@ public class Abstract {
 
 
     /**
-     *  Support Tab Locators
+     * Support Tab Locators
      */
     String Support_Header = "//android.widget.TextView[@text=\"SUPPORT\"]";
     String User_Support_Button = "//android.widget.TextView[@text=\"General User Support\"]";
@@ -539,68 +545,84 @@ public class Abstract {
     String Support_Description_Field = "//android.widget.EditText[3]";
 
     /**
-     *  Group Tab Locators
+     * Group Tab Locators
      */
 
-    String Groups_Tab="//android.widget.TextView[@text=\"GROUPS\"]";
-    String Edit_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[3] | //android.view.View/android.widget.ScrollView/android.view.View[2]";
-    String Delete_Icon="//android.view.View[8]/android.view.View[1]/android.view.View[4] | //android.view.View/android.widget.ScrollView/android.view.View[3]";
-    String Add_New_Group_Button="//android.widget.TextView[@text=\"ADD NEW GROUP\"]";
-    String Group_Banner="//android.view.View[1]/android.widget.Button";
-    String Group_Information="//android.view.View/android.widget.Button";
-    String Edit_Group_Popup="//android.view.View[2]";
-    String Group_Name_Field="//android.widget.EditText[1]";
-    String Group_Description="//android.widget.EditText[2]";
-    String Successful_Message="//android.widget.TextView";
+    String Groups_Tab = "//android.widget.TextView[@text=\"GROUPS\"]";
+    String Edit_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[3] | //android.view.View/android.widget.ScrollView/android.view.View[2]";
+    String Delete_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[4] | //android.view.View/android.widget.ScrollView/android.view.View[3]";
+    String Add_New_Group_Button = "//android.widget.TextView[@text=\"ADD NEW GROUP\"]";
+    String Group_Banner = "//android.view.View[1]/android.widget.Button";
+    String Group_Information = "//android.view.View/android.widget.Button";
+    String Edit_Group_Popup = "//android.view.View[2]";
+    String Group_Name_Field = "//android.widget.EditText[1]";
+    String Group_Description = "//android.widget.EditText[2]";
+    String Successful_Message = "//android.widget.TextView";
 
     /***
      * Club Banner Signup page Locators
      */
 
-    String Club_Banner="//android.widget.TextView[@text=\"CLUB\"]";
-    String Location_Name="//android.widget.LinearLayout[1]/android.widget.TextView[1]";
-    String Location_Text="(//android.widget.EditText)[2]";
-    String Member_Question_1_Text_Field="//android.view.View/android.widget.EditText";
-    String Require_Checkbox="//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox";
-    String Plus_Icon="//android.view.View/android.view.View[3]";
-    String Member_Question_2_Text_Field="//android.view.View/android.widget.EditText[2]";
-    String Plus_Icon_1="//android.view.View/android.view.View[6]";
-    String Minus_Icon="//android.view.View/android.view.View[5]";
-    String Require_Checkbox_1="(//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox)[2]";
-    String Member_Question_3_Text_Field="//android.view.View/android.widget.EditText[3]";
-    String Require_Checkbox_2_Question="[//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox][2]";
-    String Conformation_Text="//android.view.View[2]/android.widget.TextView";
+    String Club_Banner = "//android.widget.TextView[@text=\"CLUB\"]";
+    String Location_Name = "//android.widget.LinearLayout[1]/android.widget.TextView[1]";
+    String Location_Text = "(//android.widget.EditText)[2]";
+    String Member_Question_1_Text_Field = "//android.view.View/android.widget.EditText";
+    String Require_Checkbox = "//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox";
+    String Plus_Icon = "//android.view.View/android.view.View[3]";
+    String Member_Question_2_Text_Field = "//android.view.View/android.widget.EditText[2]";
+    String Plus_Icon_1 = "//android.view.View/android.view.View[6]";
+    String Minus_Icon = "//android.view.View/android.view.View[5]";
+    String Require_Checkbox_1 = "(//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox)[2]";
+    String Member_Question_3_Text_Field = "//android.view.View/android.widget.EditText[3]";
+    String Require_Checkbox_2_Question = "[//android.widget.TextView[@text=\"Required\"]//..//android.widget.CheckBox][2]";
+    String Conformation_Text = "//android.view.View[2]/android.widget.TextView";
 
     /***
      * Club Banner Login page Locators
      */
 
-    String Google_Icon_Signup_Screen="//android.view.View[1]/android.view.View[4]/android.view.View";
-    String Facebook_Icon_Signup_Screen="//android.view.View[1]/android.view.View[5]/android.view.View";
+    String Google_Icon_Signup_Screen = "//android.view.View[1]/android.view.View[4]/android.view.View";
+    String Facebook_Icon_Signup_Screen = "//android.view.View[1]/android.view.View[5]/android.view.View";
 
     /***
      * Club Banner Login page Locators
      */
 
-    String Pin_Icon="//android.view.View[10]/android.view.View[1]/android.view.View[1]";
-    String Pin_Icon_1="//android.view.View[10]/android.view.View[2]/android.view.View[1]";
+    String Pin_Icon = "//android.view.View[10]/android.view.View[1]/android.view.View[1]";
+    String Pin_Icon_1 = "//android.view.View[10]/android.view.View[2]/android.view.View[1]";
 
     /***
      * Club Banner Home page Locators
      */
 
-    String Admin_Page_Article_1="//android.view.View[4]/android.view.View[1]/android.widget.Button";
-    String Admin_Page_Article_2="//android.view.View[4]/android.view.View[2]/android.widget.Button";
-    String Admin_Page_Article_3="//android.view.View[4]/android.view.View[3]/android.widget.Button";
-    String Calendar_Sync_Icon="//android.widget.TextView[@text=\"SYNC\"]";
+    String Admin_Page_Article_1 = "//android.view.View[4]/android.view.View[1]/android.widget.Button";
+    String Admin_Page_Article_2 = "//android.view.View[4]/android.view.View[2]/android.widget.Button";
+    String Admin_Page_Article_3 = "//android.view.View[4]/android.view.View[3]/android.widget.Button";
+    String Calendar_Sync_Icon = "//android.widget.TextView[@text=\"SYNC\"]";
 
     /***
      * Club Banner Event page Locators
      */
 
-    String Reminder_Notification_Yes_Button="//android.view.View[10]/android.widget.Button";
-    String Documents_Upload="//android.widget.TextView[@text=\"Select Files...\"]";
-    String My_File_Option="//android.widget.LinearLayout[3]/android.widget.ImageView[1]";
-    String Document_CheckBox="(//android.widget.CheckBox)[1]";
-    String Done_Button="//android.widget.TextView[@text=\"Done\"]";
+    String Reminder_Notification_Yes_Button = "//android.view.View[10]/android.widget.Button";
+    String Documents_Upload = "//android.widget.TextView[@text=\"Select Files...\"]";
+    String My_File_Option = "//android.widget.LinearLayout[3]/android.widget.ImageView[1]";
+    String Document_CheckBox = "(//android.widget.CheckBox)[1]";
+    String Done_Button = "//android.widget.TextView[@text=\"Done\"]";
+
+    /***
+     * Manage Ads page Locators
+     */
+
+    String Manage_Ads_Tab = "//android.widget.TextView[@text=\"MANAGE ADS\"]";
+    String Add_New_Ads_Button = "//android.widget.TextView[@text=\"ADD NEW ADS\"]";
+    String Add_Ads_Header = "//android.widget.TextView[@text=\"ADD ADS\"]";
+    String Gender_Label = "//android.widget.TextView[@text=\"Gender*\"]";
+    String Age_Label = "//android.widget.TextView[@text=\"Age*\"]";
+    String App_Ads_Image_Label = "(//android.widget.TextView[@text=\"Select File...\"])[1]";
+    String Web_Ads_Image = "(//android.widget.TextView[@text=\"Select File...\"])[2]";
+    String Redirect_Url_Label = "//android.widget.TextView[@text=\"Redirect URL*\"]";
+    String Range_Of_Age = "//android.widget.ScrollView/android.widget.TextView[3]";
+    String Gallery_Back_Icon = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]";
+
 }

@@ -583,4 +583,31 @@ public class HomePage extends Abstract{
         driver.findElement(By.xpath("//android.widget.ImageView[3]")).click();
     }
 
+    public void Verify_Calender_Icon_Functionality(){
+        driver.findElement(By.xpath(Calender_Icon)).click();
+        common.log("Clicked On Calender Icon Home Page");
+        driver.findElement(By.xpath(Calendar_Page)).isDisplayed();
+    }
+
+    public void Verify_Calender_Month_Navigation(){
+        driver.findElement(By.xpath(Calendar_Previous_Month_Arrow)).click();
+        common.log("Clicked On Calender Previous_Month_Arrow");
+        driver.findElement(By.xpath(Calendar_Next_Month_Arrow)).click();
+        common.log("Clicked On Calender Next_Month_Arrow");
+    }
+
+    public void Verify_Events_List_By_Clicking_On_Date() throws InterruptedException {
+        driver.findElement(By.xpath(Calendar_Next_Month_Arrow)).click();
+        common.log("Clicked On Calender Next_Month_Arrow");
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(EventDate)).click();
+        common.log("Clicked On Date which is having events");
+        driver.findElement(By.xpath(SportsEventListBanner)).isDisplayed();
+        common.log("List Of Events are displayed");
+    }
+
+
+
+
+
 }

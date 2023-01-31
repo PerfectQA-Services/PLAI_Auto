@@ -865,6 +865,52 @@ public class HomePageTests extends Configuration {
         homePage.Delete_Member_And_Send_Request_Again_2();
     }
 
+    //TC-153 - Nov-Dec-Sprint
+    @Test
+    public void Verify_the_Calendar_icon_display_on_the_home_page()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Verify_Calender_Icon_Functionality();
+    }
 
+    //TC-154 - Nov-Dec-Sprint
+    @Test
+    public void Verify_the_functionality_to_show_next_previous_month_calendar()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Verify_Calender_Icon_Functionality();
+        homePage.Verify_Calender_Month_Navigation();
+    }
+
+    //TC-157 - Nov-Dec-Sprint
+    @Test
+    public void Verify_the_functionality_of_date_on_which_one_event_is_booked()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Verify_Calender_Icon_Functionality();
+        homePage.Verify_Calender_Month_Navigation();
+        homePage.Verify_Events_List_By_Clicking_On_Date();
+    }
 
 }
