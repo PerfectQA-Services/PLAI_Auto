@@ -4,6 +4,7 @@ import Config.Configuration;
 import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -623,5 +624,38 @@ public class NewsTabTests extends Configuration {
         newsTab.Click_Confirm_Button();
 
     }
+    //TC-135
+    @Test
+    public void Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Vzhx_Admin_Club_Banner();
+        newsTab.Verify_Ads_at_3rd_Position();
 
+    }
+    //TC-137
+    @Test
+    public void Verify_the_functionality_of_Ads_not_display_to_the_subscribed_team_member_of_groups_in_NEWS_tab ()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Verify_Ads_at_3rd_Position();
+
+    }
 }

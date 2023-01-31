@@ -3,7 +3,6 @@ package Pages;
 import Config.Common;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
 
 public class LinksTabPage extends Abstract{

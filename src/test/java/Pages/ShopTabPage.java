@@ -209,6 +209,23 @@ public class ShopTabPage extends Abstract{
         common.log("Clicked On different card. ");
 
     }
+    public void Enter_Country_Name_In_Searchbar_Verify_Done_Link() throws InterruptedException {
+
+        Thread.sleep(1000);
+        driver.findElement(By.xpath(Country_Label)).click();
+        common.log("Clicked on country label");
+        driver.findElement(By.xpath(searchbar)).click();
+        common.sendkeywords(driver,"Angola");
+        common.log("Entered country name in search bar.");
+        driver.findElement(By.xpath(Agent_code_Checkbox)).click();
+        common.log("Clicked on sport name checkbox.");
+        driver.findElement(By.xpath(done_link)).click();
+        common.log("Clicked on done link.");
+        Thread.sleep(1000);
+        String Country_Name=driver.findElement(By.xpath(Country_Text)).getText();
+        common.log("Selected agent code:-"+Country_Name);
+
+    }
 
     public void Add_New_Card() throws InterruptedException {
 
@@ -220,15 +237,40 @@ public class ShopTabPage extends Abstract{
         common.sendkeywords(driver, String.valueOf(Card_Number));
         common.log("Entered card number:-"+Card_Number);
         driver.hideKeyboard();
+        Thread.sleep(2000);
         String Card_Holder_Name=common.generateRandomChars(6);
+        driver.findElement(By.xpath(Card_Holder_Name_Label)).click();
         common.sendkeywords(driver, Card_Holder_Name);
         common.log("Entered Card holder name:-"+Card_Holder_Name);
         driver.hideKeyboard();
         driver.findElement(By.xpath(Expiry_Date_Label)).click();
-
+        common.scrollAtSpecificLocation(driver,750,1910,750,1540,"Scrolling At year of expiry date.");
+        common.scrollAtSpecificLocation(driver,750,1910,750,1540,"Scrolling At year of expiry date.");
+        common.log("Expiry Date is entered.");
+        driver.findElement(By.xpath(Confirm_Button)).click();
+        common.log("Clicked On continue button.");
+        int Card_CVV=common.GenerateRandomNumber(3);
+        driver.findElement(By.xpath(CVV_Field)).click();
+        common.sendkeywords(driver, String.valueOf(Card_CVV));
+        this.Enter_Country_Name_In_Searchbar_Verify_Done_Link();
+        this.Click_Save_Button();
 
     }
+    public void Click_Save_Button() throws InterruptedException {
+        driver.findElement(By.xpath(Confirm_Purchase)).click();
+        common.log("Clicked On save button");
+        Thread.sleep(5000);
+    }
 
+    public void Click_On_Connect_Stripe_Button() throws InterruptedException {
 
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Connect_Stripe_Button)).click();
+        common.log("Clicked on connect Stripe button.");
+        Thread.sleep(5000);
+        common.isDisplayed(Connect_Stripe_Page_Element);
+        common.log("Connect stripe site is verified.");
+
+    }
 
 }

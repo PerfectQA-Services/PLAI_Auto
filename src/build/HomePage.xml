@@ -56,6 +56,9 @@
           <include name="Verify_the_Done_link_with_Search_bar_In_Assign_Groups"></include>
           <include name="Verify_the_Confirm_button_without_entering_data_in_Assign_Groups"></include>
           <include name="Verify_the_Confirm_button_after_entering_data_in_Assign_Groups"></include>
+          <include name="Verify_the_Calendar_icon_display_on_the_home_page"></include>
+          <include name="Verify_the_functionality_to_show_next_previous_month_calendar"></include>
+          <include name="Verify_the_functionality_of_date_on_which_one_event_is_booked"></include>
         </methods>
       </class>
     </classes>

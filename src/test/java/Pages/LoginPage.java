@@ -6,7 +6,6 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 
 import java.io.IOException;
-import java.time.Instant;
 
 public class LoginPage extends Abstract{
 
