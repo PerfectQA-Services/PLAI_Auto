@@ -4,6 +4,7 @@ import Config.Configuration;
 import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -449,7 +450,29 @@ public class ShopTabTests extends Configuration {
         shopTab.Open_Shop_Tab();
         shopTab.Click_Snooker_Membership_Item_Proceed_To_Payment();
         newsTab.Click_Change_Card_Button_Verify_Result();
-        shopTab.Select_Different_Card();
+        shopTab.Add_New_Card();
+
+    }
+    //Tc-147
+    @Test
+    public void Verify_the_CONNECT_STRIPE_button_display_on_the_SHOP_tab() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        ManageAdsPage manageAdsPage=new ManageAdsPage(driver);
+        SignUpPage signup=new SignUpPage(driver);
+        ShopTabPage shopTab = new ShopTabPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
+        homePage.Click_Test27_Admin_Club_Banner();
+        shopTab.Open_Shop_Tab();
+        shopTab.Click_On_Connect_Stripe_Button();
 
     }
 

@@ -1,7 +1,5 @@
 package Tests;
 
-import org.testng.annotations.Test;
-import Config.Common;
 import Config.Configuration;
 import Pages.LaunchAppPage;
 import Pages.SignUpPage;

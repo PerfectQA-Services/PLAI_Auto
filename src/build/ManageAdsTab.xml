@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test  name="Verify Manage Ads Tab Functionality" verbose="2">
+        <classes>
+            <class name="Tests.ManageAdsTests">
+                <methods>
+                    <include name="Verify_the_Fields_display_on_the_MANAGE_ADS_tab"></include>
+                    <include name="Verify_the_ADD_NEW_ADS_button"></include>
+                    <include name="Verify_the_fields_display_on_the_ADD_NEW_ADS_screen"></include>
+                    <include name="Verify_the_Name_field"></include>
+                    <include name="Verify_the_Gender_field"></include>
+                    <include name="Verify_the_functionality_of_Age_field"></include>
+                    <include name="Verify_the_App_Ads_Image_field"></include>
+                    <include name="Verify_the_Web_Ads_Image_field"></include>
+                    <include name="Verify_the_Camera_option"></include>
+                    <include name="Verify_the_Gallery_option"></include>
+                    <include name="Verify_the_screen_after_photo_select_from_Gallery"></include>
+                    <include name="Verify_the_navigation_by_clicking_on_Back_icon"></include>
+                    <include name="Verify_the_functionality_of_Rotation_icon"></include>
+                    <include name="Verify_the_functionality_of_Flip_icon"></include>
+                    <include name="Verify_the_functionality_of_Crop_link"></include>
+                    <include name="Verify_the_Gallery_option_for_App_Ads_Image_field"></include>
+                    <include name="Verify_the_functionality_of_Redirect_URL_field_by_entering_invalid_format_of_url"></include>
+                    <include name="Verify_the_functionality_of_Redirect_URL_field_by_entering_valid_format_of_url"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -2,7 +2,6 @@ package Pages;
 
 import Config.Common;
 import io.appium.java_client.AppiumDriver;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
 
 public class LoginPage_Club_Banner extends Abstract{

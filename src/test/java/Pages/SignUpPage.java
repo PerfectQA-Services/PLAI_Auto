@@ -1,10 +1,11 @@
 package Pages;
 
 import Config.Common;
-import io.appium.java_client.*;
+import io.appium.java_client.AppiumDriver;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+
 import java.io.IOException;
 import java.util.Locale;
 

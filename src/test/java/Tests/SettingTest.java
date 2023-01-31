@@ -1,9 +1,11 @@
 package Tests;
 
-import org.testng.annotations.Test;
 import Config.Common;
 import Config.Configuration;
-import Pages.*;
+import Pages.LaunchAppPage;
+import Pages.LoginPage;
+import Pages.SettingPage;
+import Pages.SignUpPage;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 

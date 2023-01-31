@@ -280,6 +280,12 @@ public class NewsTabPage extends Abstract{
 
     }
 
+    public void Verify_Ads_at_3rd_Position() throws InterruptedException {
+
+        Thread.sleep(2000);
+        common.isDisplayed(Ads_Position);
+        common.log("Ads position after 3rd news articles is verified.");
+    }
 
 
 
