@@ -100,6 +100,13 @@ public class SignUpPage_Club_Banner extends Abstract {
         common.log("Search bar is displayed.");
 
     }
+    public void Click_On_Back_Icon() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Cancel\"]")).click();
+        common.log("Clicked on back icomn");
+
+    }
     public void Enter_Location_Name_In_Searchbar_Verify_Result() throws InterruptedException {
 
         Thread.sleep(3000);

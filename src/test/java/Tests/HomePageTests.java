@@ -1,10 +1,7 @@
 package Tests;
 
 import Config.Configuration;
-import Pages.HomePage;
-import Pages.LaunchAppPage;
-import Pages.LoginPage;
-import Pages.SignUpPage;
+import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 import java.awt.*;
@@ -912,5 +909,34 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Calender_Month_Navigation();
         homePage.Verify_Events_List_By_Clicking_On_Date();
     }
+    //TC-74
+    @Test
+    public void Verify_the_Home_page_when_article_in_NEWS_is_zero ()throws InterruptedException, IOException, AWTException, ParseException {
 
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        homePage.Login_with_valid_Credentials();
+        homePage.Verify_Homepage_Articles();
+
+    }
+//    //TC-74
+//    @Test
+////    public void Verify the 'Home Page' after adding one article in 'NEWS' tab ()throws InterruptedException, IOException, AWTException, ParseException {
+//
+//        LaunchAppPage launchApp = new LaunchAppPage(driver);
+//        LoginPage loginPage = new LoginPage(driver);
+//        HomePage homePage = new HomePage(driver);
+//        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+//        launchApp.Verify_Application_Launched();
+//        launchApp.click_on_skip_button();
+//        launchApp.click_on_next_button();
+//        homePage.Login_with_valid_Credentials();
+//        homePage.Verify_Homepage_Articles();
+//
+//    }
 }

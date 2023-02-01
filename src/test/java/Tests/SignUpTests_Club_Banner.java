@@ -427,6 +427,32 @@ public class SignUpTests_Club_Banner extends Configuration {
         signup.Select_Photo_To_Upload();
         signup.Verify_Modify_Image_Screen();
     }
+    //24
+    @Test
+    public void Verify_the_navigation_by_clicking_on_Back_icon_Gallery()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        SignUpPage signup=new SignUpPage(driver);
+        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+        ManageAdsPage manageAdsPage=new ManageAdsPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        signup_club_banner.Click_on_Club_Banner();
+        launchApp.click_on_next_button();
+        signup.click_on_sign_up_button();
+        signup.enter_first_name();
+        signup.enter_last_name();
+        signup.enter_valid_email_address();
+        signup.enter_password();
+        signup.enter_confirm_password();
+        signup.click_on_next_button();
+        signup.verify_user_information_page_button("UPLOAD PHOTO");
+        signup.click_on_user_information_page_button("UPLOAD PHOTO");
+        signup.click_on_user_information_page_button("Gallery");
+        signup.Verify_Gallery_App_Opened();
+        signup.Select_Photo_To_Upload();
+        manageAdsPage.Click_On_Back_Icon_of_Gallery();
+
+    }
     //TC-25
     @Test
     public void Verify_the_functionality_of_Rotation_icon()throws InterruptedException, IOException, AWTException, ParseException {
@@ -476,6 +502,32 @@ public class SignUpTests_Club_Banner extends Configuration {
         signup.Verify_Gallery_App_Opened();
         signup.Select_Photo_To_Upload();
         signup.Flip_Image();
+    }
+    //TC-27
+    @Test
+    public void Verify_the_functionality_of_Crop_link()throws InterruptedException, IOException, AWTException, ParseException {
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        SignUpPage signup=new SignUpPage(driver);
+        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        signup_club_banner.Click_on_Club_Banner();
+        launchApp.click_on_next_button();
+        signup.click_on_sign_up_button();
+        signup.enter_first_name();
+        signup.enter_last_name();
+        signup.enter_valid_email_address();
+        signup.enter_password();
+        signup.enter_confirm_password();
+        signup.click_on_next_button();
+        signup.verify_user_information_page_button("UPLOAD PHOTO");
+        signup.click_on_user_information_page_button("UPLOAD PHOTO");
+        Thread.sleep(5000);
+        signup.click_on_user_information_page_button("Gallery");
+        signup.Verify_Gallery_App_Opened();
+        signup.Select_Photo_To_Upload();
+        signup.Flip_Image();
+        signup.Verify_Image_Uploaded();
     }
     //TC-28
     @Test
@@ -542,6 +594,30 @@ public class SignUpTests_Club_Banner extends Configuration {
         signup.click_on_next_button();
         signup_club_banner.Enter_Data_in_Team_Name();
         createteampage.Verify_Agent_Code_Field_Element();
+
+    }
+    //TC-31
+    @Test
+    public void Verify_the_Search_bar_with_Done_link_Agent_Code() throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SignUpPage signup=new SignUpPage(driver);
+        CreateTeamPage createteampage=new CreateTeamPage(driver);
+        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        signup_club_banner.Click_on_Club_Banner();
+        launchapp.click_on_next_button();
+        signup.click_on_sign_up_button();
+        signup.enter_first_name();
+        signup.enter_last_name();
+        signup.enter_valid_email_address();
+        signup.enter_password();
+        signup.enter_confirm_password();
+        signup.click_on_next_button();
+        signup_club_banner.Enter_Data_in_Team_Name();
+        createteampage.Enter_Agent_Code_Name_In_Searchbar_Verify_Done_Link();
 
     }
     //TC-32
@@ -837,6 +913,36 @@ public class SignUpTests_Club_Banner extends Configuration {
         signup_club_banner.Enter_Country_Name_In_Searchbar_Verify_Done_Link();
         signup_club_banner.Click_on_Location_Field_And_Verify_Result();
 
+    }
+    //TC-46
+    @Test
+    public void Verify_the_Back_icon () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SignUpPage signup=new SignUpPage(driver);
+        CreateTeamPage createteampage=new CreateTeamPage(driver);
+        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        signup_club_banner.Click_on_Club_Banner();
+        launchapp.click_on_next_button();
+        signup.click_on_sign_up_button();
+        signup.enter_first_name();
+        signup.enter_last_name();
+        signup.enter_valid_email_address();
+        signup.enter_password();
+        signup.enter_confirm_password();
+        signup.click_on_next_button();
+        signup_club_banner.Enter_Data_in_Team_Name();
+        createteampage.Enter_sport_Name_In_Searchbar_Verify_Done_Link();
+        signup_club_banner.Enter_Team_Bio_In_Create_Team_Page();
+        signup.click_on_next_button();
+        signup_club_banner.Verify_Club_Banner_Signup_Third_page_Element();
+        signup_club_banner.Enter_Country_Name_In_Searchbar_Verify_Done_Link();
+        signup_club_banner.Click_on_Location_Field_And_Verify_Result();
+        signup_club_banner.Click_On_Back_Icon();
+;
     }
     //TC-47
     @Test
