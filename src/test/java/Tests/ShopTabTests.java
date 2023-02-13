@@ -460,10 +460,6 @@ public class ShopTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        SignUpPage signUp = new SignUpPage(driver);
-        ManageAdsPage manageAdsPage=new ManageAdsPage(driver);
-        SignUpPage signup=new SignUpPage(driver);
         ShopTabPage shopTab = new ShopTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();

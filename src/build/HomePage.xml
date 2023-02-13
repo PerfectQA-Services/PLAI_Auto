@@ -59,6 +59,9 @@
           <include name="Verify_the_Calendar_icon_display_on_the_home_page"></include>
           <include name="Verify_the_functionality_to_show_next_previous_month_calendar"></include>
           <include name="Verify_the_functionality_of_date_on_which_one_event_is_booked"></include>
+          <include name="Verify_the_Home_page_when_article_in_NEWS_is_zero"></include>
+          <include name="Verify_the_Home_Page_after_adding_one_article_in_NEWS_tab"></include>
+          <include name="Verify_the_Home_Page_after_adding_three_article_in_NEWS_tab"></include>
         </methods>
       </class>
     </classes>

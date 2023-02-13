@@ -2,10 +2,7 @@ package Tests;
 
 import Config.Common;
 import Config.Configuration;
-import Pages.LaunchAppPage;
-import Pages.LoginPage;
-import Pages.SettingPage;
-import Pages.SignUpPage;
+import Pages.*;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
@@ -52,11 +49,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
 
     }
@@ -67,11 +66,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Public_FeedBack_Forum_Page_Element();
 
@@ -83,11 +84,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Submission_Type_Field_Element();
     }
@@ -98,11 +101,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Click_On_Ios_Button();
 
@@ -114,11 +119,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Full_Name_Field();
 
@@ -131,11 +138,13 @@ public class SettingTest extends Configuration {
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
         Common common = new Common();
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Full_Name_Field();
         settingpage.Enter_Invalid_Email_And_Verify_Result();
@@ -156,11 +165,13 @@ public class SettingTest extends Configuration {
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
         Common common = new Common();
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Full_Name_Field();
         settingpage.Enter_valid_Email_And_Verify_Result();
@@ -180,11 +191,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Location_Field_Element();
 
@@ -196,12 +209,14 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         Common common = new Common();
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Verify_Full_Name_Field();
         settingpage.Enter_valid_Email_And_Verify_Result();
@@ -220,11 +235,14 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
+        Common common = new Common();
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Enter_Country_Name_In_Searchbar_Verify_Done_Link();
 
@@ -236,11 +254,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Click_On_No_Button();
 
@@ -252,11 +272,13 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        SupportTabPage supportTab=new SupportTabPage(driver);
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
+        supportTab.Click_Support_Tab();
         settingpage.Click_On_Report_An_Issue_Label();
         settingpage.Click_On_Yes_Button();
 
@@ -268,6 +290,7 @@ public class SettingTest extends Configuration {
         LaunchAppPage launchapp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         SettingPage settingpage=new SettingPage(driver);
+        Common common = new Common();
         launchapp.Verify_Application_Launched();
         launchapp.click_on_skip_button();
         launchapp.click_on_next_button();
@@ -1213,7 +1236,7 @@ public class SettingTest extends Configuration {
         settingpage.Verify_The_Functionality_Of_SelectAll_And_DeselectAll_Button();
 
     }
-    //95
+    //86
     @Test
     public void Verify_the_Documents_field () throws InterruptedException, IOException, ParseException {
 
@@ -1232,5 +1255,180 @@ public class SettingTest extends Configuration {
         settingpage.Verify_Upload_Documents();
 
     }
+    //87
+    @Test
+    public void Verify_the_functionality_of_Document_field_by_attaching_document () throws InterruptedException, IOException, ParseException {
 
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_Upload_Documents();
+        newsTab.Upload_Documents_Verify_Result();
+
+    }
+    //88
+    @Test
+    public void Verify_the_Plus_icon () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_Upload_Documents();
+        newsTab.Upload_Documents_Verify_Result();
+        settingpage.Click_On_Plus_Icon_Verify_Result();
+
+    }
+    //89
+    @Test
+    public void Verify_the_Delete_icon_display_on_the_added_document () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_Upload_Documents();
+        newsTab.Upload_Documents_Verify_Result();
+        settingpage.Click_On_Delete_Icon_Verify_Result();
+
+    }
+    //90
+    @Test
+    public void Verify_the_ADD_button_after_uploading_documents () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_My_Documents_Label_Verify_Header();
+        settingpage.Click_On_Add_Documents_Button();
+        settingpage.Click_On_Teams_Field();
+        settingpage.Verify_Teams_Page_Element();
+        settingpage.Verify_Upload_Documents();
+        newsTab.Upload_Documents_Verify_Result();
+        settingpage.Click_On_Add_Button();
+
+    }
+    //92
+    @Test
+    public void Verify_the_CARD_NUMBER_field_by_entering_8_digit_number () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Saved_Cards_Label();
+        settingpage.Add_New_Card_With_8_Card_Number();
+        loginPage.Get_Toast_Alert("Alert after click on save button :- ");
+
+    }
+    //93
+    @Test
+    public void Verify_the_CARD_HOLDER_NAME_field_by_not_added_data_in_field () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Saved_Cards_Label();
+        settingpage.Add_New_Card_Without_Card_Holder_Name();
+        loginPage.Get_Toast_Alert("Alert after click on save button :- ");
+
+    }
+    //94
+    @Test
+    public void Verify_the_EXPIRY_DATE_field_by_not_added_data_in_field () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Saved_Cards_Label();
+        settingpage.Add_New_Card_Without_Expiry_Date();
+        loginPage.Get_Toast_Alert("Alert after click on save button :- ");
+
+    }
+    //95
+    @Test
+    public void Verify_the_CVV_field_by_adding_2_digit_cvv () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Saved_Cards_Label();
+        settingpage.Add_New_Card_With_2_Cvv_Number();
+        loginPage.Get_Toast_Alert("Alert after click on save button :- ");
+
+    }
+    //96
+    @Test
+    public void Verify_the_Country_field_by_not_selecting_country () throws InterruptedException, IOException, ParseException {
+
+        LaunchAppPage launchapp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        SettingPage settingpage=new SettingPage(driver);
+        launchapp.Verify_Application_Launched();
+        launchapp.click_on_skip_button();
+        launchapp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        settingpage.Click_On_Setting_Icon();
+        settingpage.Click_On_Saved_Cards_Label();
+        settingpage.Add_New_Card_Without_Country_Name();
+        loginPage.Get_Toast_Alert("Alert after click on save button :- ");
+
+    }
 }

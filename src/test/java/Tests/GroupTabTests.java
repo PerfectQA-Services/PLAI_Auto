@@ -134,9 +134,6 @@ public class GroupTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        LinksTabPage linksTab = new LinksTabPage(driver);
-        MembersTabPage memberPage = new MembersTabPage(driver);
         GroupTabPage grouptab=new GroupTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();
@@ -199,9 +196,6 @@ public class GroupTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        LinksTabPage linksTab = new LinksTabPage(driver);
-        MembersTabPage memberPage = new MembersTabPage(driver);
         GroupTabPage grouptab=new GroupTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();
@@ -347,9 +341,6 @@ public class GroupTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        LinksTabPage linksTab = new LinksTabPage(driver);
-        MembersTabPage memberPage = new MembersTabPage(driver);
         GroupTabPage grouptab=new GroupTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();
@@ -367,9 +358,6 @@ public class GroupTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        LinksTabPage linksTab = new LinksTabPage(driver);
-        MembersTabPage memberPage = new MembersTabPage(driver);
         GroupTabPage grouptab=new GroupTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();
@@ -410,9 +398,6 @@ public class GroupTabTests extends Configuration {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
-        NewsTabPage newsTab = new NewsTabPage(driver);
-        LinksTabPage linksTab = new LinksTabPage(driver);
-        MembersTabPage memberPage = new MembersTabPage(driver);
         GroupTabPage grouptab=new GroupTabPage(driver);
         launchApp.Verify_Application_Launched();
         launchApp.click_on_skip_button();

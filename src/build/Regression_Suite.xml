@@ -155,6 +155,9 @@
                     <include name="Verify_the_Calendar_icon_display_on_the_home_page"></include>
                     <include name="Verify_the_functionality_to_show_next_previous_month_calendar"></include>
                     <include name="Verify_the_functionality_of_date_on_which_one_event_is_booked"></include>
+                    <include name="Verify_the_Home_page_when_article_in_NEWS_is_zero"></include>
+                    <include name="Verify_the_Home_Page_after_adding_one_article_in_NEWS_tab"></include>
+                    <include name="Verify_the_Home_Page_after_adding_three_article_in_NEWS_tab"></include>
                 </methods>
             </class>
         </classes>
@@ -232,6 +235,16 @@
                     <include name="Verify_the_Angle_left_icon"></include>
                     <include name="Verify_the_fields_of_the_SHOP_tab"></include>
                     <include name="Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab"></include>
+                    <include name="Verify_the_CALENDAR_SYNC_icon_of_EVENTS_tab"></include>
+                    <include name="Verify_the_ADD_TO_CALENDAR_button_of_OVERVIEW_tab_of_EVENT_screen"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users_but_Reminder_notification_selected_NO"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_Unavailable_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Event_Reminder_for_More_time_needed_option_of_RESPOND"></include>
+                    <include name="Verify_the_functionality_of_Document_in_EVENTS_tab"></include>
+                    <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>
+                    <include name="Verify_the_status_of_events_when_user_change_the_timezone_from_india_to_Singapore"></include>
                 </methods>
             </class>
         </classes>
@@ -274,86 +287,102 @@
                     <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
                     <include name="Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab"></include>
                     <include name="Verify_the_functionality_of_Ads_not_display_to_the_subscribed_team_member_of_groups_in_NEWS_tab"></include>
+                    <include name="Verify_the_NEWS_tab_for_Admin_banner_New_Sprint"></include>
+                    <include name="Verify_the_Pin_icon_display_on_the_article_banner"></include>
+                    <include name="Verify_the_position_of_pinned_article_by_adding_new_article"></include>
+                    <include name="Verify_the_position_of_article_after_unpinned_it"></include>
+                    <include name="Verify_the_functionality_of_Pin_icon_by_tapping_on_Pin_icon_of_two_article_banner"></include>
+                    <include name="Verify_the_functionality_of_Document_in_NEWS_tab"></include>
+                    <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>
                 </methods>
             </class>
         </classes>
     </test>
-    <test thread-count="5" name="Test">
-        <classes>
-            <class name="Tests.SettingTest">
-                <methods>
-                    <include name="Verify_the_Setting_icon_placed_at_bottom_right_of_the_Home_screen"></include>
-                    <include name="Verify_the_fields_display_on_SETTINGS"></include>
-                    <include name="Verify_Report_an_issue_field"></include>
-                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
-                    <include name="Verify_the_Submission_Type_field"></include>
-                    <include name="Verify_the_Select_Device_field"></include>
-                    <include name="Verify_the_Full_name_field"></include>
-                    <include name="Verify_the_Email_field_by_entering_invalid_email_id"></include>
-                    <include name="Verify_the_Email_field_by_entering_valid_email_id"></include>
-                    <include name="Verify_the_Location_field"></include>
-                    <include name="Verify_the_Location_field_without_selecting_location"></include>
-                    <include name="Verify_the_Search_bar_with_Done_link"></include>
-                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field"></include>
-                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button"></include>
-                    <include name="Verify_the_Description_field"></include>
-                    <include name="Verify_the_functionality_of_CONFIRM_button"></include>
-                    <include name="Verify_the_Back_icon_of_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>
-                    <include name="Verify_the_Submit_a_feature_request_field"></include>
-                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen_Request_A_Feature"></include>
-                    <include name="Verify_the_Submission_Type_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Select_Device_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Full_name_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Email_field_by_entering_invalid_email_id_Request_A_Feature"></include>
-                    <include name="Verify_the_Email_field_by_entering_valid_email_id_Request_A_Feature"></include>
-                    <include name="Verify_the_Location_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Location_field_without_selecting_location_Request_A_Feature"></include>
-                    <include name="Verify_the_Search_bar_with_Done_link_Request_A_Feature"></include>
-                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button_Request_A_Feature"></include>
-                    <include name="Verify_the_Description_field_Request_A_Feature"></include>
-                    <include name="Verify_the_functionality_of_CONFIRM_button_Request_A_Feature"></include>
-                    <include name="Verify_the_Legal_field"></include>
-                    <include name="Verify_the_field_display_on_LEGAL_screen"></include>
-                    <include name="Verify_the_Terms_of_usefield"></include>
-                    <include name="Verify_the_Back_icon_of_TERMS_OF_USE_screen"></include>
-                    <include name="Verify_the_Privacy_Policy_field"></include>
-                    <include name="Verify_the_Back_icon_of_PRIVACY_POLICY_screen"></include>
-                    <include name="Verify_the_Buyer_And_Seller_Terms_field"></include>
-                    <include name="Verify_the_Back_icon_of_BUYER_And_SELLER_TERMS_screen"></include>
-                    <include name="Verify_the_Delete_Account_field"></include>
-                    <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>
-                    <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>
-                    <include name="Verify_the_Back_icon_of_LEGAL_screen"></include>
-                    <include name="Verify_the_Change_Password_field"></include>
-                    <include name="Verify_the_field_display_on_CHANGE_PASSWORD_field"></include>
-                    <include name="Verify_the_UPDATE_PASSWORD_button_without_entering_data_in_mandatory_field"></include>
-                    <include name="Verify_the_Eye_icon_of_Current_Password_field"></include>
-                    <include name="Verify_the_New_Password_field_by_entering_7_characters"></include>
-                    <include name="Verify_the_New_Password_field_by_entering_password_which_contain_8_character_including_uppercase_letter_and_special_symbol"></include>
-                    <include name="Verify_the_Eye_icon_functionality_for_New_Password_field"></include>
-                    <include name="Verify_the_Confirm_Password_field_by_entering_different_password_than_New_Password_field"></include>
-                    <include name="Verify_the_Confirm_Password_field_by_entering_same_password_than_New_Password_field"></include>
-                    <include name="Verify_the_social_media_icon_display_on_the_SETTINGS_screen"></include>
-                    <include name="Verify_the_Logout_icon"></include>
-                    <include name="Verify_the_Dismiss_button_of_confirmation_popup_Logout_Icon"></include>
-                    <include name="Verify_the_Confirm_button_of_confirmation_popup_Logout_Icon"></include>
-                    <include name="Verify_the_Attach_a_screenshot_field_Request_A_Feature"></include>
-                    <include name="Verify_the_Capture_an_Image_option_Request_A_Feature"></include>
-                    <include name="Verify_the_Select_a_Image_option_Request_A_Feature"></include>
-                    <include name="Verify_the_Attach_a_screenshot_field"></include>
-                    <include name="Verify_the_Capture_an_Image_option"></include>
-                    <include name="Verify_the_Select_a_Image_option"></include>
-                    <include name="Verify_the_My_Documents_field"></include>
-                    <include name="Verify_the_fields_display_on_the_MY_DOCUMENTS_screen"></include>
-                    <include name="Verify_the_ADD_DOCUMENTS_button"></include>
-                    <include name="Verify_the_Teams_field"></include>
-                    <include name="Verify_the_Select_All_and_Deselect_All_button"></include>
-                    <include name="Verify_the_Documents_field"></include>
-                </methods>
-            </class>
-        </classes>
-    </test> <!-- Test -->
+<!--    <test thread-count="5" name="SettingTest">-->
+<!--        <classes>-->
+<!--            <class name="Tests.SettingTest">-->
+<!--                <methods>-->
+<!--                    <include name="Verify_the_Setting_icon_placed_at_bottom_right_of_the_Home_screen"></include>-->
+<!--                    <include name="Verify_the_fields_display_on_SETTINGS"></include>-->
+<!--                    <include name="Verify_Report_an_issue_field"></include>-->
+<!--                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>-->
+<!--                    <include name="Verify_the_Submission_Type_field"></include>-->
+<!--                    <include name="Verify_the_Select_Device_field"></include>-->
+<!--                    <include name="Verify_the_Full_name_field"></include>-->
+<!--                    <include name="Verify_the_Email_field_by_entering_invalid_email_id"></include>-->
+<!--                    <include name="Verify_the_Email_field_by_entering_valid_email_id"></include>-->
+<!--                    <include name="Verify_the_Location_field"></include>-->
+<!--                    <include name="Verify_the_Location_field_without_selecting_location"></include>-->
+<!--                    <include name="Verify_the_Search_bar_with_Done_link"></include>-->
+<!--                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field"></include>-->
+<!--                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button"></include>-->
+<!--                    <include name="Verify_the_Description_field"></include>-->
+<!--                    <include name="Verify_the_functionality_of_CONFIRM_button"></include>-->
+<!--                    <include name="Verify_the_Back_icon_of_PLAI_PUBLIC_FEEDBACK_FORUM_screen"></include>-->
+<!--                    <include name="Verify_the_Submit_a_feature_request_field"></include>-->
+<!--                    <include name="Verify_the_fields_display_on_PLAI_PUBLIC_FEEDBACK_FORUM_screen_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Submission_Type_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Select_Device_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Full_name_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Email_field_by_entering_invalid_email_id_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Email_field_by_entering_valid_email_id_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Location_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Location_field_without_selecting_location_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Search_bar_with_Done_link_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Are_you_currently_a_member_of_a_Team_or_Club_on_PLAI_field_by_selecting_YES_button_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Description_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_functionality_of_CONFIRM_button_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Legal_field"></include>-->
+<!--                    <include name="Verify_the_field_display_on_LEGAL_screen"></include>-->
+<!--                    <include name="Verify_the_Terms_of_usefield"></include>-->
+<!--                    <include name="Verify_the_Back_icon_of_TERMS_OF_USE_screen"></include>-->
+<!--                    <include name="Verify_the_Privacy_Policy_field"></include>-->
+<!--                    <include name="Verify_the_Back_icon_of_PRIVACY_POLICY_screen"></include>-->
+<!--                    <include name="Verify_the_Buyer_And_Seller_Terms_field"></include>-->
+<!--                    <include name="Verify_the_Back_icon_of_BUYER_And_SELLER_TERMS_screen"></include>-->
+<!--                    <include name="Verify_the_Delete_Account_field"></include>-->
+<!--                    <include name="Verify_the_Dismiss_button_of_confirmation_popup"></include>-->
+<!--                    <include name="Verify_the_Confirm_button_of_confirmation_popup"></include>-->
+<!--                    <include name="Verify_the_Back_icon_of_LEGAL_screen"></include>-->
+<!--                    <include name="Verify_the_Change_Password_field"></include>-->
+<!--                    <include name="Verify_the_field_display_on_CHANGE_PASSWORD_field"></include>-->
+<!--                    <include name="Verify_the_UPDATE_PASSWORD_button_without_entering_data_in_mandatory_field"></include>-->
+<!--                    <include name="Verify_the_Eye_icon_of_Current_Password_field"></include>-->
+<!--                    <include name="Verify_the_New_Password_field_by_entering_7_characters"></include>-->
+<!--                    <include name="Verify_the_New_Password_field_by_entering_password_which_contain_8_character_including_uppercase_letter_and_special_symbol"></include>-->
+<!--                    <include name="Verify_the_Eye_icon_functionality_for_New_Password_field"></include>-->
+<!--                    <include name="Verify_the_Confirm_Password_field_by_entering_different_password_than_New_Password_field"></include>-->
+<!--                    <include name="Verify_the_Confirm_Password_field_by_entering_same_password_than_New_Password_field"></include>-->
+<!--                    <include name="Verify_the_social_media_icon_display_on_the_SETTINGS_screen"></include>-->
+<!--                    <include name="Verify_the_Logout_icon"></include>-->
+<!--                    <include name="Verify_the_Dismiss_button_of_confirmation_popup_Logout_Icon"></include>-->
+<!--                    <include name="Verify_the_Confirm_button_of_confirmation_popup_Logout_Icon"></include>-->
+<!--                    <include name="Verify_the_Attach_a_screenshot_field_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Capture_an_Image_option_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Select_a_Image_option_Request_A_Feature"></include>-->
+<!--                    <include name="Verify_the_Attach_a_screenshot_field"></include>-->
+<!--                    <include name="Verify_the_Capture_an_Image_option"></include>-->
+<!--                    <include name="Verify_the_Select_a_Image_option"></include>-->
+<!--                    <include name="Verify_the_My_Documents_field"></include>-->
+<!--                    <include name="Verify_the_fields_display_on_the_MY_DOCUMENTS_screen"></include>-->
+<!--                    <include name="Verify_the_ADD_DOCUMENTS_button"></include>-->
+<!--                    <include name="Verify_the_Teams_field"></include>-->
+<!--                    <include name="Verify_the_Select_All_and_Deselect_All_button"></include>-->
+<!--                    <include name="Verify_the_Documents_field"></include>-->
+<!--                    <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>-->
+<!--                    <include name="Verify_the_Plus_icon"></include>-->
+<!--                    <include name="Verify_the_Delete_icon_display_on_the_added_document"></include>-->
+<!--                    <include name="Verify_the_ADD_button_after_uploading_documents"></include>-->
+<!--                    <include name="Verify_the_CARD_NUMBER_field_by_entering_8_digit_number"></include>-->
+<!--                    <include name="Verify_the_CARD_HOLDER_NAME_field_by_not_added_data_in_field"></include>-->
+<!--                    <include name="Verify_the_EXPIRY_DATE_field_by_not_added_data_in_field"></include>-->
+<!--                    <include name="Verify_the_CVV_field_by_adding_2_digit_cvv"></include>-->
+<!--                    <include name="Verify_the_Country_field_by_not_selecting_country"></include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
 
     <test  name="Verify Members Tab Functionality" verbose="2">
         <classes>
@@ -522,22 +551,6 @@
             </class>
         </classes>
     </test>
-    <test  name="Verify EventTab of club banner Functionality" verbose="2">
-        <classes>
-            <class name="Tests.EventTabTests_New_Sprint">
-                <methods>
-                    <include name="Verify_the_CALENDAR_SYNC_icon_of_EVENTS_tab"></include>
-                    <include name="Verify_the_ADD_TO_CALENDAR_button_of_OVERVIEW_tab_of_EVENT_screen"></include>
-                    <include name="Verify_the_functionality_of_Event_Reminder"></include>
-                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users"></include>
-                    <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users_but_Reminder_notification_selected_NO"></include>
-                    <include name="Verify_the_functionality_of_Event_Reminder_for_Unavailable_option_of_RESPOND"></include>
-                    <include name="Verify_the_functionality_of_Event_Reminder_for_More_time_needed_option_of_RESPOND"></include>
-                    <include name="Verify_the_functionality_of_Document_in_EVENTS_tab"></include>
-                </methods>
-            </class>
-        </classes>
-    </test> <!-- EventTab -->
     <test  name="Login of club banner Functionality : Verify user login" verbose="2">
         <classes>
             <class name="Tests.LoginTests_Club_Banner">
@@ -622,4 +635,14 @@
             </class>
         </classes>
     </test> <!-- Test -->
+    <test  name="Verify ManageStripeAccount Functionality" verbose="2">
+        <classes>
+            <class name="Tests.ManageStripeAccountTest">
+                <methods>
+                    <include name="Verify_the_field_display_on_the_MANAGE_STRIPE_ACCOUNT_tab"></include>
+                    <include name="Verify_the_CONNECT_STRIPE_button_display"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

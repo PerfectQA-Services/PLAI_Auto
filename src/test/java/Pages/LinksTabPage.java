@@ -16,9 +16,11 @@ public class LinksTabPage extends Abstract{
     }
 
     public void Open_Links_Tab() throws InterruptedException {
-        for(int i=0;i<=5;i++){
-            driver.findElement(By.xpath(Navigation_Right_Arrow)).click();}
         Thread.sleep(2000);
+        driver.findElement(By.xpath("//android.view.View[8]")).click();
+        for(int i=0;i<4;i++){
+            driver.findElement(By.xpath("//android.view.View[9]")).click();
+        }
         driver.findElement(By.xpath(LINKS_Tab)).click();
         common.log("Opened Links Tab");
         Thread.sleep(4000);

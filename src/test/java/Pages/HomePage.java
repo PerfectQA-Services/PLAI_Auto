@@ -364,28 +364,22 @@ public class HomePage extends Abstract{
     }
 
     public void Click_Admin_Club_Banner() throws InterruptedException {
-        common.scrollMyClubsBanners(driver);
-        Thread.sleep(1000);
-        common.isElementPresent(Admin_Tag_On_Banner);
-        driver.findElement(By.xpath(Admin_Tag_On_Banner)).click();
+        common.scrollMyClubsBannersUntilClubFound(driver,Vzhx_Club_Banner);
+        driver.findElement(By.xpath(Vzhx_Club_Banner)).click();
         common.log("Clicked On Club Banner in which user is Admin");
+        Thread.sleep(2000);
     }
 
     public void Click_Test27_Admin_Club_Banner() throws InterruptedException {
-        common.scrollMyClubsBanners(driver);
-        common.scrollMyClubsBanners(driver);
-        Thread.sleep(1000);
-        common.isElementPresent(Admin_Tag_On_Banner);
-        driver.findElement(By.xpath(Admin_Tag_On_Banner)).click();
-        common.log("Clicked On Club Banner in which user is Admin");
+        common.scrollMyClubsBannersUntilClubFound(driver,Test27_Club_Banner);
+        driver.findElement(By.xpath(Test27_Club_Banner)).click();
+        common.log("Clicked On Test27 Club Banner in which user is Admin");
         Thread.sleep(3000);
     }
 
     public void Click_Vzhx_Admin_Club_Banner() throws InterruptedException {
-        common.scrollMyClubsBanners(driver);
-        Thread.sleep(1000);
-        common.isElementPresent(Admin_Tag_On_Banner);
-        driver.findElement(By.xpath(Admin_Tag_On_Banner)).click();
+        common.scrollMyClubsBannersUntilClubFound(driver,Vzhx_Club_Banner);
+        driver.findElement(By.xpath(Vzhx_Club_Banner)).click();
         common.log("Clicked On Club Banner in which user is Admin");
         Thread.sleep(3000);
     }
@@ -539,7 +533,8 @@ public class HomePage extends Abstract{
 
     }
 
-    public void Click_Confirm_Button(){
+    public void Click_Confirm_Button() throws InterruptedException {
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Confirm_Button)).click();
         common.log("Clicked on confirm button");
     }
@@ -640,6 +635,15 @@ public class HomePage extends Abstract{
 
     }
 
+    public void Verify_Home_Page_Article_When_Add_New_News_Article(String Article_Name) throws InterruptedException {
+
+        Thread.sleep(3000);
+        common.isDisplayed("//android.widget.TextView[@text=\""+Article_Name+"\"]");
+        common.log("First Article is verified.");
+        common.isDisplayed(Ads_Position);
+        common.log("Adds position after 3rd article verified.");
+
+    }
 
 
 

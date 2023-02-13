@@ -12,7 +12,7 @@ public class Abstract {
     /***
      * LunchApp page Locators
      */
-    String bla = "msnbvjb";
+
     String Logo_Verfication = "//android.widget.ImageView[@content-desc=\"Logo\"]";
     String skip_button = "//android.view.View/android.view.View[2]/android.widget.Button";
     String next_button = "//android.view.View[2]/android.view.View[3]/android.widget.Button";
@@ -54,7 +54,7 @@ public class Abstract {
     String done_link = "//android.widget.TextView[@text=\"Done\"]";
     String searchbar = "(//android.view.View/android.view.View/android.widget.EditText)[1]";
     String get_country_name = "(//android.widget.EditText[@index=\"0\"])[1] | (//android.view.View/android.widget.TextView)[2] | //android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]";
-    String dropdown_icon = "//android.widget.EditText/android.view.View/android.view.View[2]/android.widget.Button";
+    String dropdown_icon = "//android.view.View[@content-desc=\"Trailing icon for exposed dropdown menu\"]";
     String country_checkbox = "(//android.widget.CheckBox)[1]";
     String country_checkbox_1 = "(//android.widget.CheckBox)[2]";
     String country_code_dropdown = "//android.widget.EditText/android.view.View[2] | (//android.widget.TextView[@class=\"android.widget.TextView\"])[4]";
@@ -115,7 +115,7 @@ public class Abstract {
      */
     String Pending_Request_Button = "//android.widget.TextView[@text=\"Pending Request\"]";
     String Sliding_Banners = "//android.view.View/android.view.View[3]/android.view.View[1]/android.widget.Button";
-    String Sort_By_Button = "//android.widget.TextView[@text=\"Sort by\"]";
+    String Sort_By_Button = "//android.widget.TextView[@text=\"Sort by\"] | (//android.view.View/android.view.View[4])[1]";
     String Latest_Article_Header = "//android.widget.TextView[@text=\"LATEST\"]";
     String Location_Icon = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[6]/android.view.View";
     String Create_Team_Plus_Button = "//android.view.View/android.view.View/android.view.View[7]/android.view.View/android.view.View[1]";
@@ -137,6 +137,8 @@ public class Abstract {
     String Calendar_Next_Month_Arrow = "//android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]";
     String EventDate = "//android.view.View[31]";
     String SportsEventListBanner = "//android.widget.TextView[contains(@text,\"New Sports Event\")]";
+    String Test27_Club_Banner = "//android.widget.TextView[@text=\"Test 27\"]//..//android.widget.TextView[@text=\"Admin\"]";
+    String Vzhx_Club_Banner = "//android.widget.TextView[@text=\"Vzhx\"]//..//android.widget.TextView[@text=\"Admin\"]";
 
 
     /***
@@ -287,7 +289,7 @@ public class Abstract {
     String Send_Notification_No = "//android.view.View[4]//android.widget.TextView[@text=\"NO\"]";
     String Send_A_SMS_Yes = "//android.view.View[7]//android.widget.TextView[@text=\"YES\"]";
     String Groups_Dropdown = "//android.widget.TextView[@text=\"Groups*\"]";
-    String Allow_Comments_No = "//android.view.View[8]//android.widget.TextView[@text=\"NO\"] | //android.view.View[5]//android.widget.TextView[@text=\"NO\"]";
+    String Allow_Comments_No = "(//android.widget.TextView[@text=\"NO\"])[1]";
     String Payment_page_Header = "//android.widget.TextView[@text=\"CHECKOUT\"]";
     String User_Information_Text_Payment = "(//android.widget.TextView[2])[1]";
     String Change_Card_Button = "//android.widget.TextView[@text=\"CHANGE CARD\"]";
@@ -408,8 +410,8 @@ public class Abstract {
     String Submission_Type_Bug_Text = "//android.widget.TextView[@text=\"BUG\"]";
     String Select_Device_Android = "//android.view.View[@content-desc=\"android\"]";
     String Select_Device_Ios = "//android.view.View[@content-desc=\"ios\"]";
-    String Full_Name = "//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"7\"]";
-    String Email_Field = "//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"9\"]";
+    String Full_Name = "(//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[1])[1]";
+    String Email_Field = "//android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[@index=\"9\"] | //android.widget.TextView[@text=\"Full Name:\"]//..//android.widget.EditText[2]";
     String Location_Field_Setting = "//android.view.View[@content-desc=\"Trailing icon for exposed dropdown menu\"]";
     String Member_Of_Team_No_Button = "//android.widget.TextView[@text=\"NO\"]";
     String Member_Of_Team_Yes_Button = "//android.widget.TextView[@text=\"YES\"]";
@@ -435,6 +437,9 @@ public class Abstract {
     String New_Password_Field_Show_Password_Icon_Change_Password = "(//android.view.View[@content-desc=\"Show password\"])[2]";
     String Confirm_Password_Field_Show_Password_Icon_Change_Password = "(//android.view.View[@content-desc=\"Show password\"])[3]";
     String Text_In_Red_Colour = "//android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView";
+    String Saved_Card_Label = "//android.widget.TextView[@text=\"Saved Cards\"]";
+    String Save_Button="//android.widget.TextView[@text=\"SAVE\"]";
+
 
 
     /**
@@ -512,9 +517,9 @@ public class Abstract {
      */
     String Add_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
     String Link_Google_Link_After_Search = "//android.view.View[10]/android.view.View/android.widget.TextView[1]";
-    String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
+    String Link_Banner = "//android.view.View[9]/android.view.View[1]/android.widget.Button | //android.view.View[10]/android.view.View[1]/android.widget.Button";
     String Verify_Browser_Opened = "com.android.chrome:id/url_bar";
-    String Angel_Up_Icon = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
+    String Angel_Up_Icon = "//android.view.View[9]/android.view.View[2]/android.view.View[1] | //android.view.View[10]/android.view.View[2]/android.view.View[1]";
     String Angel_Down_Icon = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
     String Update_Team_Header = "//android.widget.TextView[@text=\"UPDATE TEAM\"]";
     String Add_New_Link_Button = "//android.widget.TextView[@text=\"ADD NEW LINK\"]";
@@ -528,9 +533,9 @@ public class Abstract {
     String Show_Url_No_Button = "//android.widget.TextView[@text=\"NO\"]";
     String Show_Url_Yes_Button = "//android.widget.TextView[@text=\"YES\"]";
     String LINKS_Tab = "//android.widget.TextView[@text=\"LINKS\"]";
-    String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
-    String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1]";
-    String Delete_Link_Button = "//android.view.View[9]/android.view.View/android.view.View[4]";
+    String Down_Arrow = "//android.view.View[9]/android.view.View[1]/android.view.View[2] | //android.view.View[10]/android.view.View[1]/android.view.View[2]";
+    String Up_Arrow = "//android.view.View[9]/android.view.View[2]/android.view.View[1] | //android.view.View[10]/android.view.View[2]/android.view.View[1]";
+    String Delete_Link_Button = "//android.view.View[9]/android.view.View/android.view.View[4] | //android.view.View[10]/android.view.View/android.view.View[4]";
 
 
     /**
@@ -549,8 +554,8 @@ public class Abstract {
      */
 
     String Groups_Tab = "//android.widget.TextView[@text=\"GROUPS\"]";
-    String Edit_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[3] | //android.view.View/android.widget.ScrollView/android.view.View[2]";
-    String Delete_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[4] | //android.view.View/android.widget.ScrollView/android.view.View[3]";
+    String Edit_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[3] | //android.view.View/android.widget.ScrollView/android.view.View[2] | //android.view.View[9]/android.view.View[1]/android.view.View[3]";
+    String Delete_Icon = "//android.view.View[8]/android.view.View[1]/android.view.View[4] | //android.view.View/android.widget.ScrollView/android.view.View[3] | //android.view.View[9]/android.view.View[1]/android.view.View[4]";
     String Add_New_Group_Button = "//android.widget.TextView[@text=\"ADD NEW GROUP\"]";
     String Group_Banner = "//android.view.View[1]/android.widget.Button";
     String Group_Information = "//android.view.View/android.widget.Button";
@@ -609,6 +614,8 @@ public class Abstract {
     String My_File_Option = "//android.widget.LinearLayout[3]/android.widget.ImageView[1]";
     String Document_CheckBox = "(//android.widget.CheckBox)[1]";
     String Done_Button = "//android.widget.TextView[@text=\"Done\"]";
+    String Upload_Documents_Plus_Icon="//android.view.View[6]/android.view.View[2] | //android.view.View[2]/android.view.View[2]";
+    String Upload_Documents_Delete_Icon="//android.view.View[6]/android.view.View[1]/android.view.View | //android.view.View[2]/android.view.View[1]/android.view.View";
 
     /***
      * Manage Ads page Locators
@@ -624,5 +631,12 @@ public class Abstract {
     String Redirect_Url_Label = "//android.widget.TextView[@text=\"Redirect URL*\"]";
     String Range_Of_Age = "//android.widget.ScrollView/android.widget.TextView[3]";
     String Gallery_Back_Icon = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]";
+
+    /***
+     * Manage Ads page Locators
+     */
+
+    String Three_Dot_Button="(//android.view.View/android.view.View/android.view.View[1])[2]";
+    String Manage_Stripe_Account="//android.widget.TextView[@text=\"Manage Stripe Account\"]";
 
 }

@@ -331,4 +331,27 @@ public class Common{
         new TouchAction((MobileDriver)driver).press(ElementOption.point(x,y));
         this.log(msg);
     }
+    public void scrollMyClubsBannersUntilClubFound(MobileDriver driver, String Element) throws InterruptedException {
+        Thread.sleep(2000);
+
+        Dimension dim = driver.manage().window().getSize();
+        int height = dim.getHeight();
+        int width = dim.getWidth();
+        int x = width / 2;
+        int top_y = (int) (height * 0.50);
+        int bottom_y = (int) (height * 0.20);
+
+
+        for(int i=0;i<=20;i++){
+            if(driver.findElementsByXPath(Element).isEmpty() == true){
+                new TouchAction((MobileDriver)driver).press(ElementOption.point(941, 490)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(195, 490)).release().perform();
+                System.out.println("\nScrolling My Club Banners !!!");
+                continue;
+            }
+            else {
+                break;
+            }
+        }
+        Thread.sleep(1000);
+    }
 }

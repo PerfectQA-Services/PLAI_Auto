@@ -67,7 +67,8 @@ public class ShopTabPage extends Abstract{
     }
 
     public void Verify_Search_CLP(){
-        driver.findElement(By.xpath(Search_Bar)).sendKeys("T-Shirt");
+        driver.findElement(By.xpath(Search_Bar)).click();
+        common.sendkeywords(driver,"T-Shirt");
         common.log("Searched T-Shirt in CLP");
         common.isElementPresent(T_Shirt_Product);
         common.log("Searched Product Is Displayed");
@@ -237,7 +238,7 @@ public class ShopTabPage extends Abstract{
         common.sendkeywords(driver, String.valueOf(Card_Number));
         common.log("Entered card number:-"+Card_Number);
         driver.hideKeyboard();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         String Card_Holder_Name=common.generateRandomChars(6);
         driver.findElement(By.xpath(Card_Holder_Name_Label)).click();
         common.sendkeywords(driver, Card_Holder_Name);
@@ -257,7 +258,7 @@ public class ShopTabPage extends Abstract{
 
     }
     public void Click_Save_Button() throws InterruptedException {
-        driver.findElement(By.xpath(Confirm_Purchase)).click();
+        driver.findElement(By.xpath(Save_Button)).click();
         common.log("Clicked On save button");
         Thread.sleep(5000);
     }

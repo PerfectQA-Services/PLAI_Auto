@@ -16,9 +16,9 @@ public class GroupTabPage extends Abstract {
     public void Open_Group_Tab() throws InterruptedException {
 
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//android.view.View[6]")).click();
+        driver.findElement(By.xpath("//android.view.View[8]")).click();
         for(int i=0;i<5;i++){
-            driver.findElement(By.xpath("//android.view.View[7]")).click();
+            driver.findElement(By.xpath("//android.view.View[9]")).click();
         }
         driver.findElement(By.xpath(Groups_Tab)).click();
         common.log("Clicked On Group Tab");

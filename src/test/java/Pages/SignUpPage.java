@@ -431,11 +431,8 @@ public class SignUpPage extends Abstract{
         Thread.sleep(1000);
         driver.findElement(By.xpath(dropdown_icon)).click();
         common.log("Country is verified.");
-        if(common.isElementPresent(done_link)){
-            common.log("Drop down icon is working");
-        }else{
-            common.log("List for the country doesn't open by tapping on 'Dropdown' icon");
-        }
+
+
 
     }
 

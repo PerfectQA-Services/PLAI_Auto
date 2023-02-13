@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ManageStripeAccount Functionality">
+    <test  name="Verify ManageStripeAccount Functionality" verbose="2">
+        <classes>
+            <class name="Tests.ManageStripeAccountTest">
+                <methods>
+                    <include name="Verify_the_field_display_on_the_MANAGE_STRIPE_ACCOUNT_tab"></include>
+                    <include name="Verify_the_CONNECT_STRIPE_button_display"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

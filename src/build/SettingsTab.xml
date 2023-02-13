@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="SettingTest">
     <classes>
       <class name="Tests.SettingTest">
         <methods>
@@ -73,6 +73,15 @@
           <include name="Verify_the_Teams_field"></include>
           <include name="Verify_the_Select_All_and_Deselect_All_button"></include>
           <include name="Verify_the_Documents_field"></include>
+          <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>
+          <include name="Verify_the_Plus_icon"></include>
+          <include name="Verify_the_Delete_icon_display_on_the_added_document"></include>
+          <include name="Verify_the_ADD_button_after_uploading_documents"></include>
+          <include name="Verify_the_CARD_NUMBER_field_by_entering_8_digit_number"></include>
+          <include name="Verify_the_CARD_HOLDER_NAME_field_by_not_added_data_in_field"></include>
+          <include name="Verify_the_EXPIRY_DATE_field_by_not_added_data_in_field"></include>
+          <include name="Verify_the_CVV_field_by_adding_2_digit_cvv"></include>
+          <include name="Verify_the_Country_field_by_not_selecting_country"></include>
         </methods>
       </class>
     </classes>

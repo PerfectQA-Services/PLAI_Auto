@@ -218,8 +218,10 @@ public class NewsTabPage extends Abstract{
         common.log("Preview Screen is Displayed");
     }
 
-    public void Create_New_Article_With_Sms() throws InterruptedException {
-        driver.findElement(By.xpath(Title_Text_Field)).sendKeys("Test Article 2");
+    public String Create_New_Article_With_Sms() throws InterruptedException {
+        Thread.sleep(2000);
+        String Article_Name=common.generateRandomChars(7);
+        driver.findElement(By.xpath(Title_Text_Field)).sendKeys(Article_Name);
         common.log("Entered Article Title");
         driver.findElement(By.xpath(Article_Description_TF)).sendKeys("Test Article 2 Description");
         common.log("Entered Article Description");
@@ -241,8 +243,10 @@ public class NewsTabPage extends Abstract{
         Thread.sleep(2000);
         common.scrollDownMobile(driver);
         common.scrollDownMobile(driver);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Allow_Comments_No)).click();
         common.log("Selected No to Allow Notifications");
+        return Article_Name;
     }
 
     public void Verify_Payment_Page_Header() throws InterruptedException {
@@ -286,7 +290,51 @@ public class NewsTabPage extends Abstract{
         common.isDisplayed(Ads_Position);
         common.log("Ads position after 3rd news articles is verified.");
     }
+    public void Click_On_Pin_Icon_New_Sprint() throws InterruptedException {
 
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Pin_Icon)).click();
+        common.log("Clicked on pin icon.");
 
+    }
+    public void Click_On_Pin_Icon_Of_Second_Banner_New_Sprint() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Pin_Icon_1)).click();
+        common.log("Clicked on pin icon of second banner.");
+
+    }
+
+    public void Verify_Upload_Documents_New_Sprint() throws InterruptedException {
+        common.scrollDownMobile(driver);
+        common.scrollDownMobile(driver);
+        driver.findElement(By.xpath(Documents_Upload)).click();
+        common.log("Clicked on Documents upload");
+        driver.findElement(By.xpath(My_File_Option)).isDisplayed();
+        common.log("File manager is opened");
+
+    }
+    public void Upload_Documents_Verify_Result() throws InterruptedException {
+
+        driver.findElement(By.xpath(My_File_Option)).click();
+        common.log("Clicked on My files option");
+        driver.findElement(By.xpath(Document_CheckBox)).click();
+        common.log("Document is selected.");
+        driver.findElement(By.xpath(Done_Button)).click();
+        common.log("Clicked on done button.");
+        driver.findElement(By.xpath(Upload_Documents_Plus_Icon)).isDisplayed();
+        common.log("Plus icon is verified");
+        driver.findElement(By.xpath(Upload_Documents_Delete_Icon)).isDisplayed();
+        common.log("Delete icon is verified");
+
+    }
+
+    public void Click_On_Back_Button() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Back_Button)).click();
+        common.log("Clicked on Back Icon.");
+
+    }
 
 }

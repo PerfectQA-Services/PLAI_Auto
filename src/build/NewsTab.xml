@@ -39,6 +39,13 @@
           <include name="Verify_the_cards_display_on_the_CHECKOUT_screen"></include>
           <include name="Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab"></include>
           <include name="Verify_the_functionality_of_Ads_not_display_to_the_subscribed_team_member_of_groups_in_NEWS_tab"></include>
+          <include name="Verify_the_NEWS_tab_for_Admin_banner_New_Sprint"></include>
+          <include name="Verify_the_Pin_icon_display_on_the_article_banner"></include>
+          <include name="Verify_the_position_of_pinned_article_by_adding_new_article"></include>
+          <include name="Verify_the_position_of_article_after_unpinned_it"></include>
+          <include name="Verify_the_functionality_of_Pin_icon_by_tapping_on_Pin_icon_of_two_article_banner"></include>
+          <include name="Verify_the_functionality_of_Document_in_NEWS_tab"></include>
+          <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>
         </methods>
       </class>
     </classes>

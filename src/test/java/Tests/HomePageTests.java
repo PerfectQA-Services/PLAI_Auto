@@ -924,19 +924,76 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Homepage_Articles();
 
     }
-//    //TC-74
-//    @Test
-////    public void Verify the 'Home Page' after adding one article in 'NEWS' tab ()throws InterruptedException, IOException, AWTException, ParseException {
-//
-//        LaunchAppPage launchApp = new LaunchAppPage(driver);
-//        LoginPage loginPage = new LoginPage(driver);
-//        HomePage homePage = new HomePage(driver);
-//        SignUpPage_Club_Banner signup_club_banner=new SignUpPage_Club_Banner(driver);
-//        launchApp.Verify_Application_Launched();
-//        launchApp.click_on_skip_button();
-//        launchApp.click_on_next_button();
-//        homePage.Login_with_valid_Credentials();
-//        homePage.Verify_Homepage_Articles();
-//
-//    }
+    //TC-66
+    @Test
+    public void Verify_the_Home_Page_after_adding_one_article_in_NEWS_tab()throws InterruptedException, IOException, AWTException, ParseException {
+
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        homePage.Verify_Homepage_Articles();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        String Article_Name=newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Preview_Screen();
+        homePage.Click_Confirm_Button();
+        homePage.Click_Confirm_Button();
+        signUp.click_on_user_information_page_button("CLOSE");
+        newsTab.Click_On_Back_Button();
+        homePage.Verify_Home_Page_Article_When_Add_New_News_Article(Article_Name);
+
+    }
+    //TC-67
+    @Test
+    public void Verify_the_Home_Page_after_adding_three_article_in_NEWS_tab()throws InterruptedException, IOException, AWTException, ParseException {
+
+        LaunchAppPage launchApp = new LaunchAppPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        NewsTabPage newsTab = new NewsTabPage(driver);
+        SignUpPage signUp = new SignUpPage(driver);
+        launchApp.Verify_Application_Launched();
+        launchApp.click_on_skip_button();
+        launchApp.click_on_next_button();
+        loginPage.Login_with_valid_Credentials();
+        homePage.Verify_Homepage_Articles();
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        String Article_Name=newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Preview_Screen();
+        homePage.Click_Confirm_Button();
+        homePage.Click_Confirm_Button();
+        signUp.click_on_user_information_page_button("CLOSE");
+        newsTab.Click_On_Back_Button();
+        homePage.Verify_Home_Page_Article_When_Add_New_News_Article(Article_Name);
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        String Article_Name_1=newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Preview_Screen();
+        homePage.Click_Confirm_Button();
+        homePage.Click_Confirm_Button();
+        signUp.click_on_user_information_page_button("CLOSE");
+        newsTab.Click_On_Back_Button();
+        homePage.Verify_Home_Page_Article_When_Add_New_News_Article(Article_Name_1);
+        homePage.Click_Test27_Admin_Club_Banner();
+        newsTab.Click_Add_New_Article_Button();
+        String Article_Name_2=newsTab.Create_New_Article_With_Sms();
+        newsTab.Click_Preview_Button();
+        newsTab.Verify_Preview_Screen();
+        homePage.Click_Confirm_Button();
+        homePage.Click_Confirm_Button();
+        signUp.click_on_user_information_page_button("CLOSE");
+        newsTab.Click_On_Back_Button();
+        homePage.Verify_Home_Page_Article_When_Add_New_News_Article(Article_Name_2);
+
+    }
 }

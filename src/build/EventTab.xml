@@ -74,6 +74,16 @@
           <include name="Verify_the_Angle_left_icon"></include>
           <include name="Verify_the_fields_of_the_SHOP_tab"></include>
           <include name="Verify_the_functionality_of_Ads_display_to_the_team_member_of_groups_in_NEWS_tab"></include>
+          <include name="Verify_the_CALENDAR_SYNC_icon_of_EVENTS_tab"></include>
+          <include name="Verify_the_ADD_TO_CALENDAR_button_of_OVERVIEW_tab_of_EVENT_screen"></include>
+          <include name="Verify_the_functionality_of_Event_Reminder"></include>
+          <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users"></include>
+          <include name="Verify_the_functionality_of_Event_Reminder_for_approved_users_but_Reminder_notification_selected_NO"></include>
+          <include name="Verify_the_functionality_of_Event_Reminder_for_Unavailable_option_of_RESPOND"></include>
+          <include name="Verify_the_functionality_of_Event_Reminder_for_More_time_needed_option_of_RESPOND"></include>
+          <include name="Verify_the_functionality_of_Document_in_EVENTS_tab"></include>
+          <include name="Verify_the_functionality_of_Document_field_by_attaching_document"></include>
+          <include name="Verify_the_status_of_events_when_user_change_the_timezone_from_india_to_Singapore"></include>
         </methods>
       </class>
     </classes>
