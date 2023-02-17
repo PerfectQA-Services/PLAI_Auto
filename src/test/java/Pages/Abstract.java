@@ -123,7 +123,7 @@ public class Abstract {
     String Settings_Icon_Button = "//android.view.View/android.view.View/android.view.View[7]/android.view.View/android.view.View[3]";
     String Search_Icon = "//android.widget.ImageView[@content-desc=\"Search\"] | //android.view.View[@content-desc=\"Search\"]";
     String Find_A_Club_Header = "//android.widget.TextView[@text=\"FIND A CLUB\"]";
-    String Search_Field = "//android.view.View//android.view.View//android.widget.EditText";
+    String Search_Field = "//android.view.View//android.view.View//android.widget.EditText | //android.widget.EditText/android.view.View";
     String Map_In_Search = "//android.view.View[@content-desc=\"Google Map\"]";
     String Sliding_Banner_In_Search = "//android.view.View/android.view.View/android.view.View[1]/android.widget.Button";
     String Back_Button_Search = "//android.view.View/android.view.View/android.widget.ImageView";

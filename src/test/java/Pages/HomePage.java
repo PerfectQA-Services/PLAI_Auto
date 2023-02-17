@@ -62,7 +62,9 @@ public class HomePage extends Abstract{
     }
 
     public void Verify_Search_Functionality() throws InterruptedException {
+        Thread.sleep(2000);
         driver.findElement(By.xpath(Search_Field)).click();
+        driver.findElement(By.xpath(Search_Field)).clear();
         driver.findElement(By.xpath(Search_Field)).sendKeys("Sporty Tots");
         driver.hideKeyboard();
         common.log("Searched Sporty Tots");
@@ -74,6 +76,7 @@ public class HomePage extends Abstract{
     }
 
     public void Verify_Join_Team_Button(){
+
         common.waitUntillElementPresent(Sporty_Tots_Banner,driver);
         driver.findElement(By.xpath(Sporty_Tots_Banner)).click();
         common.log("Clicked on Sporty Tots banner");
@@ -403,8 +406,9 @@ public class HomePage extends Abstract{
         common.log("Event Tab is Displayed");
         common.isElementPresent(SHOP_Tab);
         common.log("Shop Tab is Displayed");
-        for(int i=0;i<=4;i++) {
-            driver.findElement(By.xpath(Navigation_Right_Arrow)).click();
+        driver.findElement(By.xpath("//android.view.View[8]")).click();
+        for(int i=0;i<=3;i++) {
+            driver.findElement(By.xpath("//android.view.View[9]")).click();
             common.log("Clicked On Navigation Right Arrow");
         }
         common.isElementPresent(MEMBERS_Tab);
@@ -478,8 +482,10 @@ public class HomePage extends Abstract{
         common.log("Team updated Successfully Popup is displayed");
     }
 
-    public void Search_Requested_Users(){
-        driver.findElement(By.xpath(Search_Bar)).sendKeys("Riya Test");
+    public void Search_Requested_Users() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(Search_Bar)).click();
+        common.sendkeywords(driver,"Riya Test");
         common.log("Clicked On Update Team");
         common.isElementPresent(User_Request);
         common.log("Searched user request is displayed");
