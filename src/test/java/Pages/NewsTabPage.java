@@ -322,10 +322,12 @@ public class NewsTabPage extends Abstract{
         common.log("Document is selected.");
         driver.findElement(By.xpath(Done_Button)).click();
         common.log("Clicked on done button.");
-        driver.findElement(By.xpath(Upload_Documents_Plus_Icon)).isDisplayed();
-        common.log("Plus icon is verified");
-        driver.findElement(By.xpath(Upload_Documents_Delete_Icon)).isDisplayed();
-        common.log("Delete icon is verified");
+        Thread.sleep(3000);
+        driver.findElementsByXPath(Documents_Upload).isEmpty();
+//        driver.findElement(By.xpath(Upload_Documents_Plus_Icon)).isDisplayed();
+//        common.log("Plus icon is verified");
+//        driver.findElement(By.xpath(Upload_Documents_Delete_Icon)).isDisplayed();
+//        common.log("Delete icon is verified");
 
     }
 

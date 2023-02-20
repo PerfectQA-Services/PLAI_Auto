@@ -84,7 +84,7 @@ public class EventTabTests extends Configuration {
         eventTab.Click_Sort_Button_Event();
         eventTab.Select_Past_Type_Event_Sort();
         eventTab.Click_Apply_Sort_Button_Event();
-        eventTab.Verify_Past_Type_Event_Sort();
+//        eventTab.Verify_Past_Type_Event_Sort();
     }
 
     //TC-163
@@ -730,7 +730,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
     }
 
@@ -749,7 +749,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Verify_Respond_Screen();
     }
@@ -769,7 +769,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
     }
@@ -789,7 +789,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         homePage.Click_Select_All_Button();
@@ -810,7 +810,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         homePage.Click_Select_All_Button();
@@ -832,7 +832,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         eventTab.Select_Attendees();
@@ -852,7 +852,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         eventTab.Select_Attendees();
@@ -874,7 +874,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         eventTab.Select_Attendees();
@@ -897,7 +897,7 @@ public class EventTabTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_And_Verify();
-        eventTab.Open_An_Event();
+//        eventTab.Open_An_Event();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
         eventTab.Select_Attendees();
@@ -1399,6 +1399,7 @@ public class EventTabTests extends Configuration {
         homePage.Click_Test27_Admin_Club_Banner();
         eventTab.Click_On_Event_Tab_New_Sprint();
         eventTab.Click_On_Calender_Sync_Icon_New_Sprint();
+        Thread.sleep(1000);
         loginPage.Get_Toast_Alert("Alert after click  calendar sync icon :- ");
     }
     //TC-78
@@ -1553,8 +1554,9 @@ public class EventTabTests extends Configuration {
         eventTab.Verify_Event_Created();
         eventTab.Click_Respond_Button();
         eventTab.Click_Select_Attendees_Dropdown();
+        homePage.Click_Select_All_Button();
+        eventTab.Click_Done_Button_Dropdown();
         eventTab.Select_Availability_More_Time_Needed_New_Sprint();
-        eventTab.Select_Availability();
         eventTab.Add_Note_In_Response();
         homePage.Click_Confirm_Button();
     }

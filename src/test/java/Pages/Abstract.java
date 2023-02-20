@@ -301,7 +301,7 @@ public class Abstract {
      * Event Tab
      */
     String Add_New_Event = "//android.widget.TextView[@text=\"ADD EVENT\"]";
-    String Sort_Event = "//android.view.View[9]";
+    String Sort_Event = "//android.view.View[11]";
     String Sort_Event_Type = "//android.widget.TextView[@text=\"Type\"]";
     String Sort_By_Upcoming_Event = "//android.widget.TextView[@text=\"Upcoming\"]";
     String Sort_By_Past_Event = "//android.widget.TextView[@text=\"Past\"]";
@@ -614,8 +614,8 @@ public class Abstract {
     String My_File_Option = "//android.widget.LinearLayout[3]/android.widget.ImageView[1]";
     String Document_CheckBox = "(//android.widget.CheckBox)[1]";
     String Done_Button = "//android.widget.TextView[@text=\"Done\"]";
-    String Upload_Documents_Plus_Icon="//android.view.View[6]/android.view.View[2] | //android.view.View[2]/android.view.View[2]";
-    String Upload_Documents_Delete_Icon="//android.view.View[6]/android.view.View[1]/android.view.View | //android.view.View[2]/android.view.View[1]/android.view.View";
+    String Upload_Documents_Plus_Icon="//android.view.View[2]/android.view.View[2]";
+    String Upload_Documents_Delete_Icon="//android.view.View[2]/android.view.View[1]/android.view.View";
 
     /***
      * Manage Ads page Locators
