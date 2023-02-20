@@ -344,7 +344,7 @@ public class Common{
 
         for(int i=0;i<=20;i++){
             if(driver.findElementsByXPath(Element).isEmpty() == true){
-                new TouchAction((MobileDriver)driver).press(ElementOption.point(941, 490)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(195, 490)).release().perform();
+                new TouchAction((MobileDriver)driver).press(ElementOption.point(950, 590)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(150, 590)).release().perform();
                 System.out.println("\nScrolling My Club Banners !!!");
                 continue;
             }
@@ -354,4 +354,54 @@ public class Common{
         }
         Thread.sleep(1000);
     }
+
+
+    public void scrollUntilRespondButtonFound(MobileDriver driver, String Element) throws InterruptedException {
+        Thread.sleep(2000);
+
+        Dimension dim = driver.manage().window().getSize();
+        int height = dim.getHeight();
+        int width = dim.getWidth();
+        int x = width / 2;
+        int top_y = (int) (height * 0.50);
+        int bottom_y = (int) (height * 0.20);
+
+
+        for(int i=0;i<=20;i++){
+            if(driver.findElementsByXPath(Element).isEmpty() == true){
+                new TouchAction((MobileDriver)driver).press(ElementOption.point(x, top_y)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(x, bottom_y)).release().perform();
+                System.out.println("\nScrolling Events !!!");
+                continue;
+            }
+            else {
+                break;
+            }
+        }
+        Thread.sleep(1000);
+    }
+
+    public void scrollUntilOldEventFound(MobileDriver driver, String Element) throws InterruptedException {
+        Thread.sleep(2000);
+
+        Dimension dim = driver.manage().window().getSize();
+        int height = dim.getHeight();
+        int width = dim.getWidth();
+        int x = width / 2;
+        int top_y = (int) (height * 0.50);
+        int bottom_y = (int) (height * 0.20);
+
+
+        for(int i=0;i<=20;i++){
+            if(driver.findElementsByXPath(Element).isEmpty() == true){
+                new TouchAction((MobileDriver)driver).press(ElementOption.point(x, top_y)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(x, bottom_y)).release().perform();
+                System.out.println("\nScrolling Events !!!");
+                continue;
+            }
+            else {
+                break;
+            }
+        }
+        Thread.sleep(1000);
+    }
+
 }

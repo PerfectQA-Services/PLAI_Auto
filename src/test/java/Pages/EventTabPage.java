@@ -29,7 +29,7 @@ public class EventTabPage extends Abstract{
 
     public void Search_Event() throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(By.xpath(Search_Bar)).sendKeys("Training");
+        driver.findElement(By.xpath("//android.widget.EditText")).sendKeys("Training");
         common.log("Searched Event");
     }
 
@@ -262,7 +262,7 @@ public class EventTabPage extends Abstract{
         driver.findElement(By.xpath(SelectAll_Button)).click();
         common.log("Selected All");
         driver.findElement(By.xpath(done_link)).click();
-        common.log("Clicked On Dome Button");
+        common.log("Clicked On Done Button");
     }
 
     public void Select_To_Whom_Event_Is_Visible(){
@@ -271,7 +271,7 @@ public class EventTabPage extends Abstract{
         driver.findElement(By.xpath(SelectAll_Button)).click();
         common.log("Selected All");
         driver.findElement(By.xpath(done_link)).click();
-        common.log("Clicked On Dome Button");
+        common.log("Clicked On Done Button");
     }
 
     public void Click_Preview_Button() throws InterruptedException {
@@ -306,6 +306,7 @@ public class EventTabPage extends Abstract{
     }
 
     public void Click_On_Old_Event() throws InterruptedException {
+        common.scrollDownMobile(driver);
         driver.findElement(By.xpath(Old_Event)).click();
         common.log("Clicked On Old Event");
         Thread.sleep(4000);
@@ -316,7 +317,8 @@ public class EventTabPage extends Abstract{
         common.log("Clicked On Old Event");
     }
 
-    public void Click_Respond_Button(){
+    public void Click_Respond_Button() throws InterruptedException {
+        common.scrollUntilRespondButtonFound(driver,Respond_Button);
         driver.findElement(By.xpath(Respond_Button)).click();
         common.log("Clicked On Respond Button");
         common.isElementPresent(Respond_Screen_Header);
@@ -333,6 +335,12 @@ public class EventTabPage extends Abstract{
     }
 
     public void Open_An_Event() throws InterruptedException {
+        driver.findElement(By.xpath("//android.view.View[12]/android.view.View[1]/android.widget.Button")).click();
+        common.log("Event Opened");
+        Thread.sleep(4000);
+    }
+
+    public void Open_An_Event_To_respond() throws InterruptedException {
         driver.findElement(By.xpath("//android.view.View[12]/android.view.View[1]/android.widget.Button")).click();
         common.log("Event Opened");
         Thread.sleep(4000);
@@ -513,7 +521,11 @@ public class EventTabPage extends Abstract{
     public void Click_On_Did_Not_Attend_Checkbox() throws InterruptedException {
 
         Thread.sleep(2000);
-        driver.findElement(By.xpath(Did_Not_Attend_Checkbox)).click();
+        if(driver.findElementsByXPath(Did_Not_Attend_Checkbox).isEmpty() == true){
+        driver.findElement(By.xpath(Attended_Checkbox)).click();}
+        else{
+            driver.findElement(By.xpath(Did_Not_Attend_Checkbox)).click();
+        }
         common.log("Clicked on did not attended checkbox.");
 
     }
@@ -521,7 +533,12 @@ public class EventTabPage extends Abstract{
     public void Click_On_Attend_Checkbox() throws InterruptedException {
 
         Thread.sleep(2000);
-        driver.findElement(By.xpath(Attended_Checkbox)).click();
+        if(driver.findElementsByXPath(Attended_Checkbox).isEmpty() == true){
+            driver.findElement(By.xpath(Did_Not_Attend_Checkbox)).click();}
+        else{
+            driver.findElement(By.xpath(Attended_Checkbox)).click();
+        }
+//        driver.findElement(By.xpath(Attended_Checkbox)).click();
         common.log("Clicked attended checkbox.");
 
     }
@@ -569,7 +586,7 @@ public class EventTabPage extends Abstract{
         driver.findElement(By.xpath(SelectAll_Button)).click();
         common.log("Selected All");
         driver.findElement(By.xpath(done_link)).click();
-        common.log("Clicked On Dome Button");
+        common.log("Clicked On Done Button");
     }
 
     public void Select_To_Whom_Event_Is_Visible_New_Sprint(){
@@ -578,7 +595,7 @@ public class EventTabPage extends Abstract{
         driver.findElement(By.xpath(SelectAll_Button)).click();
         common.log("Selected All");
         driver.findElement(By.xpath(done_link)).click();
-        common.log("Clicked On Dome Button");
+        common.log("Clicked On Done Button");
     }
 
     public void Click_Preview_Button_New_Sprint() throws InterruptedException {
@@ -663,6 +680,11 @@ public class EventTabPage extends Abstract{
         driver.findElement(By.xpath(My_File_Option)).isDisplayed();
         common.log("File manager is opened");
 
+    }
+
+    public void Click_Done_Button_Dropdown(){
+        driver.findElement(By.xpath(done_link)).click();
+        common.log("Clicked on Done Button");
     }
 
     public void Change_Time_Zone(String Timezone_Name){
