@@ -3,10 +3,19 @@ package Pages;
 import Config.Common;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
+import java.awt.event.KeyEvent;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class HomePage extends Abstract{
@@ -38,8 +47,8 @@ public class HomePage extends Abstract{
     }
 
     public void Click_On_Search_Icon() throws InterruptedException {
-        Thread.sleep(4000);
-        driver.findElement(By.xpath(Search_Icon)).click();
+        Thread.sleep(6000);
+        driver.findElement(By.xpath(Location_Icon)).click();
         common.log("Clicked On Search Icon");
         Thread.sleep(7000);
         common.log("Search Page is displayed");
@@ -546,11 +555,9 @@ public class HomePage extends Abstract{
     }
 
     public void Delete_Member_And_Send_Request_Again_1() throws InterruptedException, IOException, ParseException {
-        for(int i=0;i<=5;i++) {
-            driver.findElement(By.xpath(Navigation_Right_Arrow)).click();
-            common.log("Clicked On Navigation Right Arrow");
-            Thread.sleep(1000);
-        }
+        driver.findElement(By.xpath(Navigation_Right_Arrow)).click();
+        common.log("Clicked On Navigation Right Arrow");
+        Thread.sleep(1000);
         common.isElementPresent(MEMBERS_Tab);
         common.log("Members Tab is Displayed");
         driver.findElement(By.xpath(MEMBERS_Tab)).click();
@@ -573,7 +580,7 @@ public class HomePage extends Abstract{
     public void Delete_Member_And_Send_Request_Again_2() throws InterruptedException, IOException, ParseException {
         driver.findElement(By.xpath(Search_Field)).click();
         driver.findElement(By.xpath(Search_Field)).sendKeys("Vzhx");
-        driver.executeScript("mobile: performEditorAction", ImmutableMap.of("action", "search"));
+        driver.hideKeyboard();
         Thread.sleep(2000);
         common.isElementPresent(Vzhx_Banner);
         driver.findElement(By.xpath(Vzhx_Banner)).click();
@@ -651,6 +658,49 @@ public class HomePage extends Abstract{
 
     }
 
+//
+//    public void Get_Count_Of_Name_Chars() throws IOException, ParseException {
+//
+//        JSONParser jsonParser = new JSONParser();
+//        FileReader reader = new FileReader(System.getProperty("user.dir") + "/src/test/resources/Static_Parameters.json");
+//        Object obj = jsonParser.parse(reader);
+//        JSONArray usersList = (JSONArray) obj;
+//        JSONObject parameters = (JSONObject) usersList.get(0);
+//        String Name = (String)parameters.get("Name");
+//
+//
+//
+////        String Name = "TANISHQSONI";
+//
+//        char[] ch = new char[Name.length()];
+//        char[] ch2 = new char[Name.length()];
+//        for (int i = 0; i < Name.length(); i++) {
+//            ch[i] = Name.charAt(i);
+//            ch2[i] = Name.charAt(i);
+//        }
+//
+//        for(int j=0;j<Name.length();j++){
+//            int count =0;
+//            for(int k=0;k<=j;k++)
+//            {
+//                if(ch[j] == ch[k]){
+//                    count+=1;
+//                    continue;
+//                }
+//                else{
+//                    continue;
+//                }
+//
+//            }
+//            System.out.print("Count of " +ch[j] + " is : " + count + "\n");
+//        }
+//
+//
+//
+//
+//
+//    }
+//
 
 
 }

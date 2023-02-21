@@ -80,7 +80,6 @@ public class HomePageTests extends Configuration {
         loginPage.Verify_Splash_Welcome_Screen_Elements_After_Login();
         homePage.Click_On_Search_Icon();
         homePage.Verify_Search_Functionality();
-        //Search icon is replaced with Calendar icon
     }
 
     //TC-81
@@ -740,7 +739,6 @@ public class HomePageTests extends Configuration {
         homePage.Click_Admin_Club_Banner();
         homePage.Accept_User_Request();
         homePage.Verify_Assign_Groups_Popup();
-        //There is no user request so it is failed
     }
 
     //TC-121
@@ -760,7 +758,6 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Assign_Groups_Popup();
         homePage.Click_Assign_Groups_Dropdown();
         homePage.Select_Group();
-        //There is no user request so it is failed
     }
 
     //TC-122
@@ -780,7 +777,6 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Assign_Groups_Popup();
         homePage.Click_Assign_Groups_Dropdown();
         homePage.Click_Select_All_Button();
-        //There is no user request so it is failed
     }
 
     //TC-123
@@ -801,7 +797,6 @@ public class HomePageTests extends Configuration {
         homePage.Click_Assign_Groups_Dropdown();
         homePage.Click_Select_All_Button();
         homePage.Click_DeSelect_All_Button();
-        //There is no user request so it is failed
     }
 
     //TC-124
@@ -821,7 +816,6 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Assign_Groups_Popup();
         homePage.Click_Assign_Groups_Dropdown();
         homePage.Search_And_Select_Group();
-        //There is no user request so it is failed
     }
 
     //TC-125
@@ -841,7 +835,6 @@ public class HomePageTests extends Configuration {
         homePage.Verify_Assign_Groups_Popup();
         homePage.Click_Confirm_Button();
         loginPage.Get_Toast_Alert("Alert to select Group");
-        //There is no user request so it is failed
     }
 
     //TC-126
@@ -868,7 +861,6 @@ public class HomePageTests extends Configuration {
         loginPage.Login_with_Random_valid_Credentials("saregama@mailinator.com","Test123.");
         homePage.Click_On_Search_Icon();
         homePage.Delete_Member_And_Send_Request_Again_2();
-        //There is no user request so it is failed
     }
 
     //TC-153 - Nov-Dec-Sprint
@@ -1007,4 +999,11 @@ public class HomePageTests extends Configuration {
         //There is no saved cards and can not create new card.
 
     }
+
+//    @Test
+//    public void Task() throws IOException, ParseException {
+//        HomePage homePage = new HomePage(driver);
+//        homePage.Get_Count_Of_Name_Chars();
+//    }
+
 }

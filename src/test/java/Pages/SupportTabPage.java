@@ -39,7 +39,7 @@ public class SupportTabPage extends Abstract{
     public void Select_Support_Type_And_Verify_Them(){
         driver.findElement(By.xpath(User_Support_Button)).click();
         common.log("Selected General User Support");
-        driver.findElement(By.xpath(User_Support_Button)).click();
+        driver.findElement(By.xpath(Admin_Support_Button)).click();
         common.log("Now Selected Team Admin Support");
     }
 
