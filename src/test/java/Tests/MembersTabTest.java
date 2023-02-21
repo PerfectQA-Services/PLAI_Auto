@@ -466,7 +466,7 @@ public class MembersTabTest extends Configuration {
 
     //TC-266
     @Test
-    public void Verify_the_Mobile_Number_field()throws InterruptedException, IOException, AWTException, ParseException {
+        public void Verify_the_Mobile_Number_field()throws InterruptedException, IOException, AWTException, ParseException {
         LaunchAppPage launchApp = new LaunchAppPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);

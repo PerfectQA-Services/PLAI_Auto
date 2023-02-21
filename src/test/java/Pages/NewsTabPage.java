@@ -245,6 +245,7 @@ public class NewsTabPage extends Abstract{
         common.scrollDownMobile(driver);
         Thread.sleep(2000);
         driver.findElement(By.xpath(Allow_Comments_No)).click();
+        common.scrollDownMobile(driver);
         common.log("Selected No to Allow Notifications");
         return Article_Name;
     }

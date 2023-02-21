@@ -59,6 +59,7 @@ public class ShopTabPage extends Abstract{
     }
 
     public void Verify_View_All() throws InterruptedException {
+        common.scrollUntilClothingProductsEventFound(driver,Clothing_Header);
         driver.findElement(By.xpath(View_All_ShopTab)).click();
         common.log("Clicked On View All Button Of Clothing");
         Thread.sleep(6000);
@@ -68,7 +69,7 @@ public class ShopTabPage extends Abstract{
 
     public void Verify_Search_CLP(){
         driver.findElement(By.xpath(Search_Bar)).click();
-        common.sendkeywords(driver,"T-Shirt");
+        common.sendkeywords(driver,"Test");
         common.log("Searched T-Shirt in CLP");
         common.isElementPresent(T_Shirt_Product);
         common.log("Searched Product Is Displayed");

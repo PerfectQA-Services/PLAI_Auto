@@ -18,7 +18,7 @@ public class Abstract {
     String next_button = "//android.view.View[2]/android.view.View[3]/android.widget.Button";
     String Back_Button = "//android.widget.ImageView[@index=\"0\"]";
     String LogOut_Button = "//android.widget.ImageView[@index=\"2\"]";
-    String Search_Bar = "//android.widget.EditText[@text=\"Search Now\"] | //android.widget.TextView[@text=\"Search Now\"]";
+    String Search_Bar = "//android.widget.EditText[@text=\"Search Now\"] | //android.widget.EditText | //android.widget.TextView[@text=\"Search Now\"]";
 
 
     /***
@@ -261,7 +261,7 @@ public class Abstract {
     String Add_New_Article_News_Tab = "//android.widget.TextView[@text=\"ADD NEW ARTICLE\"]";
     String News_Article = "//android.view.View[9]/android.view.View[1]/android.widget.Button";
     String Bookmark_News_Article = "//android.view.View[9]/android.view.View[1]/android.view.View[1]";
-    String Share_News_Article = "//android.view.View[9]/android.view.View[1]/android.view.View[3]";
+    String Share_News_Article = "//android.view.View[10]/android.view.View[1]/android.view.View[3]";
     String Edit_Button_News_Article = "//android.widget.ScrollView/android.view.View[1]";
     String Update_Article = "//android.widget.TextView[@text=\"UPDATE ARTICLE\"]";
     String Update_Article_Title_Field = "//android.widget.TextView[@text=\"Title*\"]";
@@ -452,7 +452,7 @@ public class Abstract {
     String Product_Price = "//android.widget.TextView[contains(@text,\"£\")]";
     String Test_Product = "//android.widget.TextView[@text=\"Test Product\"]";
     String Clothing_Header = "//android.widget.TextView[@text=\"CLOTHING\"]";
-    String T_Shirt_Product = "//android.widget.TextView[@text=\"T-Shirt\"]";
+    String T_Shirt_Product = "//android.widget.TextView[@text=\"T-Shirt\"] | //android.widget.TextView[@text=\"Test\"]";
     String Buy_Now_Button = "//android.widget.TextView[@text=\"BUY NOW\"]";
     String Back_Button_PDP = "//android.widget.ImageView";
     String Checkout_Header = "//android.widget.TextView[@text=\"CHECKOUT\"]";

@@ -39,6 +39,7 @@ public class SupportTabTests extends Configuration {
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
         supportTab.Click_Support_Tab();
+        supportTab.Click_Support_Tab();
         supportTab.Verify_Support_Tab();
     }
 
@@ -55,6 +56,7 @@ public class SupportTabTests extends Configuration {
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
+        supportTab.Click_Support_Tab();
         supportTab.Click_Support_Tab();
         supportTab.Select_Support_Type_And_Verify_Them();
     }
@@ -73,6 +75,7 @@ public class SupportTabTests extends Configuration {
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
         supportTab.Click_Support_Tab();
+        supportTab.Click_Support_Tab();
         supportTab.Enter_First_Name();
     }
 
@@ -89,6 +92,7 @@ public class SupportTabTests extends Configuration {
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
+        supportTab.Click_Support_Tab();
         supportTab.Click_Support_Tab();
         supportTab.Enter_Last_Name();
     }
@@ -107,6 +111,7 @@ public class SupportTabTests extends Configuration {
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
         supportTab.Click_Support_Tab();
+        supportTab.Click_Support_Tab();
         supportTab.Select_Team();
     }
 
@@ -123,6 +128,7 @@ public class SupportTabTests extends Configuration {
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
+        supportTab.Click_Support_Tab();
         supportTab.Click_Support_Tab();
         supportTab.Enter_Support_Description();
     }
@@ -141,6 +147,7 @@ public class SupportTabTests extends Configuration {
         loginPage.Login_with_valid_Credentials();
         settingpage.Click_On_Setting_Icon();
         settingpage.Verify_Setting_Header();
+        supportTab.Click_Support_Tab();
         supportTab.Click_Support_Tab();
         supportTab.Select_Support_Type_And_Verify_Them();
         supportTab.Enter_First_Name();
