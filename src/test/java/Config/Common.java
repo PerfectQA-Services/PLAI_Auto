@@ -393,7 +393,7 @@ public class Common{
 
         for(int i=0;i<=20;i++){
             if(driver.findElementsByXPath(Element).isEmpty() == true){
-                new TouchAction((MobileDriver)driver).press(ElementOption.point(x, top_y)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(3500))).moveTo(ElementOption.point(x, bottom_y)).release().perform();
+                new TouchAction((MobileDriver)driver).press(ElementOption.point(x, top_y)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(1500))).moveTo(ElementOption.point(x, bottom_y)).release().perform();
                 System.out.println("\nScrolling Events !!!");
                 continue;
             }
@@ -401,7 +401,6 @@ public class Common{
                 break;
             }
         }
-        Thread.sleep(1000);
     }
 
     public void scrollUntilClothingProductsEventFound(MobileDriver driver, String Element) throws InterruptedException {

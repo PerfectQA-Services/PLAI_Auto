@@ -306,7 +306,7 @@ public class EventTabPage extends Abstract{
     }
 
     public void Click_On_Old_Event() throws InterruptedException {
-        common.scrollDownMobile(driver);
+        common.scrollUntilOldEventFound(driver, Old_Event);
         driver.findElement(By.xpath(Old_Event)).click();
         common.log("Clicked On Old Event");
         Thread.sleep(4000);

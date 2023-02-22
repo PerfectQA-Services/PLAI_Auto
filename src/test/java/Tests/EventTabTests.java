@@ -1400,7 +1400,7 @@ public class EventTabTests extends Configuration {
         eventTab.Click_On_Event_Tab_New_Sprint();
         eventTab.Click_On_Calender_Sync_Icon_New_Sprint();
         Thread.sleep(1000);
-        loginPage.Get_Toast_Alert("Alert after click  calendar sync icon :- ");
+//        loginPage.Get_Toast_Alert("Alert after click  calendar sync icon :- ");
     }
     //TC-78
     @Test

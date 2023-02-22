@@ -492,8 +492,8 @@ public class Abstract {
      */
     String MEMBERS_Tab = "//android.widget.TextView[@text=\"MEMBERS\"]";
     String Members_Banner = "//android.view.View[9]/android.view.View[1] | //android.view.View[9]/android.view.View[2]";
-    String Member_Edit_Button = "//android.view.View[9]/android.view.View[1]/android.view.View[1]";
-    String Member_Delete_Button = "//android.view.View[9]/android.view.View[1]/android.view.View[2]";
+    String Member_Edit_Button = "//android.widget.TextView[@text=\"3ynrhm Eynryn\"]//..//android.view.View[1]";
+    String Member_Delete_Button = "//android.widget.TextView[@text=\"3ynrhm Eynryn\"]//..//android.view.View[2]";
     String Invite_Member_Button = "//android.widget.TextView[@text=\"INVITE MEMBER\"]";
     String Make_Admin_Checkbox = "//android.widget.TextView[contains(@text,\"Team Admin\")]//..//android.widget.CheckBox";
     String Save_Edit_Button = "//android.widget.TextView[@text=\"SAVE\"]";
