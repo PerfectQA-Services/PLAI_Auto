@@ -144,7 +144,7 @@
 					</property>
 				</properties>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/build/Regression_Suite.xml</suiteXmlFile>`
+						<suiteXmlFile>src/build/LaunchApp.xml</suiteXmlFile>`
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
